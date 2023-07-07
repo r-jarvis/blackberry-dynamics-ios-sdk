@@ -48,6 +48,8 @@
 "Send Log" = "Envoyer journal";
 "Retry" = "Réessayer";
 "SafetyNet validation failed" = "Validation SafetyNet impossible";
+"SafetyNet validation failed error message" = "Les vérifications de l'intégrité de l'application par SafetyNet ont échoué. Votre entreprise n'autorise pas l'utilisation d'applications modifiées et potentiellement dangereuses.";
+"Play Integrity validation failed error message" = "Les vérifications de l'intégrité de l'application par Play Integrity ont échoué. Votre entreprise n'autorise pas l'utilisation d'applications modifiées et potentiellement dangereuses.";
 "OS version not compliant" = "La version actuelle du système d'exploitation n'est pas autorisée par la politique de votre entreprise.\n\nMettez à jour le logiciel de votre appareil ou contactez votre administrateur.";
 "App integrity check failed" = "La vérification de l'intégrité de l'application a échoué, ce qui n'est pas autorisé par la politique de votre entreprise.";
 "Migration is in progress" = "Migration en cours";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "L'option biométrique sélectionnée n'est pas prise en charge. Modifiez l'option biométrique préférée dans les paramètres de l'appareil en choisissant l'empreinte digitale ou saisissez votre mot de passe.";
 "Activation failure" = "Échec de l'activation";
 "Biometry is not allowed for activation" = "L'option biométrique sélectionnée n'est pas prise en charge. Veuillez changer l'option biométrique préférée puis réessayer.";
+"Problem activating. Try again" = "Problème lors de l'activation. Réessayez";
+"Unlock Failure" = "Échec du déverrouillage";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "Échec du déverrouillage de l'application par empreinte digitale. Pour réinitialiser cette fonctionnalité, déverrouillez l'application avec le mot de passe, puis désactivez et réactivez le déverrouillage par empreinte digitale.";
 "Password now required" = "Votre administrateur exige la définition d'un mot de passe";
 "Log uploader status" = "État du chargeur de journaux";
 "Button Upload" = "Charger";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "La stratégie de mot de passe a été mise à jour.";
 "Camera" = "Appareil photo";
 "BBWebView error named file size message" = "Impossible de charger %s. %s est la taille de fichier maximale prise en charge.";
+"OverlayDialogTitle" = "Superposition d'écran détectée";
+"OverlayDialogDescription" = "Une application autorisée à se superposer peut observer les touches sur lesquelles vous appuyez.\n\nPour continuer, fermez l'autre application ou révoquez son autorisation à se superposer à d'autres applications.";

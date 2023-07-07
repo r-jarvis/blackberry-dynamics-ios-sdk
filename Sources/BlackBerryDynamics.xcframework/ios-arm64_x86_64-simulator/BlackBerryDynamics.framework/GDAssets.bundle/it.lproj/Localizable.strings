@@ -48,6 +48,8 @@
 "Send Log" = "Invia registro";
 "Retry" = "Riprova";
 "SafetyNet validation failed" = "Convalida SafetyNet non riuscita";
+"SafetyNet validation failed error message" = "I controlli di integrità delle app eseguiti da SafetyNet hanno avuto esito negativo. L'organizzazione non consente l'uso di applicazioni modificate e potenzialmente dannose.";
+"Play Integrity validation failed error message" = "I controlli di integrità delle app eseguiti da Play Integrity hanno avuto esito negativo. L'organizzazione non consente l'uso di applicazioni modificate e potenzialmente dannose.";
 "OS version not compliant" = "La versione corrente del sistema operativo non è consentita dalla policy dell'organizzazione.\n\nAggiornare il software del dispositivo oppure contattare l'amministratore";
 "App integrity check failed" = "La verifica dell'integrità dell'applicazione non è riuscita e questo non è consentito dalla policy dell'organizzazione.";
 "Migration is in progress" = "Migrazione in corso";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "L'opzione biometrica selezionata non è supportata. Modificare l'opzione biometrica preferita nelle impostazioni del dispositivo per utilizzare l'impronta digitale oppure immettere la propria password.";
 "Activation failure" = "Errore di attivazione";
 "Biometry is not allowed for activation" = "L'opzione biometrica selezionata non è supportata. Modificare l'opzione biometrica preferita e riprovare.";
+"Problem activating. Try again" = "Problema durante l'attivazione. Riprovare";
+"Unlock Failure" = "Sblocco non riuscito";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "Non è stato possibile sbloccare l'applicazione con l'impronta digitale. Sbloccare con la password, quindi disattivare e riattivare lo sblocco mediante impronta digitale per ripristinare questa funzione";
 "Password now required" = "L'amministratore richiede l'impostazione di una password";
 "Log uploader status" = "Stato caricamento registro";
 "Button Upload" = "Carica";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "I criteri per la password sono stati aggiornati.";
 "Camera" = "Fotocamera";
 "BBWebView error named file size message" = "Impossibile caricare %s. %s è la dimensione file massima supportata.";
+"OverlayDialogTitle" = "Sovrapposizione schermo rilevata";
+"OverlayDialogDescription" = "Un'applicazione con autorizzazione ad apparire sulle altre, potrebbe osservare i tasti premuti dall'utente.\n\nChiudere l'altra applicazione o revocare l'autorizzazione ad apparire sulle altre app per continuare.";

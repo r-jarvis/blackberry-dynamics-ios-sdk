@@ -50,6 +50,8 @@
 "Send Log" = "Send Log";
 "Retry" = "Retry";
 "SafetyNet validation failed" = "SafetyNet validation failed";
+"SafetyNet validation failed error message" = "App integrity checks performed by SafetyNet have failed. Your organization doesn't permit use of modified and potentially harmful applications.";
+"Play Integrity validation failed error message" = "App integrity checks performed by Play Integrity have failed. Your organization doesn't permit use of modified and potentially harmful applications.";
 "OS version not compliant" = "The current version of the operating system is not allowed by your organization's policy.\n\nUpdate your device software or contact your administrator";
 "App integrity check failed" = "The application integrity check has failed which is not allowed by your organization's policy.";
 "Migration is in progress" = "Migration is in progress";
@@ -871,3 +873,5 @@
 "Files" = "Files";
 "Select" = "Select";
 "Dialog message" = "Dialog message";
+"OverlayDialogTitle" = "Screen Overlay Detected";
+"OverlayDialogDescription" = "An application permitted to appear on top may be observing your keystrokes.\n\nPlease close the other application or revoke its permission to display over other apps to continue.";

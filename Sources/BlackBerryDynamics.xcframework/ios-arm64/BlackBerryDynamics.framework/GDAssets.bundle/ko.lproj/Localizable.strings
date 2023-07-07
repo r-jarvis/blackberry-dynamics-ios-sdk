@@ -48,6 +48,8 @@
 "Send Log" = "로그 전송";
 "Retry" = "재시도";
 "SafetyNet validation failed" = "SafetyNet 확인 실패";
+"SafetyNet validation failed error message" = "SafetyNet에서 수행한 앱 무결성 검사에 실패했습니다. 조직에서 수정되고 잠재적으로 유해한 애플리케이션의 사용을 허용하지 않습니다.";
+"Play Integrity validation failed error message" = "Play Integrity에서 수행한 앱 무결성 검사에 실패했습니다. 조직에서 수정되고 잠재적으로 유해한 애플리케이션의 사용을 허용하지 않습니다.";
 "OS version not compliant" = "조직의 정책에 따라 현재 버전의 운영 체제가 허용되지 않습니다.\n\n장치 소프트웨어를 업데이트하거나 관리자에게 문의하십시오.";
 "App integrity check failed" = "애플리케이션 무결성 검사에 실패했습니다. 이는 조직의 정책에 따라 허용되지 않습니다.";
 "Migration is in progress" = "마이그레이션 진행 중";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "선택한 생체인식 옵션은 지원되지 않습니다. 기기 설정에서 기본 생체인식 옵션을 지문으로 변경하거나 비밀번호를 입력하십시오.";
 "Activation failure" = "활성화 실패";
 "Biometry is not allowed for activation" = "선택한 생체인식 옵션을 지원하지 않습니다. 기본 생체인식 옵션을 변경하고 다시 시도하십시오.";
+"Problem activating. Try again" = "활성화 중 문제가 발생했습니다. 다시 시도하십시오.";
+"Unlock Failure" = "잠금 해제 실패";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "지문이 애플리케이션 잠금을 해제하지 못했습니다. 암호로 잠금을 해제한 다음 지문 잠금 해제를 비활성화했다가 다시 활성화하여 이 기능을 재설정합니다.";
 "Password now required" = "관리자가 암호 설정을 요청합니다.";
 "Log uploader status" = "로그 업로드 상태";
 "Button Upload" = "업로드";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "암호 정책이 업데이트되었습니다.";
 "Camera" = "카메라";
 "BBWebView error named file size message" = "%s 파일을 업로드할 수 없음. %s 용량이 최대 지원 파일 사이즈입니다.";
+"OverlayDialogTitle" = "화면 오버레이가 감지됨";
+"OverlayDialogDescription" = "위에 표시되도록 허용된 애플리케이션은 키 입력을 감지할 수 있습니다.\n\n계속하려면 다른 애플리케이션을 닫거나 다른 애플리케이션 위에 표시하는 권한을 취소하십시오.";

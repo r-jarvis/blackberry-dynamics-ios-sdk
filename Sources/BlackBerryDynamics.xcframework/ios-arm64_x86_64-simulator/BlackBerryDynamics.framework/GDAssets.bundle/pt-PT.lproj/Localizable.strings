@@ -48,6 +48,8 @@
 "Send Log" = "Enviar registo";
 "Retry" = "Tentar de novo";
 "SafetyNet validation failed" = "Falha na validação SafetyNet";
+"SafetyNet validation failed error message" = "Falha nas verificações de integridade da aplicação efetuadas pelo SafetyNet. A sua organização não permite a utilização de aplicações modificadas e potencialmente nocivas.";
+"Play Integrity validation failed error message" = "Falha nas verificações de integridade da aplicação efetuadas pelo Play Integrity. A sua organização não permite a utilização de aplicações modificadas e potencialmente nocivas.";
 "OS version not compliant" = "A versão atual do sistema operativo não é permitida pela política da organização.\n\nAtualize o software do seu dispositivo ou contacte o seu administrador.";
 "App integrity check failed" = "A verificação da integridade da aplicação falhou, o que não é permitido pela política da organização.";
 "Migration is in progress" = "Migração em curso";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "A opção biométrica selecionada não é suportada. Altere a opção biométrica preferida nas definições do dispositivo para impressão digital ou introduza a sua palavra-passe.";
 "Activation failure" = "Falha na ativação.";
 "Biometry is not allowed for activation" = "A opção biométrica selecionada não é suportada. Altere a sua opção biométrica preferida e tente novamente.";
+"Problem activating. Try again" = "Problema ao ativar. Tente novamente";
+"Unlock Failure" = "Falha no desbloqueio";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "A função de impressão digital não teve êxito a desbloquear a aplicação. Desbloqueie com a palavra-passe e em, seguida, desative e volte a ativar o desbloqueio por impressão digital para repor esta funcionalidade";
 "Password now required" = "O seu administrador requer que defina uma palavra-passe";
 "Log uploader status" = "Estado do carregamento de registos";
 "Button Upload" = "Carregar";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "A política de palavras-passe foi atualizada.";
 "Camera" = "Câmara";
 "BBWebView error named file size message" = "Não é possível carregar %s. O tamanho de ficheiro máximo permitido é %s.";
+"OverlayDialogTitle" = "Sobreposição de ecrã detetada";
+"OverlayDialogDescription" = "Uma aplicação com autorização para aparecer na parte superior pode estar a observar as suas combinações de teclas.\n\nFeche as outras aplicações ou revogue a permissão para se sobrepôr a outras aplicações.";

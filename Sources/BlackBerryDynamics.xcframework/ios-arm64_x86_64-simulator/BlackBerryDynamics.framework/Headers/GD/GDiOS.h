@@ -38,6 +38,60 @@ typedef NS_ENUM(NSInteger, GDServiceType)
 
 NS_ASSUME_NONNULL_BEGIN
 
+/** Provide information about the authentication delegate app, if one exists.
+ *
+ * This class is used to return information about the application 
+ * authentication is delegated to. If there is no such delegated application, 
+ * isAuthenticationDelegated will be \ss_false.
+ * See \ref GDiOS::getAuthDelegate
+ */
+@interface GDAuthDelegateInfo : NSObject
+
+/** Name of the auth delegate application.
+ * 
+ * Display name of the auth delegate app.
+ *
+ * This property contains displayed name of the auth delegate app registered in the Dynamics catalog.
+ * This string may be empty but is not null.
+*/
+@property (nonatomic, copy) NSString* name;
+
+/** Native application identifier of the auth delegate.
+ * 
+ * Native application identifier of the auth delegate app.
+ *
+ * This property contains the native application identifier of the auth delegate as in the catalog.
+ * This string may be empty but is not null.
+ */
+@property (nonatomic, copy) NSString* address;
+
+/** Entitlement identifier of the auth delegate.
+ * 
+ * Entitlement identifier of the auth delegate app.
+ *
+ * This property contains the entitlement identifier registered in the Dynamics catalog.
+ * This string may be empty but is not null.
+ */
+@property (nonatomic, copy) NSString* applicationId;
+
+/** Flag if authentication is delegated.
+ * 
+ * Indicate if authentication is delegated to another app.
+ *
+ * @return \ss_true if the app is delegating authentication to another app.
+ * @return \ss_false if the app is managing authentication.
+
+ */
+@property (nonatomic, assign) BOOL isAuthenticationDelegated;
+
+/** Description of the GDAuthDelegateInfo
+ *
+ * This method returns an NSString representing the values of GDAuthDelegateInfo
+ */
+- (NSString *)description;
+
+@end
+
 /** Event dispatched from the BlackBerry Dynamics runtime.
  * 
  * This class is used to deliver events to the \ss_runtime_link event handler
@@ -342,6 +396,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)authorizeAutonomously;
 
+/** Get a pointer to the GDAuthDelegateInfo structure. 
+ * 
+ * Get a pointer to the GDAuthDelegateInfo structure. Non-Null.
+ * If there is no auth delegate application, isAuthenticationDelegated within structure will be NO.
+ */
+- (GDAuthDelegateInfo*)getAuthDelegate;
+
 /** String constants used as keys for programmatic activation parameters.
  *\copydetails ssGDRunTimeProgrammticActivationParameters
  * \link GDiOS::programmaticAuthorize: \endlink
@@ -521,12 +582,10 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  */
 - (NSString*)getVersion;
 
-/** Open the BlackBerry Dynamics preferences user interface.
+/** Open the BlackBerry Dynamics preferences user interface to change password.
  * 
- * Call this \ss_function to show the BlackBerry Dynamics preferences user
- * interface. This is the interface in which the end user sets any options that
- * are applied by the runtime directly, without reference to the application.
- * This includes, for example, changing their unlock password.
+ * Call this \ss_function to show the BlackBerry Dynamics interface
+ * to enable the user to change their unlock password. 
  * 
  * This \ss_function enables a BlackBerry Dynamics user interface element to be
  * included in the application's own user interface.
@@ -539,7 +598,8 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  *
  * @return \ss_true if the user interface element opened OK.
  * @return \ss_false if the user interface element was already open, or if 
- *                   authorization is delegated to another application.
+ *        authorization is delegated to another application. Also returned 
+ *        if enterprise policy doesn't require a password to unlock the application.
  */
 - (BOOL)showPreferenceUI:(nullable UIViewController*)baseViewController;
 

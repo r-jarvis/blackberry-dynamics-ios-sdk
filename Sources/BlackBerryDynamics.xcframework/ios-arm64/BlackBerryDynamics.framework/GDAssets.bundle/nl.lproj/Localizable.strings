@@ -48,6 +48,8 @@
 "Send Log" = "Log verzenden";
 "Retry" = "Opnieuw proberen";
 "SafetyNet validation failed" = "SafetyNet-validatie mislukt";
+"SafetyNet validation failed error message" = "App-integriteitscontroles uitgevoerd door by SafetyNet zijn mislukt. Uw organisatie staat het gebruik van gewijzigde en potentieel schadelijke applicaties niet toe.";
+"Play Integrity validation failed error message" = "App-integriteitscontroles uitgevoerd door by Play Integrity zijn mislukt. Uw organisatie staat het gebruik van gewijzigde en potentieel schadelijke applicaties niet toe.";
 "OS version not compliant" = "De huidige versie van het besturingssysteem is volgens het beleid van uw organisatie niet toegestaan.\n\nWerk uw apparaatsoftware bij of neem contact op met uw beheerder";
 "App integrity check failed" = "De integriteitscontrole van de toepassing is mislukt. Dit is niet toegestaan volgens het beleid van uw organisatie.";
 "Migration is in progress" = "De migratie wordt uitgevoerd";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "De geselecteerde biometrische optie wordt niet ondersteund. Wijzig de geselecteerde biometrische optie in apparaatinstellingen naar Vingerafdruk of voer uw wachtwoord in.";
 "Activation failure" = "Activatiefout";
 "Biometry is not allowed for activation" = "De geselecteerde biometrische optie wordt niet ondersteund. Wijzig de gewenste biometrische optie en probeer het opnieuw.";
+"Problem activating. Try again" = "Probleem bij activeren. Probeer het opnieuw";
+"Unlock Failure" = "Ontgrendelingsfout";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "De applicatie kon niet via vingerafdruk worden ontgrendeld. Ontgrendel met wachtwoord, deactiveer en vervolgens activeer vingerafdrukontgrendeling om deze functie te resetten";
 "Password now required" = "Uw beheerder vereist dat u een wachtwoord instelt";
 "Log uploader status" = "Log uploadstatus";
 "Button Upload" = "Uploaden";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "Wachtwoordbeleid is bijgewerkt.";
 "Camera" = "Camera";
 "BBWebView error named file size message" = "Kan %s niet uploaden. %s is de maximaal ondersteunde bestandsgrootte.";
+"OverlayDialogTitle" = "Schermoverlay gedetecteerd";
+"OverlayDialogDescription" = "Een applicatie die bovenop mag verschijnen observeert mogelijk uw toetsaanslagen.\n\nSluit de andere applicatie of herroep de machtiging om over andere apps weer te geven om door te gaan.";

@@ -220,7 +220,7 @@ bringServiceToFront:(GDTForegroundOption)option
  * 
  * \copydetails ssGDServicesCancelRequest
  */
-+ (BOOL) cancelRequest:(NSString*)requestID toApplication:(NSString*)application;
++ (BOOL) cancelRequest:(nullable NSString*)requestID toApplication:(NSString*)application;
 
 /** Bring another application to the foreground.
  *

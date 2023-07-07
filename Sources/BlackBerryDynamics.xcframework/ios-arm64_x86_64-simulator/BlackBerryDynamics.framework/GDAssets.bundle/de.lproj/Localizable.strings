@@ -48,6 +48,8 @@
 "Send Log" = "Protokoll senden";
 "Retry" = "Wiederholen";
 "SafetyNet validation failed" = "SafetyNet-Validierung fehlgeschlagen";
+"SafetyNet validation failed error message" = "Von SafetyNet durchgeführte App-Integritätsprüfungen sind fehlgeschlagen. Für Ihre Organisation ist die Verwendung modifizierter und potenziell schädlicher Anwendungen nicht zulässig.";
+"Play Integrity validation failed error message" = "Von Play Integrity durchgeführte App-Integritätsprüfungen sind fehlgeschlagen. Für Ihre Organisation ist die Verwendung modifizierter und potenziell schädlicher Anwendungen nicht zulässig.";
 "OS version not compliant" = "Die aktuelle Version des Betriebssystems ist gemäß den Unternehmensrichtlinien nicht zulässig.\n\nAktualisieren Sie die Gerätesoftware oder kontaktieren Sie Ihren Administrator";
 "App integrity check failed" = "Die Anwendungsintegritätsprüfung ist fehlgeschlagen, was gemäß den Unternehmensrichtlinien nicht zulässig ist.";
 "Migration is in progress" = "Migration im Gang";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "Die ausgewählte Biometrie-Option wird nicht unterstützt. Ändern Sie die bevorzugte Biometrie-Option in den Geräteeinstellungen zu Fingerabdruck oder geben Sie Ihr Kennwort ein.";
 "Activation failure" = "Fehler bei der Aktivierung";
 "Biometry is not allowed for activation" = "Die ausgewählte Biometrie-Option wird nicht unterstützt. Ändern Sie die bevorzugte Biometrie-Option und versuchen Sie es erneut.";
+"Problem activating. Try again" = "Problem beim Aktivieren. Versuchen Sie es erneut.";
+"Unlock Failure" = "Fehler beim Entsperren";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "Die Anwendung konnte nicht per Fingerabdruck entsperrt werden. Entsperren Sie sie mit einem Kennwort, deaktivieren Sie die Sperre per Fingerabdruck und aktivieren Sie sie erneut, um diese Funktion zurückzusetzen.";
 "Password now required" = "Ihr Administrator verlangt das Festlegen eines Passworts";
 "Log uploader status" = "Protokolluploadstatus";
 "Button Upload" = "Hochladen";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "Die Kennwortrichtlinie wurde aktualisiert.";
 "Camera" = "Kamera";
 "BBWebView error named file size message" = "%s kann nicht hochgeladen werden. %s ist die maximal unterstützte Dateigröße.";
+"OverlayDialogTitle" = "Bildschirmüberlagerung erkannt";
+"OverlayDialogDescription" = "Eine Anwendung, die im Vordergrund ausgeführt werden darf, verfolgt möglicherweise Ihre Tasteneingaben.\n\nBitte schließen Sie die andere Anwendung oder ziehen Sie die Berechtigung, diese Anwendung im Vordergrund vor anderen Apps auszuführen, zurück, um fortzufahren.";

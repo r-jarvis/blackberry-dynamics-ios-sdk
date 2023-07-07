@@ -562,7 +562,7 @@ bringServiceToFront:(GDTForegroundOption)option
  *                   no service request that matches the specified values, or if
  *                   none of the requests that match could be cancelled.
  */
-+ (BOOL) cancelRequest:(NSString*)requestID toApplication:(NSString*)application;
++ (BOOL) cancelRequest:(nullable NSString*)requestID toApplication:(NSString*)application;
 
 /** Bring another application to the foreground.
  *

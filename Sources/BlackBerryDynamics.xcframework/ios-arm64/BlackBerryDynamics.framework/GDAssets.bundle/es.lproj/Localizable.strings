@@ -48,6 +48,8 @@
 "Send Log" = "Enviar registro";
 "Retry" = "Reintentar";
 "SafetyNet validation failed" = "Error de validación de SafetyNet";
+"SafetyNet validation failed error message" = "Error en las comprobaciones de integridad de la aplicación realizadas por SafetyNet. Su organización no permite el uso de aplicaciones modificadas y potencialmente dañinas.";
+"Play Integrity validation failed error message" = "Error en las comprobaciones de integridad de la aplicación realizadas por Play Integrity. Su organización no permite el uso de aplicaciones modificadas y potencialmente dañinas.";
 "OS version not compliant" = "La versión actual del sistema operativo no está permitida por la política de su organización.\n\nActualice el software de su dispositivo o póngase en contacto con el administrador";
 "App integrity check failed" = "Error en la comprobación de la integridad de la aplicación, que no está permitida por la política de su organización.";
 "Migration is in progress" = "Migración en curso";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "La opción biométrica seleccionada no es compatible. Cambie la opción biométrica preferida en la configuración del dispositivo a huella digital o introduzca su contraseña.";
 "Activation failure" = "Error de activación";
 "Biometry is not allowed for activation" = "La opción biométrica seleccionada no es compatible. Cambie la opción biométrica preferida e inténtelo de nuevo.";
+"Problem activating. Try again" = "Problema con la activación. Inténtelo de nuevo.";
+"Unlock Failure" = "Error al desbloquear";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "La huella dactilar no ha podido desbloquear la aplicación. Desbloquéela con la contraseña; a continuación, deshabilite el desbloqueo con huella dactilar y vuelva a habilitarlo para restablecer esta función.";
 "Password now required" = "El administrador requiere que establezca una contraseña";
 "Log uploader status" = "Registrar estado de la carga";
 "Button Upload" = "Cargar";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "Se ha actualizado la política de contraseñas.";
 "Camera" = "Cámara";
 "BBWebView error named file size message" = "No se puede cargar %s. %s es el tamaño máximo de archivo admitido.";
+"OverlayDialogTitle" = "Se ha detectado una superposición en la pantalla";
+"OverlayDialogDescription" = "Una aplicación con permiso para colocarse por encima puede estar observando sus pulsaciones.\nCierre esa aplicación o retírele el permiso para mostrarse sobre otras aplicaciones para continuar.";

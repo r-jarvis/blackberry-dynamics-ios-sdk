@@ -48,6 +48,8 @@
 "Send Log" = "ログを送信";
 "Retry" = "再試行";
 "SafetyNet validation failed" = "SafetyNetの検証に失敗しました";
+"SafetyNet validation failed error message" = "SafetyNetのアプリ整合性チェックが失敗しました。改変された、および有害の可能性のあるアプリの使用は所属組織によって禁止されています。";
+"Play Integrity validation failed error message" = "Play Integrityのアプリ整合性チェックが失敗しました。改変された、および有害の可能性のあるアプリの使用は所属組織によって禁止されています。";
 "OS version not compliant" = "現在のOSのバージョンは組織のポリシーで認められていません。\n\nデバイスのソフトウェアを更新するか、管理者に連絡してください";
 "App integrity check failed" = "アプリケーション整合性チェックが失敗しました。この操作は組織のポリシーで許可されていません。";
 "Migration is in progress" = "移行中";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "選択した生体認証オプションはサポートされていません。デバイス設定で現行オプションを指紋認証オプションに変更するか、パスワードを入力してください。";
 "Activation failure" = "アクティベーションエラー";
 "Biometry is not allowed for activation" = "選択した生体認証オプションはサポートされていません。生体認証オプションを変更してもう一度試してください。";
+"Problem activating. Try again" = "問題が発生しました。もう一度試してください。";
+"Unlock Failure" = "ロック解除が失敗しました";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "指紋によるアプリロックの解除に失敗しました。パスワードでロックを解除し、指紋によるロック解除機能を一度無効にした後に再度有効にしてリセットしてください。";
 "Password now required" = "管理者がパスワードの設定を要求しています";
 "Log uploader status" = "ログアップロードステータス";
 "Button Upload" = "アップロード";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "パスワードポリシーが更新されました。";
 "Camera" = "カメラ";
 "BBWebView error named file size message" = "%sをアップロードできません。%sがサポートされる最大のファイルサイズです。";
+"OverlayDialogTitle" = "画面のオーバーレイが検出されました";
+"OverlayDialogDescription" = "最前面に表示できるように設定されたアプリケーションからキー入力を検出できます。\n\n続行するには、他のアプリケーションを閉じるか、最前面に表示されないように他のアプリを設定してください。";

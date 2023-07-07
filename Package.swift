@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-name: "blackberry-dynamics-ios-sdk",
+    name: "blackberry-dynamics-ios-sdk",
     platforms: [
         .iOS(.v15),
     ],

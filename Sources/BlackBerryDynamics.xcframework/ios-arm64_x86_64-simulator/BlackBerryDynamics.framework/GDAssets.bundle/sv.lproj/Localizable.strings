@@ -48,6 +48,8 @@
 "Send Log" = "Skicka logg";
 "Retry" = "Försök igen";
 "SafetyNet validation failed" = "SafetyNet-validering misslyckades";
+"SafetyNet validation failed error message" = "Integritetskontrollen för appen som genomfördes av SafetyNet misslyckades. Din organisation tillåter inte användning av program som ändrats eller som kan vara skadliga.";
+"Play Integrity validation failed error message" = "Integritetskontrollen för appen som genomfördes av Play Integrity misslyckades. Din organisation tillåter inte användning av program som ändrats eller som kan vara skadliga.";
 "OS version not compliant" = "Den nuvarande versionen av operativsystemet tillåts inte av din organisations policy.\n\nUppdatera enhetens programvara eller kontakta din administratör";
 "App integrity check failed" = "Integritetskontrollen för applikationen misslyckades, vilket inte är tillåtet enligt din organisations policy.";
 "Migration is in progress" = "Migreringen pågår";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "Det finns inte stöd för valt biometriskt alternativ. Ändra föredraget biometriskt alternativ i enhetsinställningarna till fingeravtryck eller ange ditt lösenord.";
 "Activation failure" = "Aktiveringen misslyckades";
 "Biometry is not allowed for activation" = "Det valda biometriska alternativet stöds inte. Byt biometriskt alternativ och försök igen.";
+"Problem activating. Try again" = "Problem vid aktivering. Försök igen";
+"Unlock Failure" = "Fel vid upplåsning";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "Fingeravtrycket kunde inte öppna programmet. Lås upp med lösenord, starta sedan om upplåsning med fingeravtryck för att starta om funktionen";
 "Password now required" = "Administratören kräver att du anger ett lösenord";
 "Log uploader status" = "Logga uppladdningsstatus";
 "Button Upload" = "Ladda upp";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "Lösenordspolicyn har uppdaterats.";
 "Camera" = "Kamera";
 "BBWebView error named file size message" = "Det går inte att ladda upp %s. %s är den högsta tillåtna filstorleken.";
+"OverlayDialogTitle" = "Skärmöverlägg upptäckt";
+"OverlayDialogDescription" = "Ett program har behörighet att visas längst fram kan eventuellt observera din tryckningar.\n\nStäng andra program eller ta bort behörigheten att visas framför andra appar för att fortsätta.";

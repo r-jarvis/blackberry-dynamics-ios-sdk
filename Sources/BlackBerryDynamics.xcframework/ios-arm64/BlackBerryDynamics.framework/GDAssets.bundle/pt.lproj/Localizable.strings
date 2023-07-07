@@ -48,6 +48,8 @@
 "Send Log" = "Enviar log";
 "Retry" = "Repetir";
 "SafetyNet validation failed" = "Falha na validação do SafetyNet";
+"SafetyNet validation failed error message" = "As verificações de integridade do aplicativo realizadas pela SafetyNet falharam. Sua organização não permite o uso de aplicativos modificados e potencialmente nocivos.";
+"Play Integrity validation failed error message" = "As verificações de integridade do app realizadas pelo Play Integrity falharam. Sua organização não permite o uso de aplicativos modificados e potencialmente nocivos.";
 "OS version not compliant" = "A versão atual do sistema operacional não é permitida pela política da sua organização.\n\nAtualize o software do seu dispositivo ou entre em contato com o seu administrador";
 "App integrity check failed" = "A verificação de integridade do aplicativo falhou, o que não é permitido pela política da sua organização.";
 "Migration is in progress" = "Migração em andamento";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "A opção de biometria selecionada não é compatível. Altere a opção de biometria de preferência nas configurações de impressão digital do dispositivo ou digite sua senha.";
 "Activation failure" = "Falha de ativação";
 "Biometry is not allowed for activation" = "A opção de biometria selecionada não é compatível. Altere a opção de biometria de preferência e tente novamente.";
+"Problem activating. Try again" = "Problema ao ativar. Tente novamente";
+"Unlock Failure" = "Falha ao desbloquear";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "A impressão digital falhou ao desbloquear o aplicativo. Desbloqueie com senha e, em seguida, desative e reative o desbloqueio de impressão digital para redefinir este recurso";
 "Password now required" = "Seu administrador requer que você defina uma senha";
 "Log uploader status" = "Status do carregamento de log";
 "Button Upload" = "Upload";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "A política de senhas foi atualizada.";
 "Camera" = "Câmera";
 "BBWebView error named file size message" = "Não foi possível fazer o upload de %s. O tamanho máximo de arquivo suportado é %s.";
+"OverlayDialogTitle" = "Sobreposição de tela detectada";
+"OverlayDialogDescription" = "Um aplicativo com permissão para aparecer no topo pode estar observando suas teclas enquanto você digita.\n\nFeche o outro aplicativo ou revogue sua permissão para exibição sobre outros aplicativos para continuar.";

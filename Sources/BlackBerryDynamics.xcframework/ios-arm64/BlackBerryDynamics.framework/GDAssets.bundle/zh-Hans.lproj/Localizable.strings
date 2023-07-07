@@ -48,6 +48,8 @@
 "Send Log" = "发送日志";
 "Retry" = "重试";
 "SafetyNet validation failed" = "SafetyNet 验证失败";
+"SafetyNet validation failed error message" = "由 SafetyNet 执行的应用完整性检查失败。您的组织不允许使用修改过的、可能有害的应用程序。";
+"Play Integrity validation failed error message" = "由 Play Integrity 执行的应用完整性检查失败。您的组织不允许使用修改过的、可能有害的应用程序。";
 "OS version not compliant" = "您所在组织的策略不允许使用当前版本的操作系统。\n\n请更新您的设备软件或联系您的管理员";
 "App integrity check failed" = "应用程序完整性检查失败，您所在组织的策略不允许这种检查。";
 "Migration is in progress" = "正在进行迁移";
@@ -516,6 +518,9 @@
 "Biometry is not allowed for unlock" = "不支持选定的生物识别选项。请将设备设置中的首选生物识别选项更改为指纹或输入密码。";
 "Activation failure" = "激活失败";
 "Biometry is not allowed for activation" = "不支持选定的生物识别选项。请更改首选生物识别选项，然后重试。";
+"Problem activating. Try again" = "激活时出现问题。请再试一次";
+"Unlock Failure" = "解锁失败";
+"The fingerprint failed to unlock the application. Unlock with password then disable and re-enable fingerprint unlock to reset this feature" = "指纹无法解锁应用程序。使用密码解锁，然后禁用并重新启用指纹解锁以重置此功能";
 "Password now required" = "您的管理员要求您设置密码";
 "Log uploader status" = "日志上载状态";
 "Button Upload" = "上载";
@@ -868,3 +873,5 @@
 "Password policy has been updated" = "密码策略已更新。";
 "Camera" = "照相机";
 "BBWebView error named file size message" = "无法上传 %s。支持的最大文件大小为 %s。";
+"OverlayDialogTitle" = "检测到屏幕覆盖";
+"OverlayDialogDescription" = "允许出现在顶部的应用程序可能正在观察您的击键。\n\n请关闭其他应用程序或撤销其在其他应用上显示的权限才能继续。";
