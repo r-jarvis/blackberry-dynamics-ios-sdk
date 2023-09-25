@@ -1,11 +1,13 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
 #import <Foundation/Foundation.h>
 
-/** Manage access across the firewall via the URL Loading System.
+/*!
+ * \class GDURLLoadingSystem GDURLLoadingSystem.h <BlackBerryDynamics/GD/GDURLLoadingSystem.h>
+ * \brief Manage access across the firewall via the URL Loading System.
  * 
  * BlackBerry Dynamics applications can utilize the native URL Loading System to
  * communicate with servers that are behind the enterprise firewall.

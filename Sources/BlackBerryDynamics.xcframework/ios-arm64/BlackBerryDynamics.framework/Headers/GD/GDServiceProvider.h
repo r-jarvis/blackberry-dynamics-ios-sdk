@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -20,16 +20,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class GDServiceDetail;
 
-/** Service provider details.
+/*!
+ * \class GDServiceProvider GDServiceProvider.h <BlackBerryDynamics/GD/GDServiceProvider.h>
+ * \brief Service provider details.
  *
  * This class is used to return information about a service provider. See
- * \reflink GDiOS::getServiceProvidersFor:andVersion:andServiceType: getServiceProvidersFor: (GDiOS) \endlink. An instance of this class either represents a
+ * \ss_servicediscovery_link. An instance of this class either represents a
  * front-end application, running on a mobile device or computer, or a back-end
  * server.
  *
- * The information returned for an application could be used to send a
+ * \if iOS The information returned for an application could be used to send a
  * service request to the service provider using AppKinetics. See the
- * \reflink GDService GDService class reference\endlink for details of the programming interface.
+ * \ss_serviceoverview_link for details of the programming interface.
+ * \endif
  *
  * The information returned for a server could be used to establish HTTP or TCP
  * socket communications with an instance of the server.

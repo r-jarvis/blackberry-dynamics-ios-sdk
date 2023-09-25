@@ -1,17 +1,19 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
 
 #import <Foundation/Foundation.h>
 
-/** NSInputStream subclass for reading files that are in the secure store.
+/*!
+ * \class GDCReadStream GDCReadStream.h <BlackBerryDynamics/GD/GDCReadStream.h>
+ * \brief NSInputStream subclass for reading files that are in the secure store.
  * 
  * This class is a subclass of the native <tt>NSInputStream</tt> class, for
  * access to the BlackBerry Dynamics secure file system.
  *
- * @see \reflink  GDFileManager \endlink
+ * @see \ss_filesystem_link
  * @see \link GDFileHandle \endlink
  *
  * <h2>Programming Interface</h2>
@@ -36,7 +38,7 @@
  * application. It mustn't be assumed that a file has been completely read into
  * a buffer, even if the buffer is large enough to accomodate the whole file.
  *
- * The functions in this class utilize <tt>NSError</tt> in a conventional way. Function calls accept as a parameter the location of a pointer to <tt>NSError</tt>, i.e. a pointer to a pointer, with type <tt>NSError**</tt>. The location may be <tt>nil</tt>. If the location isn't <tt>nil</tt>, and an error occurs, the BlackBerry Dynamics runtime overwrites the pointer at the specified location with the address of an object that describes the error that occurred.
+ * \error_param_intro{this class}
  * 
  * @see <a
  *          href="https://developer.apple.com/reference/foundation/nsinputstream"

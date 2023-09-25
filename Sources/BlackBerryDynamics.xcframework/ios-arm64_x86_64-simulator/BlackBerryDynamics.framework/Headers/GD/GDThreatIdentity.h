@@ -6,8 +6,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**  
- * Determine whether current application activity matches the behavior and identity of the authorized user.
+/*!
+ * \class BBDThreatIdentity GDThreatIdentity.h <BlackBerryDynamics/GD/GDThreatIdentity.h>
+ * \brief Determine whether current application activity matches the behavior and identity of the authorized user.
  * 
  * Requires BlackBerry Persona to be enabled.
  *

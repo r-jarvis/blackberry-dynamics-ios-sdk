@@ -1,4 +1,4 @@
-/* Copyright (c) 2017 - 2020 BlackBerry Limited.
+/* Copyright (c) 2017 - 2022 BlackBerry Limited.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -51,6 +51,7 @@ static NSString* const BBDOKButtonID = @"BBDOKButtonID";
 // Cancel button on the EasyActivationUnlockUI and CertificateSigningRequestUnlockUI
 // Could be used on other UIs as well
 static NSString* const BBDCancelButtonID = @"BBDCancelButtonID";
+static NSString* const BBDBackButtonID = @"BBDBackButtonID";
 static NSString* const BBDFaceIDButtonID = @"BBDFaceIDButtonID";
 static NSString* const BBDLearnMoreMessageID = @"BBDLearnMoreMessageID";
 static NSString* const BBDContainerWipedTitleID = @"BBDContainerWipedTitleID";
@@ -95,6 +96,7 @@ static NSString* const BBDRemoteUnlockUI = @"BBDRemoteUnlockUI";
 static NSString* const BBDActivationProgressUI = @"BBDActivationProgressUI";
 static NSString* const BBDAuthDelegationBlockedUI = @"BBDAuthDelegationBlockedUI";
 static NSString* const BBDBlockedUI = @"BBDBlockedUI";
+static NSString* const BBDBlockedUI_AccessDenied = @"BBDBlockedUI_AccessDenied";
 static NSString* const BBDContainerWipedUI = @"BBDContainerWipedUI";
 static NSString* const BBDPrivacySplashUI = @"BBDPrivacySplashUI";
 // BIS UI

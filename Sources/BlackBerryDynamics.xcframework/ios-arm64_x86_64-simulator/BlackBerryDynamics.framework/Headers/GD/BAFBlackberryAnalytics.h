@@ -1,5 +1,5 @@
 /*
- * (c) 2020 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -96,8 +96,9 @@ extern NSString * _Nonnull const BISThreatLevelChangeKey;
 
 
 
-/** Class for BlackBerry Analytics and BlackBerry Persona
- *
+/*!
+ * \class BAFBlackberryAnalytics BAFBlackberryAnalytics.h <BlackberryDynamics/GD/BAFBlackberryAnalytics.h>
+ * \brief Class for BlackBerry Analytics and BlackBerry Persona.
  * \copydetails ssAnalytics 
  * 
  */

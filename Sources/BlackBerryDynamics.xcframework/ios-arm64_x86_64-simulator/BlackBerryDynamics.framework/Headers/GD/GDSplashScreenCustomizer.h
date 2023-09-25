@@ -1,12 +1,14 @@
 /*
- * (c) 2020 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
 #import <Foundation/Foundation.h>
 
 
-/** Delegate for handling GDSplashScreenCustomizer callback when a splash screen is about to be displayed.
+/*!
+ * \protocol GDSplashScreenCustomizerDelegate GDSplashScreenCustomizer.h <BlackBerryDynamics/GD/GDSplashScreenCustomizer.h>
+ * \brief Delegate for handling GDSplashScreenCustomizer callback when a splash screen is about to be displayed.
  *
  * The GDSplashScreenCustomizerDelegate protocol includes a single property which
  * enables an application to display a custom view controller instead of the default
@@ -39,7 +41,9 @@
 @end
 
 
-/** Display a custom view controller instead of the default BlackBerry Dynamics splash screen
+/*!
+ * \class GDSplashScreenCustomizer GDSplashScreenCustomizer.h <BlackBerryDyanmices/GD/GDSplashScreenCustomizer.h>
+ * \brief Display a custom view controller instead of the default BlackBerry Dynamics splash screen.
  * 
  *
  * When a BlackBerry Dynamics applications becomes inactive by default a BlackBerry 

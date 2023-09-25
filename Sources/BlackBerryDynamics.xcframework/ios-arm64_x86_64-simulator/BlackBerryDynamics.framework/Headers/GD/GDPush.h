@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -170,7 +170,9 @@ extern NSString* const GDPushChannelErrorKey;
 /** \}
  */
 
-/** Manage Push Channel tokens and notifications.
+/*!
+ * \class GDPushChannel GDPush.h <BlackBerryDynamics/GD/GDPush.h>
+ * \brief Manage Push Channel tokens and notifications.
  * 
  * \copydetails ssPushChannel
  */

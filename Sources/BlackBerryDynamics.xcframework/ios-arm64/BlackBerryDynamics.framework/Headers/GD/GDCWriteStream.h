@@ -1,17 +1,19 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
 
 #import <Foundation/Foundation.h>
 
-/** NSOutputStream subclass for writing files in the secure store.
+/*!
+ * \class GDCWriteStream GDCWriteStream.h <BlackBerryDynamics/GD/GDCWriteStream.h>
+ * \brief NSOutputStream subclass for writing files in the secure store.
  * 
  * This class is a subclass of the native <tt>NSInputStream</tt> class, for
  * access to the BlackBerry Dynamics secure file system.
  *
- * @see \reflink  GDFileManager \endlink
+ * @see \ss_filesystem_link
  * @see \link GDFileHandle \endlink
  * 
  * <h2>Programming Interface</h2>
@@ -23,7 +25,7 @@
  * This documentation includes only additional operations provided by
  * GDCWriteStream that are not part of <tt>NSOutputStream</tt>.
  *
- * The functions in this class utilize <tt>NSError</tt> in a conventional way. Function calls accept as a parameter the location of a pointer to <tt>NSError</tt>, i.e. a pointer to a pointer, with type <tt>NSError**</tt>. The location may be <tt>nil</tt>. If the location isn't <tt>nil</tt>, and an error occurs, the BlackBerry Dynamics runtime overwrites the pointer at the specified location with the address of an object that describes the error that occurred.
+ * \error_param_intro{this class}
  *
  * @see <a
  *          href="https://developer.apple.com/reference/foundation/nsoutputstream?language=objc"

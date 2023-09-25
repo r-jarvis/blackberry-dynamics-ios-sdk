@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -42,7 +42,9 @@ typedef NS_ENUM(NSInteger, GDSocketErrorType)
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** Delegate for handling GDSocket state transitions and received data.
+/*!
+ * \protocol GDSocketDelegate GDNETiOS.h <BlackBerryDynamics/GD/GDNETiOS.h>
+ * \brief Delegate for handling GDSocket state transitions and received data.
  * 
  * Errors and state changes that occur when using GDSocket are handled by
  * creating a class that implements this protocol. The callback for handling
@@ -108,7 +110,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/** Buffer for accessing GDSocket and GDHttpRequest data.
+/*!
+ * \class GDDirectByteBuffer GDNETiOS.h <BlackBerryDynamics/GD/GDNETiOS.h>
+ * \brief Buffer for accessing GDSocket and GDHttpRequest data.
  * 
  * The BlackBerry Dynamics direct byte buffer interface is used to access
  * a number of in-memory byte buffers within the BlackBerry Dynamics secure
@@ -266,208 +270,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @see GDSocket
  */
 
-/** TCP socket, supporting SSL/TLS and communication across the firewall.
+/*!
+ * \class GDSocket GDNETiOS.h <BlackBerryDynamics/GD/GDNETiOS.h>
+ * \brief TCP socket, supporting SSL/TLS and communication across the firewall.
  * 
- * 
- * The BlackBerry Dynamics socket is for bi-directional data
- * communication between the mobile application on the device and an application
- * server. The application server can be on the Internet, or behind the
- * enterprise firewall. Use of a Secure Socket Layer and Transport Layer
- * Security (SSL/TLS) are supported.
- * 
- * The functions in this class cannot be called until BlackBerry Dynamics
- * authorization processing is complete.
- * 
- * 
- * BlackBerry Dynamics secure communication does not go via the proxy specified
- * in the device's native settings, if any.
- * @see \reflink GDiOS \endlink, for BlackBerry Dynamics authorization.
- * @see \ref threads
- * @see \ref background_execution
- * @see GDHttpRequest
- * @see GDNetUtility
- * @see <a  HREF="https://docs.blackberry.com/en/endpoint-management/blackberry-uem/"  target="_blank" >Manuals page for the BlackBerry Dynamics enterprise servers</a > for the Platform Overview.
- *
- *
- * <h3>Overview</h3>
- * The BlackBerry Dynamics socket programming interface is asynchronous and
- * state-based. The application attaches its own event-handler callbacks to the
- * socket object. The callback functions are invoked when socket events occur,
- * or when the socket changes state. Which functions can be called by the
- * application at any time depend on the socket's state.
- *
- * Callbacks are attached through a delegate class. The states in which each
- * callback may be expected to be invoked are detailed in the delegate class's
- * documentation, see \ref GDSocketDelegate.
- *
- * The availability of functions, and what actions take place, are detailed
- * below, and summarized in the following table. The table also summarizes which
- * callbacks may expect to be invoked in each state.
- * <table>
- *     <tr><th>State</th><th>Functions / Actions</th><th>Expected callbacks</th>
- *
- *     </tr><tr><td>
- *         Prepared</td>
- *     <td>
- *         Application can call <tt>connect</tt>: state becomes Connecting\n
- *         Application can call <tt>disableHostVerification</tt>:
- *         no state change\n
- *         Application can call <tt>disablePeerVerification</tt>:
- *         no state change</td>
- *     <td>
- *         None</td>
- *
- *     </tr><tr><td>
- *         Connecting</td>
- *     <td>
- *         Open socket connection to server</td>
- *     <td>
- *         <tt>onErr</tt>: no state change\n
- *         <tt>onOpen</tt>: new state is Open</td>
- *
- *     </tr><tr><td>
- *         Open</td>
- *     <td>
- *         Application can call <tt>disconnect</tt>: state becomes
- *         Disconnecting\n
- *         Application can call <tt>write</tt>: No state change</td>
- *     <td>
- *         <tt>onRead</tt>: no state change\n
- *         <tt>onErr</tt>: no state change\n
- *         <tt>onClose</tt>: new state is Disconnected</td>
- *
- *     </tr><tr><td>
- *         Disconnecting</td>
- *     <td>
- *         Close socket connection</td>
- *     <td>
- *         <tt>onRead</tt>: no state change\n
- *         <tt>onErr</tt>: no state change\n
- *         <tt>onClose</tt>: new state is Disconnected</td>
- *
- *     </tr><tr><td>
- *         Disconnected</td>
- *     <td>
- *         Application can call <tt>connect</tt>: state becomes Connecting</td>
- *     <td>
- *         None</td>
- *
- *     </tr>
- * </table>
- * The transitions in the above table are also shown in the
- * \ref st02gdsocket
- *
- * <h3>Sending and Receiving Data</h3>
- * Sending data through a BlackBerry Dynamics socket is a two-stage operation.
- * The first stage is to add the data to the socket's outbound buffer. The
- * socket's outbound buffer is represented by the <tt>writestream</tt> property,
- * and is accessed using the BlackBerry Dynamics direct byte buffer interface.
- * The second stage is to send the contents of the buffer through the socket
- * connection. To send the buffer, call the <tt>write</tt> function.
- *
- * Reading data from a BlackBerry Dynamics socket is asynchronous. When data is
- * received at the device, the data is stored in the socket's inbound buffer.
- * The application is then notified that data is available to read, by
- * invocation of the delegate <tt>onRead</tt> callback. In the callback, the
- * application consumes the received data from the inbound buffer. The inbound
- * buffer is represented by the <tt>readStream</tt> property, and is
- * accessed using the BlackBerry Dynamics direct byte buffer interface.
- *
- * <h3>SSL/TLS Security</h3>
- * The BlackBerry Dynamics socket interface supports use of a Secure Socket
- * Layer or Transport Layer Security (SSL/TLS) to send and receive data.
- *
- * Using SSL/TLS requires that the remote end has a suitable certificate, and
- * that the certificate is valid.
- * A number of checks for validity are made by the BlackBerry Dynamics runtime,
- * some of which can be switched off by the application.
-
- * A typical secure socket connection sequence would be as follows. The
- * application makes a first connection attempt. In the first attempt, all
- * checking is switched on. If a security error is encountered, this attempt
- * will fail. The application can then switch off some checking, and make a
- * second connection attempt to the same address as the first connection
- * attempt. With less rigorous checking, the second attempt may succeed where
- * the first failed.
- *
- * The relevant parts of the API are:
- * - Use of SSL/TLS is specified by including
- *   <tt>andUseSSL:</tt>&nbsp;<tt>YES</tt> in the call to the <tt>init</tt>
- *   function.
- * - Security errors are treated the same as connection failures.
- * - The functions <tt>disableHostVerification</tt> and
- *   <tt>disablePeerVerification</tt> are used to reduce the level
- *   of security checking. Setting <tt>disablePeerVerification</tt> implicitly
- *   sets <tt>disableHostVerification</tt>.
- * .
- * <h4>Secure Protocol Selection</h4>
- * Establishing an SSL/TLS connection can involve negotiating and retrying, in
- * order to select a secure protocol that is supported by both client and
- * server. The BlackBerry Dynamics runtime handles client-side negotiation and
- * retrying, if secure communication is in use.
- *
- * By default, the runtime won't offer the TLSv1.1 or TLSv1.2 protocols for
- * SSL/TLS connections with an application server.
- *
- * The runtime can be configured to offer these protocols, as follows.
- * -# Add a new row to the application's Info.plist file:
- *     - Key: <tt>GDControlTLSVersions</tt>
- *     - Type: <tt>String</tt> (the default)
- *     .
- * -# Set the value to:
- *     - <tt>GDEnableTLS1.1</tt> to enable the TLSv1.1 protocol.
- *     - <tt>GDEnableTLS1.2</tt> to enable both TLSv1.1 and TLSv1.2 protocols.
- *     .
- *     As an alternative, the value can instead be an array containing one or
- *     both of the above strings as separate items.
- * .
- * (*In case there are multiple Info.plist files, check that the correct one has
- * been edited by opening the Info tab of the application target being built.
- * The setting just made should appear there.)
- * 
- * The setting only affects connections to application servers, not the
- * connection with the BlackBerry Dynamics infrastructure itself. The protocols
- * aren't offered by default because there are many installed web servers with
- * which a connection cannot be established after one of these protocols has
- * been offered.
- *
- * In addition to the above, the following protocol versions can be blocked by
- * enterprise management console configuration.
- * <div class="bulletlists">
- * - SSLv3
- * - TLSv1.0
- * - TLSv1.1
- * - TLSv1.2
- * .
- * </div>
- *
- * The configuration of blocked protocol versions can be done in the enterprise
- * management console user interface. The configuration applies at the
- * deployment level and isn't specific to user, policy group, or application
- * server. The block only affects communication with application servers that is
- * routed via the BlackBerry Dynamics proxy infrastructure.
- *
- * <h3>Enterprise server connection notes</h3>
- * BlackBerry Dynamics secure communication can be used to connect to servers
- * that are behind the enterprise firewall. This applies to socket connections
- * and HTTP requests. Note the following when using this capability.
- *
- * The addresses of any application servers to which connection is being made
- * must be configured in the enterprise management console. The address could be
- * registered as the application's server, or as an additional server, for
- * example.
- *
- * Note. The application server configuration set in the management console can
- * be obtained in the application code by using the
- * \reflink GDiOS::getApplicationConfig getApplicationConfig (GDiOS) \endlink function.
- *
- * The connection to the application server will be made through the BlackBerry
- * Dynamics proxy infrastructure. The status of the application's connection to
- * the proxy infrastructure can be checked and monitored by using the
- * GDReachability interface.
- *
- * @see \ref GC
- * @see \reflink GDReachability GDReachability \endlink class reference.
+ * \copydetails ssGDSocket
  */
 @interface GDSocket : NSObject {
     /** \privatesection */

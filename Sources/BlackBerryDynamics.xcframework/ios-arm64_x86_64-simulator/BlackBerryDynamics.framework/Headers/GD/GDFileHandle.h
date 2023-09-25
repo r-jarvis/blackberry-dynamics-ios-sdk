@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -9,7 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** File handle access to the secure file system.
+/*!
+ * \class GDFileHandle GDFileHandle.h <BlackBerryDynamics/GD/GDFileHandle.h>
+ * \brief File handle access to the secure file system.
  * 
  * This class is a subclass of the native <tt>NSFileHandle</tt> class, for
  * access to the BlackBerry Dynamics secure file system.

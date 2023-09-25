@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * (c) 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -38,7 +38,9 @@ typedef NS_ENUM(NSInteger, GDServiceType)
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** Provide information about the authentication delegate app, if one exists.
+/*!
+ * \class GDAuthDelegateInfo GDiOS.h <BlackBerryDynamics/GD/GDiOS.h>
+ * \brief Provide information about the authentication delegate app, if one exists.
  *
  * This class is used to return information about the application 
  * authentication is delegated to. If there is no such delegated application, 
@@ -92,7 +94,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/** Event dispatched from the BlackBerry Dynamics runtime.
+/*!
+ * \class GDAppEvent GDiOS.h <BlackBerryDynamics/GD/GDiOS.h>
+ * \brief Event dispatched from the BlackBerry Dynamics runtime.
  * 
  * This class is used to deliver events to the \ss_runtime_link event handler
  * in the application. See \ref GDiOSDelegate.
@@ -135,8 +139,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/** Handler for events dispatched from the BlackBerry Dynamics Runtime,
- *  including authorization events.
+/*!
+ * \protocol GDiOSDelegate GDiOS.h <BlackBerryDynamics/GD/GDiOS.h>
+ * \brief Handler for events dispatched from the BlackBerry Dynamics Runtime, including authorization events.
  * 
  * Errors and state changes that occur when using \ss_runtime_link can be
  * handled by creating a class that implements this protocol.
@@ -158,8 +163,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/** BlackBerry Dynamics Runtime object interface, including authorization.
- * 
+/*!
+ * \class GDiOS GDiOS.h <BlackBerryDynamic/GD/GDiOS.h>
+ * \brief BlackBerry Dynamics Runtime object interface, including authorization.
+ *
  * \copydetails ssGDRunTime
  * 
  * \snippets_intro
@@ -590,6 +597,9 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  * This \ss_function enables a BlackBerry Dynamics user interface element to be
  * included in the application's own user interface.
  *
+ * If authorization is delegated to another application, then that application
+ * will be opened and its Change Password user interface will be shown.
+ *
  * @param baseViewController Reference to the navigation controller within which
  *        the BlackBerry Dynamics user interface element is to open as a view
  *        controller.\n
@@ -597,9 +607,9 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  *        controller, for example when no navigation controller is available.
  *
  * @return \ss_true if the user interface element opened OK.
- * @return \ss_false if the user interface element was already open, or if 
- *        authorization is delegated to another application. Also returned 
- *        if enterprise policy doesn't require a password to unlock the application.
+ * @return \ss_false if the user interface element was already open,
+ *                   or if enterprise policy doesn't require a password to unlock the application,
+ *                   or if the application has been wiped.
  */
 - (BOOL)showPreferenceUI:(nullable UIViewController*)baseViewController;
 

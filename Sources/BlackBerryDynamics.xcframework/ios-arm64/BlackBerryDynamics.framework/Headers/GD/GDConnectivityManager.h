@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -7,12 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
-/** BlackBerry Dynamics infrastructure connection management.
+/*!
+ * \class GDConnectivityManager GDConnectivityManager.h <BlackBerryDynamics/GD/GDConnectivityManager.h>
+ * \brief BlackBerry Dynamics infrastructure connection management.
  * 
- * Use this class to control the connection from the application to the
- * BlackBerry Dynamics infrastructure.
- *
- * @see \reflink GDReachability GDReachability \endlink class reference.
+ * \copydetails ssGDConnectionManagement
  */
 @interface GDConnectivityManager : NSObject
 

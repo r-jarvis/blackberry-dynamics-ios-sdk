@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -10,14 +10,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** NSURLCache category with additional features.
+/*!
+ * \category  NSURLCache(GDURLCache) GDNET.h <BlackBerryDynamics/GD/GDNET.h>
+ * \brief NSURLCache category with additional features.
  * 
  * This class is a category of the native <tt>NSURLCache</tt> class that adds
- * the functions documented below to the interface. The additional
- * functions can be used when the BlackBerry Dynamics proxy infrastructure
+ * the \ss_functions documented below to the interface. The additional
+ * \ss_functions can be used when the BlackBerry Dynamics proxy infrastructure
  * is in use in the
+ * \if iOS
  * URL Loading System, see \ref GDURLLoadingSystem, or in the URL session
  * system, see \ref nsurlsession_support.
+ * \else
+ * URL Loading System, see \ref GDURLLoadingSystem.
+ * \endif
  *
  * This class provides additional features to the default cache.
  *
@@ -93,23 +99,31 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/** Control the secure authentication cache.
+/*!
+ *\class GDCacheController GDNET.h <BlackBerryDynamics/GD/GDNET.h>
+ *\brief Control the secure authentication cache.
  * 
  * Use this class to control the secure authentication cache of the
  * \ref GDURLLoadingSystem 
+ * \if iOS
  * and the deprecated \ref GDHttpRequest class. (Currently, there are only two
  * controls.)
+ * \endif
  * The secure authentication cache is used as follows.
  * <dl>
  * <dt>URL Loading System</dt><dd>
  * Stores credentials for all authentication methods.\n
  * Stores tickets for Kerberos authentication.</dd>
+ * \if iOS
  * <dt>G<tt></tt>DHttpRequest (deprecated)</dt>
  * <dd>Stores tickets for Kerberos authentication.</dd>
+ * \endif
  * </dl>
  *
  * @see \ref GDURLLoadingSystem
+ * \if iOS
  * @see \ref GDHttpRequest
+ * \endif
  */
 @interface GDCacheController : NSObject {
 }

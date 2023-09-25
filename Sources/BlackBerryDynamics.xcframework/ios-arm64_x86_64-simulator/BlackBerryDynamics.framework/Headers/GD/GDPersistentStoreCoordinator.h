@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
@@ -7,8 +7,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-/** NSPersistentStoreCoordinator subclass that supports an encrypted binary
- *  store type in Core Data.
+/*!
+ * \class GDPersistentStoreCoordinator GDPersistentStoreCoordinator.h <BlackBerryDynamics/GD/GDPersistentStoreCoordinator.h>
+ * \brief NSPersistentStoreCoordinator subclass that supports an encrypted binary store type in Core Data.
  * 
  * BlackBerry Dynamics applications can store Core Data objects in the secure
  * store.

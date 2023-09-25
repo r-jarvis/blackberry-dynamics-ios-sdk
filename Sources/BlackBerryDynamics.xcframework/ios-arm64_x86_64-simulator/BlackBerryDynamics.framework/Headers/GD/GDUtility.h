@@ -1,5 +1,5 @@
 /*
- * (c) 2019 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -66,8 +66,9 @@ typedef void (^BBDJWTCompletion)(NSString* JWT, BBDJWTStatusCode status, int err
 /** \}
  */
 
-/** Delegate for handling the results of BlackBerry Dynamics authentication
- *  token requests.
+/*!
+ * \protocol GDAuthTokenDelegate GDUtility.h <BlackBerryDynamics/GD/GDUtility.h>
+ * \brief Delegate for handling the results of BlackBerry Dynamics authentication token requests.
  * 
  * \copydetails ssGDAuthTokenListener
  */
@@ -94,7 +95,9 @@ typedef void (^BBDJWTCompletion)(NSString* JWT, BBDJWTStatusCode status, int err
 
 @end
 
-/** BlackBerry Dynamics utility for managing authentication tokens and identity.
+/*!
+ * \class GDUtility GDUtility.h <BlackBerryDynamics/GD/GDUtility.h>
+ * \brief BlackBerry Dynamics utility for managing authentication tokens and identity.
  * 
  * \copydetails ssGDAuthToken
  * \copydetails ssSharedUserId

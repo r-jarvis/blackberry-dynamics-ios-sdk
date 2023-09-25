@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <Foundation/Foundation.h>
@@ -102,56 +102,17 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
 /** \}
  */
 
-/** Secure File System.
+/*!
+ * \class GDFileManager GDFileManager.h <BlackBerryDynamics/GD/GDFileManager.h>
+ * \brief Secure File System.
  * 
  * This class is a subclass of the native <tt>NSFileManager</tt> class, for
  * access to the BlackBerry Dynamics secure file system.
  * 
  * <h2>Secure File System</h2>
- * The secure file system is part of the BlackBerry Dynamics Secure
- * Storage feature.
- *
- * For applications, the BlackBerry Dynamics secure file system behaves like the
- * default file system, with the following differences.
- * - All data within the secure file system is stored on the device
- *   in an encrypted form.
- * - Directory and file names are also encrypted.
- * - The secure file system cannot be accessed until BlackBerry Dynamics
- *   authorization processing is complete, see under \reflink GDiOS::authorize: authorize (GDiOS) \endlink.
- * .
- *
- * Every operating system has a maximum supported length for the names of files
- * and directories. For example, iOS 11 supports a maximum length of 255 bytes,
- * given by the <tt>NAME_MAX</tt> constant. The encrypted form of the name of a
- * directory or file will typically be longer than the plaintext, and it is the
- * encrypted form that must be within the limits supported by the operating
- * system. This means that names in the secure file system have a shorter
- * effective maximum supported length. It isn't possible to give a simple
- * maximum but the following should be expected.
- * - Names that are 16 bytes or longer will be increased by a factor of
- *   4:3 approximately.
- * - Shorter names will be increased to a length of 20 bytes approximately.
- * .
+ * \copydetails ssGDFileSystem
  * 
- * Encryption and decryption is transparent to the application code:
- * - The application passes its data to a file writing interface. The BlackBerry
- *   Dynamics runtime encrypts the data and stores it on the device.
- * - When a file-reading interface is utilized, the runtime decrypts and returns
- *   the data.
- * - Path access interfaces accept plaintext parameters for directory and file
- *   names. The runtime encrypts the parameter values in order to create paths
- *   in the secure store.
- * - Directory and file names provided as return values are plaintext. The
- *   runtime decrypts paths in the secure store in order to generate the return
- *   values.
- * .
- *
- * The encryption method used by the BlackBerry Dynamics runtime generally
- * requires that the user has entered a security password, from which an
- * encryption key is derived.
- *
- * 
- * \htmlonly<div class="bulletlists">\endhtmlonly
+ * \divclass{bulletlists}
  * <h2>Usage</h2>
  * This class is a subclass of the native <tt>NSFileManager</tt> class. It
  * should be easy to replace references to <tt>NSFileManager</tt> with
@@ -165,7 +126,7 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
  *   items in "cloud" storage.
  * - There is no access to native application group containers, which aren't
  *   secured by BlackBerry Dynamics. The
- *   <tt>containerURLForSecurityApplicationGroupIdentifier:</tt> function
+ *   <tt>containerURLForSecurityApplicationGroupIdentifier:</tt> \ss_function
  *   returns the same value as the base class would for an invalid group
  *   identifier.
  * - The secure file system doesn't have a designated temporary directory. The
@@ -183,18 +144,18 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
  *   domain, or could be general <tt>NS</tt> error codes.
  * .
  *
- * The <tt>NSURL</tt> values returned by functions in this class can only be
+ * The <tt>NSURL</tt> values returned by \ss_functions in this class can only be
  * used to access files and directories by BlackBerry Dynamics programming
  * interfaces. They cannot be used by native interfaces, such as
  * <tt>NSInputStream</tt> nor <tt>stringWithContentsOfURL:</tt> for example.
  *
- * The <tt>NSString</tt> values for paths returned by functions in this
+ * The <tt>NSString</tt> values for paths returned by \ss_functions in this
  * class can only be used to access files and directories by BlackBerry Dynamics
  * programming interfaces. They cannot be used by native interfaces, such as
  * <tt>stringByResolvingSymlinksInPath</tt>, nor
  * <tt>dataWithContentsOfFile:</tt> for example.
  *
- * To read and write files in the secure store, use functions in this class
+ * To read and write files in the secure store, use \ss_functions in this class
  * or in one of the other BlackBerry Dynamics programming interfaces. For
  * example:
  * - \link GDFileManager::createFileAtPath:contents:attributes:
@@ -210,19 +171,19 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
  * - The <tt>GDFileHandle</tt> class.
  * - The BlackBerry Dynamics C Language programming interface.
  * .
- * Don't use file-reading and -writing functions in the native <tt>NS</tt>
+ * Don't use file-reading and -writing \ss_functions in the native <tt>NS</tt>
  * classes to access files in the secure store.
  *
  * Best practice for building paths for use with this class is as follows. First
  * use an <tt>NSSearchPathDirectory</tt> value to generate a path prefix, for
  * example by calling the <tt>NSSearchPathForDirectoriesInDomains:</tt>
- * function. Then append to the prefix, for example by calling the
- * <tt>NSString</tt> <tt>stringByAppendingPath:</tt> function or the
- * <tt>NSURL</tt> <tt>URLByAppendingPathComponent</tt> function.
+ * \ss_function. Then append to the prefix, for example by calling the
+ * <tt>NSString</tt> <tt>stringByAppendingPath:</tt> \ss_function or the
+ * <tt>NSURL</tt> <tt>URLByAppendingPathComponent</tt> \ss_function.
  * 
- * The functions in this API utilize <tt>NSError</tt> in a conventional way. Function calls accept as a parameter the location of a pointer to <tt>NSError</tt>, i.e. a pointer to a pointer, with type <tt>NSError**</tt>. The location may be <tt>nil</tt>. If the location isn't <tt>nil</tt>, and an error occurs, the BlackBerry Dynamics runtime overwrites the pointer at the specified location with the address of an object that describes the error that occurred.
+ * \error_param_intro
  *
- * The documentation of this class includes descriptions for functions and
+ * The documentation of this class includes descriptions for \ss_functions and
  * other elements of the programming interface that:
  * - Have different semantics to the corresponding elements in the base class.
  * - Are not present in the base class.
@@ -232,7 +193,7 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
  * Elements of the base class that aren't overriden are not listed. See the
  * documentation of the base class, <tt>NSFileManager</tt>, for full
  * descriptions.
- * \htmlonly</div>\endhtmlonly
+ * \enddivclass
  *
  * @see <a
             href="https://developer.apple.com/reference/foundation/nsfilemanager"
@@ -249,13 +210,13 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
         >NSSearchPathForDirectoriesInDomains reference documentation</a
         > on the apple.com developer website.
  * @see \ref gdfilemanagererrordomain
- * @see \reflink  sqlite Secure SQL Database API \endlink
+ * @see \ss_sqldatabase_link
  * @see \ref GDPersistentStoreCoordinator
- * @see \ref GDFileHandle 
+ * \if iOS @see \ref GDFileHandle \endif
  * @see \ref capilist
   *
- * <h2>Code Snippets</h2> The following code snippets illustrate some common tasks.
- * <h3>Simple conversion to secure file system</h3>
+ * \snippets_intro
+ * \snippet{Simple conversion to secure file system}
  * The following code snippets illustrate simple conversion of a function that
  * uses the native file system to use the secure files system instead.
  *

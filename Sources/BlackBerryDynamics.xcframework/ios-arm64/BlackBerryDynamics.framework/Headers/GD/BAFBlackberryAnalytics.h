@@ -1,5 +1,5 @@
 /*
- * (c) 2020 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -97,66 +97,10 @@ extern NSString * _Nonnull const BISThreatLevelChangeKey;
 
 
 
-/** Class for BlackBerry Analytics and BlackBerry Persona
- *
- * <h3>BlackBerry Analytics </h3>
-* 
-* BlackBerry Analytics provides developers and UEM administrators metrics about the BlackBerry Dynamics 
-* apps and devices in an organization's environment. BlackBerry Dynamics apps with this feature enabled 
-* by their administrator will periodically send events (including startup, crash information) and data 
-* (including OS, minutes used, app name, version) to the BlackBerry Analytics platform. The BlackBerry 
-* Analytics platform processes and compiles the events and data into dashboard reports. 
-* An app developer can optionally use this programmatic interface to record usage of custom features or 
-* events within their app to enable these metrics to be included within the Analytics dashboard. 
-* 
-* For more information, see the <a href="https://docs.blackberry.com/en/endpoint-management/blackberry-analytics" target="_blank">BlackBerry Analytics documentation</a>.
-*
-*
-* <h3>BlackBerry Persona</h3>
-* 
-* BlackBerry Persona processes events and location data from BlackBerry Dynamics apps to 
-* assess a user’s security risk level based on their real-world context, and adjusts the user’s device 
-* and app behavior based on their current risk level. For example, if a user’s app data reports a 
-* geographic location that is not typical for the user, BlackBerry Persona can dynamically 
-* limit the user’s access to work apps or disable certain device features such as the camera. In addition,
-* it can be configured by the enterprise administrator to enforce stricter authentication requirements 
-* by applying an override policy.
-*
-* This service requires enabling and configuration by the enterprise administrator. In addition, application 
-* developers are required to perform steps to enable BlackBerry Persona.
-* 
-* <h4>Enabling BlackBerry Persona</h4>
-*
-* Implement these step to enable Persona within a BlackBerry Dynamics application.
-*
-*
-*
-*
-* 1. Add the following custom properties to the <tt>Info</tt> section of your project target in Xcode. The resulting <tt>Info.plist</tt> file should contain:
-*
-* \code 
-* <dict>
-*   <key>BlackBerryDynamics</key>
-*   <dict>
-*     <key>EnableBlackBerryPersona</key>
-*     <true/>
-*   </dict>
-* </dict>
-* \endcode
-*
-* 2. Add a setting in the application user interface for end users to enable or disable BlackBerry Persona. 
-*
-* This setting should ideally be implemented within the 'Settings' or 'Preferences' section of your application's user interface.  
-* When the user selects a menu item called 'BlackBerry Persona Settings' the application should call the method 
-* BAFBlackberryAnalytics.displaySISsettings.
-* This triggers the runtime to display a settings screen which provides the user the 
-* option to opt in or out of using location based information when assessing their current risk level. This is a legal 
-* requirement to ensure end users are able to opt out of location data collection at any time. It is best practice to 
-* only show this option to users who have BlackBerry Persona enabled by their administrator, see  
-* BAFBlackberryAnalytics.isSISenabled.
-* 
-* For more information, see the <a href="https://docs.blackberry.com/en/cylance-and-security/blackberry-persona-uem" target="_blank">BlackBerry Persona documentation</a>.
-*
+/*!
+ * \class BAFBlackberryAnalytics BAFBlackberryAnalytics.h <BlackberryDynamics/GD/BAFBlackberryAnalytics.h>
+ * \brief Class for BlackBerry Analytics and BlackBerry Persona.
+ * \copydetails ssAnalytics 
  * 
  */
 @interface BAFBlackberryAnalytics : NSObject

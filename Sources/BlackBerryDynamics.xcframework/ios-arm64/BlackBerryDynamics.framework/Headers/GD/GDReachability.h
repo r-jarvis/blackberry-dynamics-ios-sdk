@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <Foundation/Foundation.h>
@@ -53,75 +53,11 @@ typedef NS_ENUM(NSInteger, GDReachabilityStatus) {
  */
 extern NSString *GDReachabilityChangedNotification;
 
-/** BlackBerry Dynamics infrastructure connection status.
+/*!
+ * \class GDReachability GDReachability.h <BlackBerryDynamics/GD/GDReachability.h>
+ * \brief BlackBerry Dynamics infrastructure connection status.
  * 
- * This class represents the status of the connection from the
- * application to the BlackBerry Dynamics infrastructure.
- * 
- * Every BlackBerry Dynamics application connects to the BlackBerry Dynamics
- * infrastructure whenever possible. The connection is maintained by the
- * BlackBerry Dynamics runtime instance that is embedded in the application. The
- * infrastructure includes the BlackBerry Dynamics Network Operation Center
- * (NOC) as well as a number of other components that can be installed by the
- * enterprise.
- * <p class="bulletlists">
- * The current status can be obtained synchronously. It is also possible to
- * receive notifications whenever the status changes. Use the native
- * <tt>NSNotificationCenter</tt> programming interface, with the following
- * parameters.
- * - Set the notification name to the \ref GDReachabilityChangedNotification
- *   value.
- * - Set the notification object to the BlackBerry Dynamics runtime interface
- *   object, obtained by
- *   <tt>[G<tt></tt>DiOS sharedInstance]</tt>.
- * </p>
- *
- * @see \ref GDConnectivityManager class reference.
- * @see <a href="https://developer.apple.com/reference/foundation/nsnotificationcenter"
-          target="_blank">NSNotificationCenter class reference</a>
-          on the apple.com developer website.
- *
- * <h2>Code Snippets</h2> The following code snippets illustrate some common tasks.
- * <h3>Register for notification</h3>
- * \code
- * - (void)addChangeConnectionStatusObserver {
- *  [[NSNotificationCenter defaultCenter] addObserver:self
- *                                           selector:@selector(reachabilityChanged:)
- *                                               name:GDReachabilityChangedNotification
- *                                             object:[GDiOS sharedInstance]];
- * }
- * \endcode
- *
- * \code
- * - (void)reachabilityChanged:(NSNotification *)notification {
- *  GDReachability *reachability = [GDReachability sharedInstance];
- *
- *  if (reachability.status == GDReachabilityNotReachable) {
- *
- *      UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error"
- *                                                      message:@"Network NOT Available"
- *                                                     delegate:nil
- *                                            cancelButtonTitle:@"OK"
- *                                            otherButtonTitles:nil, nil];
- *      [alert show];
- *
- *  } else {
- *
- *      UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Success"
- *                                                      message:@"Network Available"
- *                                                     delegate:nil
- *                                            cancelButtonTitle:@"OK"
- *                                            otherButtonTitles:nil, nil];
- *      [alert show];
- *
- *  }
- * \endcode
- * <p class="bulletlists">
- * The above snippet shows:
- * - Registration for notification of changes in connection status. The observer
- *   code is specified by a selector.
- * - Implementation of the selector, which displays a message to the user.
- * </p>
+ * \copydetails ssGDConnectionManagementNetworkInfo
  */
 @interface GDReachability : NSObject
 

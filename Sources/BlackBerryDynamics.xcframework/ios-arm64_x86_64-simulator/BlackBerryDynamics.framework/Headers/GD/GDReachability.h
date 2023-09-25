@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <Foundation/Foundation.h>
@@ -55,7 +55,9 @@ typedef NS_ENUM(NSInteger, GDReachabilityStatus) {
  */
 extern NSString *GDReachabilityChangedNotification;
 
-/** BlackBerry Dynamics infrastructure connection status.
+/*!
+ * \class GDReachability GDReachability.h <BlackBerryDynamics/GD/GDReachability.h>
+ * \brief BlackBerry Dynamics infrastructure connection status.
  * 
  * \copydetails ssGDConnectionManagementNetworkInfo
  */

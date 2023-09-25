@@ -1,17 +1,19 @@
 /*
- * (c) 2016 Good Technology Corporation. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
 
 #import <Foundation/Foundation.h>
 
-/** Application server configuration.
+/*!
+ * \class GDAppServer GDAppServer.h <BlackBerryDynamics/GD/GDAppServer.h>
+ * \brief Application server configuration.
  * 
  * This class is used to return the details of application server configuration.
  * A collection of instances of this class will be in the
  * <tt>GDAppConfigKeyServers</tt> value returned by the
- * \reflink GDiOS::getApplicationConfig getApplicationConfig (GDiOS) \endlink function, or in the
+ * \ss_runtime_link{getApplicationConfig} \ss_function, or in the
  * <tt>serverCluster</tt> property of a <tt>GDServiceProvider</tt> object.
  */
 @interface GDAppServer : NSObject

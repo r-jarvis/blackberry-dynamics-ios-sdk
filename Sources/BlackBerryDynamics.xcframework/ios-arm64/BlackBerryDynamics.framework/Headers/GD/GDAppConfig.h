@@ -60,6 +60,12 @@ extern const NSString* const GDAppConfigKeyInstanceIdentifier;
 extern const NSString* const GDAppConfigKeyPreventDictation;
 
 /**
+ * Constant key value for whether wearable (WatchOS) devices are allowed.\ See under
+ * \ref GDiOS::getApplicationConfig.
+ */
+extern const NSString* const GDAppConfigKeyAllowWearable;
+
+/**
  * Constant key value for whether custom keyboards are allowed.\ See under
  * \ref GDiOS::getApplicationConfig.
  */

@@ -1,4 +1,4 @@
-/* Copyright (c) 2017 - 2020 BlackBerry Limited.
+/* Copyright (c) 2017 - 2022 BlackBerry Limited.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -86,30 +86,6 @@
                 failTestOnTimeout:(BOOL)failTestOnTimeout
                           handler:(nullable XCWaitCompletionHandler)handler;
 
-/**
- * Synchronously waits for any from detached expectations.
- * Sometimes we need to have any of expectations fulfilled
- *
- * @param expectations
- * Expectations which were created by detachedExpectationForPredicate:evaluatedWithObject:handler call only
- *
- * @param timeout
- * The amount of time within which any of expectations must be fulfilled
- *
- * @param failTestOnTimeout
- * Parameter can be used to make the test continue after timeout if param is NO;
- * YES value will fail test on timeout (as default Apple implementation works)
- *
- * @param handler
- * If provided, the handler will be invoked both on timeout or fulfillment of all
- * expectations. Timeout is treated as a test failure.
- *
- */
-
-- (void)waitForAnyDetachedExpectation:(nonnull NSArray<XCTestExpectation*> *)expectations
-                          withTimeout:(NSTimeInterval)timeout
-                    failTestOnTimeout:(BOOL)failTestOnTimeout
-                              handler:(nullable XCWaitCompletionHandler)handler;
 
 /**
  * Creates detached expectation that is fulfilled if the predicate returns true when evaluated with the given

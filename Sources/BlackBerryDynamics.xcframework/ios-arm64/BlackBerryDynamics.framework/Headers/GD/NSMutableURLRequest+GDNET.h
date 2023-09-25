@@ -8,9 +8,11 @@
 
 extern NSString* const GDURLAuthenticationParameters;
 
-/** NSMutableURLRequest category with additional features.
+/*!
+ * \category NSMutableURLRequest(GDNET) NSMutableURLRequest+GDNET.h <BlackBerryDynamics/GD/NSMutableURLRequest+GDNET.h>
+ * \brief NSMutableURLRequest category with additional features.
  * 
- * This class is a category of the Foundation <tt>NSMutableURLRequest</tt>
+ * This class is a category of the \foundation <tt>NSMutableURLRequest</tt>
  * class that can be used when the BlackBerry Dynamics proxy infrastructure is
  * in use via the URL Loading System (see \ref GDURLLoadingSystem). This class
  * provides additional features to the default request class.

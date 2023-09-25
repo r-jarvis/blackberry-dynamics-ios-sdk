@@ -1,12 +1,14 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
 
 #import <Foundation/Foundation.h>
 
-/** NSOutputStream subclass for writing files in the secure store.
+/*!
+ * \class GDCWriteStream GDCWriteStream.h <BlackBerryDynamics/GD/GDCWriteStream.h>
+ * \brief NSOutputStream subclass for writing files in the secure store.
  * 
  * This class is a subclass of the native <tt>NSInputStream</tt> class, for
  * access to the BlackBerry Dynamics secure file system.

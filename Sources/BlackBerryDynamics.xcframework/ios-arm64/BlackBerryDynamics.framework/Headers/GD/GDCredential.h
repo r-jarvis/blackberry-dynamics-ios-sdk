@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #ifndef GD_CREDENTIAL_H
@@ -20,7 +20,9 @@ extern "C" {
 #include <BlackBerryDynamics/GD/GDCommon.h>
 #include <time.h>
 
-/** X.509 Public Key Certificate.
+/*!
+ * \struct GDX509Certificate GDCredential.h <BlackBerryDynamics/GD/GDCredential.h>
+ * \brief X.509 Public Key Certificate.
  *
  * This structure is be used to represent X.509 public key certificates in the
  * BlackBerry Dynamics secure store.
@@ -243,7 +245,10 @@ GD_C_API const char* GDX509Certificate_issuer_relative_name(const struct GDX509C
 GD_C_API const char* GDX509Certificate_subject_relative_name(const struct GDX509Certificate* certificate, const char* relative_name);
 
 
-/** \copydetails ssGDPKICredential
+/*!
+ * \struct GDCredential GDCredential.h <BlackBerryDynamics/GD/GDCredential.h>
+ *
+ * \copydetails ssGDPKICredential
  * 
  * The \ref GDCredential_list function returns instances of this structure.
  * 

@@ -16,8 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 extern NSString * const BBDThreatStatusNotification;
 
-/**
- * Class providing details of security threats related to the device, application, network, and user.
+/*!
+ * \class BBDThreatStatus GDThreatStatus.h <BlackBerryDynamics/GD/GDThreatStatus.h>
+ * \brief Class providing details of security threats related to the device, application, network, and user.
  */
 @interface BBDThreatStatus : NSObject
 

@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #ifndef GD_CREDENTIALS_PROFILE_H
@@ -108,7 +108,9 @@ typedef enum {
     GDCredentialsProfileStateDeleted
 } GD_C_API GDCredentialsProfileState;
 
-/** User Credential profile.
+/*!
+ * \struct GDCredentialsProfile GDCredentialsProfile.h <BlackBerryDynamics/GD/GDCredentialsProfile.h>
+ * \brief User Credential profile.
  *
  * This structure is used to represent a User Credential profile (UCP) from the
  * enterprise BlackBerry Dynamics management console.
@@ -235,7 +237,9 @@ typedef enum {
  */
 GD_C_API GDCredentialsProfileType GDCredentialsProfile_type(const char* profileId);
 
-/** User Credential profile event.
+/*!
+ * \struct GDCredentialsProfileEvent GDCredentialsProfile.h <BlackBerryDynamics/GD/GDCredentialsProfile.h>
+ * \brief User Credential profile event.
  *
  * An instance of this structure is dispatched to the application profile
  * event callback when a User Credential profile (UCP) changes state.

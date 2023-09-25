@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -240,7 +240,9 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  * \}
  */
 
-/** BlackBerry Dynamics run-time state.
+/*!
+ * \class GDState GDState.h <BlackBerryDynamic/GD/GDState.h>
+ * \brief BlackBerry Dynamics run-time state.
  *
  * This class represents a number of aspects of the BlackBerry Dynamics run-time
  * state. The representation is compliant with key-value observing (KVO). An
@@ -254,13 +256,13 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  * .
  *
  * Changes to the following types of configuration are posted from here.
- * - Services-related, see under \reflink GDiOS::getServiceProvidersFor:andVersion:andServiceType: getServiceProvidersFor: (GDiOS) \endlink.
+ * - Services-related, see under \ss_servicediscovery_link.
  * - Application-specific policy settings, see
- *   \reflink GDiOS::getApplicationPolicy getApplicationPolicy (GDiOS) \endlink.
+ *   \ss_runtime_link{getApplicationPolicy}.
  * - Entitlement, see
- *   \reflink GDiOS::getEntitlementVersionsFor:callbackBlock: getEntitlementVersionsFor:callbackBlock: (GDiOS) \endlink.
+ *   \ss_runtime_link{getEntitlementVersionsFor:callbackBlock:}.
  * - Other settings from the enterprise, see
- *   \reflink GDiOS::getApplicationConfig getApplicationConfig (GDiOS) \endlink.
+ *   \ss_runtime_link{getApplicationConfig}.
  * .
  *
  * <h2>Synchronous access and notifications</h2>
@@ -270,7 +272,7 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  *
  * Notes on KVO usage:
  * - To get an object whose properties are suitable for observing, access the
- *   \reflink GDiOS::state state (GDiOS) \endlink property.
+ *   \ss_runtime_link{state} property.
  * - Use the \ref gdstateconstants to specify the paths of properties of the
  *   observable object.
  * .
@@ -278,7 +280,7 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  * Notes on <tt>NSNotificationCenter</tt> usage:
  * - Set the notification name to one of the \ref gdstateconstants.
  * - Set the notification object to the GDState instance that is accessible
- *   as the \reflink GDiOS::state state (GDiOS) \endlink property.
+ *   as the \ss_runtime_link{state} property.
  * - In addition to the base NSNotification, the notifications for state changes
  *   will include a <tt>userInfo</tt> dictionary with the following items.
  *   - Name of the property whose change triggered the notification, in the
@@ -299,6 +301,7 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  *  on the apple.com developer website.
  *
  * <h2>Alternatives</h2>
+ * \if iOS
  * Using this class is an alternative to using some parts of using the \link
  * GDiOSDelegate \endlink class.
  *
@@ -309,6 +312,11 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  * @see Sample code in the GreetingsServer application that comes with the
  *      BlackBerry Dynamics software development kit for iOS.
  * 
+ * \endif
+ * \if Mac
+ * Using this class is an alternative to using some parts of using the \link
+ * GDMacDelegate \endlink class.
+ * \endif
  * 
  */
 @interface GDState : NSObject

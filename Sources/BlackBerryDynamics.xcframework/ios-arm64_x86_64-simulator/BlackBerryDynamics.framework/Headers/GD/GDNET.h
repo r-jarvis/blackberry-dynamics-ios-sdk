@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** NSURLCache category with additional features.
+/*!
+ * \category  NSURLCache(GDURLCache) GDNET.h <BlackBerryDynamics/GD/GDNET.h>
+ * \brief NSURLCache category with additional features.
  * 
  * This class is a category of the native <tt>NSURLCache</tt> class that adds
  * the \ss_functions documented below to the interface. The additional
@@ -97,7 +99,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/** Control the secure authentication cache.
+/*!
+ *\class GDCacheController GDNET.h <BlackBerryDynamics/GD/GDNET.h>
+ *\brief Control the secure authentication cache.
  * 
  * Use this class to control the secure authentication cache of the
  * \ref GDURLLoadingSystem 

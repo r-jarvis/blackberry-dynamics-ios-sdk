@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -24,7 +24,9 @@ extern NSString* const GDPKINotificationCertificateAdded;
  */
 extern NSString* const GDPKINotificationCertificateRemoved;
 
-/** X.509 Public Key Certificate.
+/*!
+ * \class GDPKICertificate GDPKI.h <BlackBerryDynamics/GD/GDPKI.h>
+ * \brief X.509 Public Key Certificate.
  * 
  * \copydetails ssGDPKICertificate
  *
@@ -151,7 +153,9 @@ extern NSString* const GDPKINotificationCertificateRemoved;
 
 @end
 
-/** Credentials Management User Interface
+/*!
+ * \class GDCredentialManagerUI GDPKI.h <BlackBerryDynamics/GD/GDPKI.h>
+ * \brief Credentials Management User Interface
  *
  *  Use this interface to embed the Credentials Management UI within your app.
  */

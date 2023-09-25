@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -9,7 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** BlackBerry Dynamics entitlement version.
+/*!
+ * \class GDVersion GDVersion.h <BlackBerryDynamics/GD/GDVersion.h>
+ * \brief BlackBerry Dynamics entitlement version.
  * 
  * \copydetails ssGDRunTimeGDVersion
  */

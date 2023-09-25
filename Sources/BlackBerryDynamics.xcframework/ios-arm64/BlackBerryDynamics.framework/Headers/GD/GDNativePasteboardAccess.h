@@ -1,12 +1,14 @@
 /*
-* (c) 2020 BlackBerry Limited. All rights reserved.
+* Copyright 2023 BlackBerry Limited. All rights reserved.
 *
 */
 
 #import <Foundation/Foundation.h>
-/** Use the Pasteboard in the clear while DLP is turned on.
-*
-*/
+/*!
+ * \class GDNativePasteboardAccess GDNativePasteboardAccess.h <BlackBerryDynamics/GD/GDNativePasteboardAccess.h>
+ * \brief Use the Pasteboard in the clear while DLP is turned on.
+ *
+ */
 
 @interface GDNativePasteboardAccess : NSObject
 

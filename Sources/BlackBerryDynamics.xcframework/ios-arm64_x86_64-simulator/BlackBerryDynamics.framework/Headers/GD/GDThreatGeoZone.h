@@ -6,8 +6,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * Determine a user’s security risk level based on their real-world context.
+/*!
+ * \class BBDThreatGeoZone GDThreatGeoZone.h <BlackBerryDynamics/GD/GDThreatGeoZone.h>
+ * \brief Determine a user’s security risk level based on their real-world context.
  *
  * Utilizes events and location data and scores these against geozones set by an administrator. Requires BlackBerry Persona 
  * to be enabled and configured.

@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * (c) 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -38,11 +38,13 @@ typedef NS_ENUM(NSInteger, GDServiceType)
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** Provide information about the authentication delegate app, if one exists.
+/*!
+ * \class GDAuthDelegateInfo GDiOS.h <BlackBerryDynamics/GD/GDiOS.h>
+ * \brief Provide information about the authentication delegate app, if one exists.
  *
  * This class is used to return information about the application 
  * authentication is delegated to. If there is no such delegated application, 
- * isAuthenticationDelegated will be <tt>NO</tt>.
+ * isAuthenticationDelegated will be \ss_false.
  * See \ref GDiOS::getAuthDelegate
  */
 @interface GDAuthDelegateInfo : NSObject
@@ -92,9 +94,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/** Event dispatched from the BlackBerry Dynamics runtime.
+/*!
+ * \class GDAppEvent GDiOS.h <BlackBerryDynamics/GD/GDiOS.h>
+ * \brief Event dispatched from the BlackBerry Dynamics runtime.
  * 
- * This class is used to deliver events to the \reflink GDiOS \endlink event handler
+ * This class is used to deliver events to the \ss_runtime_link event handler
  * in the application. See \ref GDiOSDelegate.
  */
 @interface GDAppEvent : NSObject
@@ -135,10 +139,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/** Handler for events dispatched from the BlackBerry Dynamics Runtime,
- *  including authorization events.
+/*!
+ * \protocol GDiOSDelegate GDiOS.h <BlackBerryDynamics/GD/GDiOS.h>
+ * \brief Handler for events dispatched from the BlackBerry Dynamics Runtime, including authorization events.
  * 
- * Errors and state changes that occur when using \reflink GDiOS \endlink can be
+ * Errors and state changes that occur when using \ss_runtime_link can be
  * handled by creating a class that implements this protocol.
  *
  * @see \ref GDState for an alternative interface.
@@ -158,410 +163,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/** BlackBerry Dynamics Runtime object interface, including authorization.
+/*!
+ * \class GDiOS GDiOS.h <BlackBerryDynamic/GD/GDiOS.h>
+ * \brief BlackBerry Dynamics Runtime object interface, including authorization.
+ *
+ * \copydetails ssGDRunTime
  * 
- * This class represents the application's connection to its embedded
- * BlackBerry Dynamics runtime instance, and hence to the wider BlackBerry
- * Dynamics platform infrastructure.
- *
- * The programming interface includes a number of functions that the
- * application must call at particular points in the application execution
- * cycle. The application must also implement a handler for events dispatched
- * from this interface. Calling the functions, and handling the events
- * correctly, ensures compliance with enterprise security policies. This
- * programming interface also includes a number of miscellaneous functions
- * for various purposes, such as setting a custom logo for display in the
- * BlackBerry Dynamics user interface.
- *
- * The application must initialize the runtime object, using this programming
- * interface, prior to using any other BlackBerry Dynamics interface.
- * Initialization will only succeed if the end user has been set up in the
- * enterprise BlackBerry Dynamics management console, and is entitled to use the
- * application.
- * 
- * The user's entitlement to the application may later be revoked or
- * temporarily withdrawn. For example, temporary withdrawal may take place if
- * the user is inactive for a period of time. In either case, the application
- * will be notified with an event or callback from this interface.
- *
- * Successful initialization of the BlackBerry Dynamics interface object also
- * makes the BlackBerry Dynamics proxy infrastructure accessible from within the
- * URL Loading System, which includes the native URL session programming
- * interface.
- *
- * @see \ref GC
- * @see <a  HREF="https://docs.blackberry.com/en/endpoint-management/blackberry-uem/"  target="_blank" >Manuals page for the BlackBerry Dynamics enterprise servers</a > for the Platform Overview.
- * @see \ref threads
- * @see \ref background_execution
- * @see \ref GDURLLoadingSystem for proxy infrastructure usage within the URL
- *      Loading System.
- * @see \ref nsurlsession_support for proxy infrastructure usage through the
- *      native URL session programming interface.
- *
- * <h3>BlackBerry Dynamics Platform Connection</h3>
- * Establishing a connection to the BlackBerry Dynamics platform requires
- * authorization of the end user, and of the application. 
- * Both authorizations are initiated by a single call to the <tt>authorize</tt>
- * function.
- *
- * The <tt>authorize</tt> function call is typically made when the
- * application starts, in the
- * <tt>application:didFinishLaunchingWithOptions:</tt> handler.
- *
- * Authorization generally includes establishing a data connection to the
- * BlackBerry Dynamics proxy infrastructure, and hence to the enterprise that
- * set up the end user entitlement. In addition, authorization will also include
- * any necessary registration of the device, at the BlackBerry Dynamics Network
- * Operation Center (infrastructure activation), and at the enterprise
- * (enterprise activation). See under Activation, below, for more details.
- *
- * Authorization may include user interaction, see the documentation of the
- * authorize function, below, for details. All user interaction that is part
- * of authorization takes place in a user interface that is built into the
- * BlackBerry Dynamics runtime library, not part of the application.
- *
- * The authorization programming interface is state-based and asynchronous. The
- * initiation function generally returns immediately. Success or failure of
- * authorization is then notified to the application code later, as a transition
- * of the <em>authorization state</em>. The application should generally wait to
- * be notified of transition to the "authorized" state before attempting to
- * utilize any other BlackBerry Dynamics interfaces.
- *
- * Further changes to the authorization state can take place, and are notified
- * to the application in the same way. See under Authorization State, below.
- *
- * @see \ref enterprisesimulation for instructions on building an application to
- *      run in a special limited mode in which authorization with the enterprise
- *      is only simulated.
- * @see <a 
-    href="https://developers.blackberry.com/content/dam/developer-blackberry-com/resource-assets/pdf/NOC%20server%20addresses.pdf"
-    target="_blank"
-    >Network Operation Center server addresses</a> on the application developer
- * portal, for IP address and port number details of the BlackBerry Dynamics
- * Network Operation Center services.
- *
- * <h3>Authorization State</h3>
- * The BlackBerry Dynamics runtime maintains the authorization state of the
- * application. The programming interfaces that can be utilized by the
- * application depend on its current authorization state.
- *
- * The initial state of the application when it starts is <em>not
- * authorized</em>. In this state the application can utilize the authorization
- * processing initiation interface but cannot utilize any principal interfaces,
- * such as secure store access and secure communication.
- *
- * After authorization has been initiated and has succeeded, the application
- * enters the <em>authorized </em>state. The principal interfaces can then be
- * utilized.
- *
- * Authorization of the end user may be temporarily withdrawn, in which case the
- * application enters the <em>locked </em>state. This would happen when, for
- * example, the user doesn't interact with the application for an extended
- * period and the enterprise inactivity time out expires. Note that the
- * authorization of the application itself has not been withdrawn in this state,
- * only the authorization of the end user to access the application's data.\n
- * In the locked state, the BlackBerry Dynamics runtime superimposes an unlock
- * screen on the application user interface to prevent the user from interacting
- * with it or viewing its data. Note that the runtime doesn't block the whole
- * device user interface, which means that native notification features and
- * other ancillary mechanisms
- * could still be utilized by the application. The application mustn't cause
- * sensitive enterprise data to be displayed through these features and
- * mechanisms when in the locked state.\n
- * The application can continue to utilize the principal BlackBerry Dynamics
- * interfaces, in the background.
- *
- * After a temporary withdrawal ends, the application returns to the authorized
- * state. This would happen when, for example, the user enters their security
- * password in the unlock screen.
- *
- * Authorization may also be permanently withdrawn, in which case the
- * application enters the <em>wiped </em>state. This would happen when, for
- * example, the end user's entitlement to the application is removed by the
- * enterprise administrator. In the wiped state, the application cannot utilize
- * the principal BlackBerry Dynamics interfaces.
- * 
- * Transitions of the authorization state are notified as follows.
- * - A <tt>GDAppEvent</tt> is dispatched to the
- *   <tt>GDiOSDelegate</tt> instance in the
- *   application. The event will have a number of attributes, including a type
- *   value that indicates whether the user is now authorized.
- * - A <tt>GDStateChangeNotification</tt> is posted to any registered
- *   NSNotification observers. See the \link GDState \endlink class reference for
- *   how to register.
- * - The <tt>isAuthorized</tt> property of the \reflink GDiOS::state state (GDiOS) \endlink object
- *   changes value, which can be notified by key-value observing (KVO). See
- *   again the \link GDState \endlink class reference for details.
- * .
- * 
- * The authorization states and their corresponding event type values are listed
- * in the following table.
-  <table>
-      <tr
-          ><th>State</th
-          ><th>Description</th
-          ><th
-          ><tt>GDApp</tt><tt>Event</tt><br>type value</th
- 
-      ></tr><tr><td
-          >Not authorized</td
-      ><td
-          >Initial state.\n
-          The application can initiate authorization, but cannot utilize the
-          principal interfaces.</td
-      ><td
-          ></td
- 
-      ></tr><tr><td
-          >Authorized</td
-      ><td
-          >Either the user has just been authorized to access the application,
-          following authorization processing, or a condition that caused
-          authorization to be withdrawn has been cleared.\n
-          The application can utilize the principal interfaces.</td
-      ><td
-          ><tt>GDAppEventAuthorized</tt></td
- 
-      ></tr><tr><td
-          >Locked</td
-      ><td
-          >Authorization of the user has been temporarily withdrawn, for
-          example due to inactivity.\n
-          User interaction is blocked. The application can still utilize the
-          principal interfaces.</td
-      ><td
-          ><tt>GDAppEventNotAuthorized</tt></td
- 
-      ></tr><tr><td
-          >Wiped</td
-      ><td
-          >Authorization of the user has been permanently withdrawn, for
-          example due to violation of an enterprise policy for which the
-          enforcement action is to wipe the secure container.\n
-          The application cannot use any interfaces.</td
-      ><td
-          ><tt>GDAppEventNotAuthorized</tt>\n
-          This is the same event type as the Locked state transition event.</td
- 
-      ></tr
-  ></table
-  >The transitions in the above table are also shown in the
- * \ref st04gdauthorisation.
- *
- * The BlackBerry Dynamics runtime user interface includes all the necessary
- * screens and messages to inform the user of the authorization state. The
- * application code needs only to ensure:
- * - That it doesn't bypass the runtime user interface.
- * - That it doesn't attempt to access the principal interfaces prior to
- *   authorization.
- * - That it doesn't attempt to access the principal interfaces after the
- *   authorization state has changed to wiped.
- * .
- * An authorized application may change an authorization state to 'locked'
- * and prompt the user to reauthenticate by using \reflink GDAuthenticationManager GDAuthenticationManager \endlink.
- *
- * 
- * <h3>Programming interface restrictions</h3>
- * The application cannot use any of the principal BlackBerry Dynamics
- * interfaces before authorization has succeeded. If the application attempts to
- * do so, the runtime generates an assertion,
- * which results in the application being terminated.
- * The runtime uses the Foundation <tt>NSAssert</tt> macro to generate these
- * assertions.
- *
- * The runtime doesn't generate assertions for
- * transient conditions, but only for apparent programming errors in the
- * application. Consequently, these assertions are
- * only expected when the application is in development, and not when the
- * application is in production. The failure message of the
- * assertion will describe the programming
- * error.
- *
- * The recommended approach is that the application should be allowed to
- * terminate, so that the failure message can be read
- * on the console.
- * The failure message will describe the programming error, which can then be
- * corrected.
- * For example, a message like the following could be seen in the logs:\n
- * <tt>My application [7506:40b] *** Terminating app due to uncaught exception
- * 'NSInternalInconsistencyException', reason:
- * 'Not authorized. Call [GDi</tt><tt>OS autho</tt><tt>rize] first.'</tt>
- *
- * <h4>First usage of BlackBerry Dynamics in the execution cycle</h4>
- * The typical first usage of the BlackBerry Dynamics programming interface in
- * the execution cycle is to initiate authorization, in the
- * <tt>application:didFinishLaunchingWithOptions:</tt> handler. The first point
- * in the execution cycle at which it is possible to use the BlackBerry Dynamics
- * interface is the invocation of the
- * <tt>application:willFinishLaunchingWithOptions:</tt> handler. The BlackBerry
- * Dynamics programming interface cannot be used prior to
- * <tt>application:willFinishLaunchingWithOptions:</tt> invocation. For example,
- * if the application uses a subclass of <tt>UIApplication</tt>, the BlackBerry
- * Dynamics programming interface cannot be used in its <tt>init</tt> method.
- *
- * <h3>Activation</h3>
- * In BlackBerry Dynamics, activation refers to a number of registration
- * procedures that must be completed in order to access all platform
- * capabilities. Once a particular activation has been completed, registration
- * credentials are stored on the device. This means that each activation need
- * only be processed once.
- *
- * Activations are generally transparent to the application. The application
- * will call a BlackBerry Dynamics authorization method, and the runtime will
- * process whichever activations are required.
- *
- * There are two activations in BlackBerry Dynamics.<dl
-  ><dt
-      >Infrastructure activation</dt><dd
-          >Recognition of the application instance as a terminal by the
-          BlackBerry Dynamics central server.</dd
-  ><dt
-      >Enterprise activation</dt><dd
-          >Association of the terminal with a provisioned end user at the
-          enterprise. This requires activation credentials, which may be
-          obtained by any of the following means.
-          - Entered manually into the BlackBerry Dynamics user interface.
-          - Retrieved progammatically via another BlackBerry Dynamics
-            application, known as Easy Activation.
-          .</dd
-  ></dl>
- * @see \ref GC.
- * @see \ref enterprisesimulation for instructions on building an application to
- *      run in a special limited mode in which there is no enterprise
- *      activation.
- *
- * <h3>Identification</h3>
- * Every BlackBerry Dynamics application has a unique identifier and version
- * for the purposes of entitlement management, publishing, and service provider
- * registration. The identifier was previously referred to as the Good Dynamics
- * application identifier, or in the abbreviated form GD App ID, but is now
- * referred to as the <em>entitlement identifier</em>.
- *
- * Entitlement identifiers are used:
- * - In the application.
- * - In the BlackBerry Dynamics management console at the enterprise.
- * - In some administrative user interfaces accessible via the application
- *   developer portal.
- * .
- *
- * A BlackBerry Dynamics entitlement identifier is generally accompanied by a
- * separate entitlement version.
- *
- * In the mobile application, the entitlement identifier and version values are
- * set by the authorization call, as documented in the <tt>authorize</tt>
- * function reference, below. In the management console, the entitlement
- * identifier and version values are entered as part of application management.
- *
- * @see \ref GC.
- *
- * <h4>Entitlement Identifier Format</h4>
- * Entitlement identifiers are textual and follow a typical naming convention.
- * The reversed Internet domain of the application developer forms the initial
- * part of the identifier. For example, applications developed by BlackBerry can
- * have identifiers that begin "com.blackberry." because BlackBerry owns the
- * blackberry.com Internet domain.
- *
- * The rest of the identifier is made up of the application's name, possibly
- * preceded by a number of categories and sub-categories. Categories and
- * sub-categories are separated by full stops. For example, the identifier of an
- * example remote database application, made by BlackBerry, could be:
- * "com.blackberry.gd.examples.remotedb". Note that BlackBerry also owns the
- * good.com domain, so could also use "com.good.gd.examples.remotedb".
- * 
- * Formally, the syntax of an entitlement identifer is a string that:
- * - Contains only the following ASCII characters: hyphen (dash), full stop
- *   (period), numeric digit, lower-case letter.
- * - Conforms to the &lt;subdomain&gt; format initially defined in section 2.3.1
- *   of <a href="http://www.ietf.org/rfc/rfc1035.txt" 
-            target="_blank" >RFC1035</a>
-     and subsequently modified in section 2.1 of
-     <a href="http://www.ietf.org/rfc/rfc1123.txt" target="_blank" >RFC1123</a>.
- * .
- *
- * <h4>Entitlement Version Format</h4>
- * A BlackBerry Dynamics entitlement version is a string made up of a sequence
- * of numbers separated by full stops (periods). The following represents best
- * practice.
- * - The first release of the application should have "1.0.0.0" as its
- *   entitlement version.
- * - The version string should change in subsequent releases in which one of the
- *   following software changes is made:
- *   - The application starts to provide a new shared service or shared service
- *     version.
- *   - The application stops providing a shared service or shared service
- *     version.
- *   .
- *   Otherwise, version should not change in the release.
- * .
- *
- * See the \reflink GDService GDService class reference\endlink for details of shared services.
- *
- * The syntax rules of entitlement version values are as follows.
- * - A version string consists of one to four version numbers separated by full
- *   stop (period) characters.
- * - A version number consists of one of the following:
- *   - A single zero.
- *   - A sequence of up to three digits with no leading zero.
- *   .
- * .
- * The syntax can be formally expressed as the following regular expression:
- * <tt>(0|[1-9][0-9]{0,2})(.(0|[1-9][0-9]{0,2})){0,3}</tt>
- * 
- * Don't use a different entitlement version for an early access or beta
- * software release. Instead, add a suffix to the BlackBerry Dynamics
- * entitlement identifier and native application identifier used for general
- * access. For example, the entitlement identifier "com.example.gdapp.beta"
- * could be used to identify a "com.example.gdapp" beta release.\n
- * Using a different native identifier makes it possible for general access and
- * early access software to be installed on the same mobile device, and
- * facilitates use of different signing certificates.
- *
- * <h3>Application user interface restrictions</h3>
- * See the \ref AppUserInterfaceRestrictions page.
- *
- * <h3>Build-Time Configuration</h3>
- * See the \ref BuildTimeConfiguration page.
- *
- * <h3>Enterprise Configuration Information</h3>
- * There are a number of functions in this class for obtaining enterprise
- * configuration information, including settings that apply to the current end
- * user. The \reflink GDiOS::getApplicationPolicy getApplicationPolicy (GDiOS) \endlink and
- * \reflink GDiOS::getApplicationConfig getApplicationConfig (GDiOS) \endlink functions are examples of this
- * type of function.
- *
- * All the functions of this type:
- * - Return their results in a collection of objects.
- * - Have a corresponding \reflink GDAppEvent GDAppEvent \endlink event type that is
- *   dispatched to the application's 
- *   \reflink GDiOSDelegate GDiOSDelegate \endlink 
- *   instance when the result would change.
- * - Have a corresponding <tt>NSNotification</tt> that is posted to any
- *   registered observers, when the result would change. See the
- *   \link GDState \endlink class reference for how to register.
- *
- *
- * For example, the \reflink GDiOS::getApplicationPolicy getApplicationPolicy (GDiOS) \endlink function returns 
- * an <tt>NSDictionary</tt>
- * collection. When there is a change,
- * a <tt>GDPolicyUpdateNotification</tt> is posted, and
- * a <tt>GDAppEventPolicyUpdate</tt> event is dispatched.
- *
- * Use these functions as follows.
- * -# Make a first call to get an initial collection.
- * -# Retain the collection, and refer to it in any code that utilizes its
- *    values.
- * -# When the update event is received, discard the retained collection and
- *    call the function again to get a new collection.
- *
- *
- * Don't make a subsequent call to the same function until an update event
- * has been received. The BlackBerry Dynamics runtime generates a new collection
- * for each call to one of these functions. If the application code makes
- * multiple calls and retains all the returned collections, then they will all
- * consume memory or other application resources.
- * 
- * <h2>Code Snippets</h2> The following code snippets illustrate some common tasks.
- * <h3>Authorization</h3>
+ * \snippets_intro
+ * \snippet{Authorization}
  * The following snippet shows initiation of BlackBerry Dynamics authorization.
  * \code
  * [GDiOS sharedInstance].delegate = self;
@@ -584,7 +193,7 @@ NS_ASSUME_NONNULL_BEGIN
  * The extract sets "com.example.browser" as the BlackBerry Dynamics entitlement
  * identifer, and "1.0.0.0" as the BlackBerry Dynamics entitlement version.
  *
- * <h3>User interface pre-initialization</h3>
+ * \snippet{User interface pre-initialization}
  * The following snippet shows some necessary steps that precede initialization
  * of the application's user interface. The recommended place in the code for
  * these steps is as shown in the snippet.
@@ -614,7 +223,7 @@ NS_ASSUME_NONNULL_BEGIN
  * interface initialization within its event handler, as shown in the following
  * code snippet.
  *
- * <h3>User interface initialization</h3>
+ * \snippet{User interface initialization}
  * The following snippet shows the recommended place in the code to initialize
  * the application's user interface.
  * \code
@@ -1761,6 +1370,9 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  * This function enables a BlackBerry Dynamics user interface element to be
  * included in the application's own user interface.
  *
+ * If authorization is delegated to another application, then that application
+ * will be opened and its Change Password user interface will be shown.
+ *
  * @param baseViewController Reference to the navigation controller within which
  *        the BlackBerry Dynamics user interface element is to open as a view
  *        controller.\n
@@ -1768,9 +1380,9 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  *        controller, for example when no navigation controller is available.
  *
  * @return <tt>YES</tt> if the user interface element opened OK.
- * @return <tt>NO</tt> if the user interface element was already open, or if 
- *        authorization is delegated to another application. Also returned 
- *        if enterprise policy doesn't require a password to unlock the application.
+ * @return <tt>NO</tt> if the user interface element was already open,
+ *                   or if enterprise policy doesn't require a password to unlock the application,
+ *                   or if the application has been wiped.
  */
 - (BOOL)showPreferenceUI:(nullable UIViewController*)baseViewController;
 

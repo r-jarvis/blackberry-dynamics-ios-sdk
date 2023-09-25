@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <Foundation/Foundation.h>
@@ -56,7 +56,9 @@ extern NSString * const GDLogUploadNotification;
  */
 extern const NSTimeInterval GDLogManagerDetailedMaximumDuration;
 
-/** BlackBerry Dynamics log manager.
+/*!
+ * \class GDLogManager GDLogManager.h <BlackBerryDynamics/GD/GDLogManager.h>
+ * \brief BlackBerry Dynamics log manager.
  *
  * \copydetails ssGDLogManager
  */

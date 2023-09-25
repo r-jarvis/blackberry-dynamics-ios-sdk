@@ -1,12 +1,14 @@
 /*
- * (c) 2020 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** WKWebView category with additional features.
+/*!
+ * \category WKWebView(GDNET) WKWebView+GDNET.h <BlackBerryDynamics/GD/WKWebView+GDNET.h>
+ * \brief WKWebView category with additional features.
  *
  * This class is a category of the <tt>WKWebView</tt> class that adds the
  * properties documented below to the programming interface.

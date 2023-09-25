@@ -1,14 +1,16 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
 
 #import <Foundation/Foundation.h>
 
-/** NSURLCredential category with additional features.
+/*!
+ * \category NSURLCredential(GDNET) NSURLCredential+GDNET.h <BlackBerryDyanmics/GD/NSURLCredential+GDNET.h>
+ * \brief NSURLCredential category with additional features.
  * 
- * This class is a category of the Foundation <tt>NSURLCredential</tt> class
+ * This class is a category of the \foundation <tt>NSURLCredential</tt> class
  * that can be used when the BlackBerry Dynamics proxy infrastructure is in use
  * via the URL Loading System (see \ref GDURLLoadingSystem). This class provides
  * the ability to set the persistence of credentials.

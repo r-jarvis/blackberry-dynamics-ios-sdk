@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  * 
  * The documentation in this file is also used elsewhere.
  */
@@ -180,38 +180,11 @@ extern NSString* const GDFrontRequestMethod;
 /** \}
  */
 
-/** Handler for AppKinetics consumer events.
+/*!
+ * \protocol GDServiceClientDelegate GDServices.h <BlackBerryDynamics/GD/GDServices.h>
+ * \brief Handler for AppKinetics consumer events.
  * 
- * Responses to AppKinetics service requests are handled by creating a
- * class that implements this protocol.
- *
- * This class is part of the service consumer side of the AppKinetics
- * programming interface.
- *
- * The \reflink GDServiceClientDelegate::GDServiceClientDidReceiveFrom:withParams:withAttachments:correspondingToRequestID: GDServiceClientDidReceiveFrom \endlink callback would be
- * invoked after the application had sent a service request to a service
- * provider, and the provider had responded or an error had occurred.
- * 
- * @see The \reflink GDService GDService class reference\endlink for an overall description of AppKinetics.
- *
- * This class also includes a callback that is invoked when transmission of a
- * service request completes.
- *
- * <h3>Callback Invocation Sequence</h3>
- * The callbacks in this class will be invoked in the following sequence when a
- * service response is received.
- * -# \link GDServiceClientDelegate::GDServiceClientWillStartReceivingFrom:numberOfAttachments:forRequestID:
- *    GDServiceWillStartReceivingFrom:numberOfAttachments:forRequestID:\endlink
- *    once, if the service request has any file attachments.
- * -# \link GDServiceClientDelegate::GDServiceClientWillStartReceivingFrom:attachmentPath:fileSize:forRequestID:
- *    GDServiceWillStartReceivingFrom:attachmentPath:fileSize:forRequestID:\endlink
- *    once for each file attachment.
- * -# \reflink GDServiceClientDelegate::GDServiceClientDidReceiveFrom:withParams:withAttachments:correspondingToRequestID: GDServiceClientDidReceiveFrom \endlink once.
- * .
- * The first two of these callbacks enable the application to display a
- * receiving status in its user interface. No action should be taken on any
- * attachment files until the last callback,
- * \reflink GDServiceClientDelegate::GDServiceClientDidReceiveFrom:withParams:withAttachments:correspondingToRequestID: GDServiceClientDidReceiveFrom \endlink.
+ * \copydetails ssGDServicesClientListener
  */
 @protocol GDServiceClientDelegate<NSObject>
 @required
@@ -408,40 +381,11 @@ extern NSString* const GDFrontRequestMethod;
 @end
 
 
-/** AppKinetics service consumer.
+/*!
+ * \class GDServiceClient GDServices.h <BlackBerryDynamics/GD/GDServiceClient.h>
+ * \brief AppKinetics service consumer.
  * 
- * This class is mandatory for AppKinetics service consumer
- * applications. This class also includes the programming interface for sending
- * AppKinetics service requests.
- *
- * To utilize this interface, the application must meet the requirements listed
- * under Service Consumer Requirements, below.
- * 
- * For an overall description of AppKinetics see the \reflink GDService GDService class reference\endlink.
- * 
- * The functions in this programming interface cannot be used until
- * BlackBerry Dynamics authorization processing is
- * complete, see under \reflink GDiOS::authorize: authorize (GDiOS) \endlink.
- * 
- * @see \reflink iccerrors AppKinetics Errors \endlink
- * 
- * <h3>Service Consumer Requirements</h3>
- * To function as an AppKinetics service consumer, a BlackBerry Dynamics
- * application must:
- * - Instantiate a single object of the <tt>GDServi</tt><tt>ceClient</tt> class.
- * - Set the delegate to an instance of a class that
- *   implements the \reflink GDServiceClientDelegate GDServiceClientDelegate \endlink
- *   protocol, typically
- *   <tt>self</tt>.
- * - Register the AppKinetics URL type
- *   on the device. This will normally be achieved by utilizing the mandatory
- *   BlackBerry Dynamics build-time
- *   configuration, as detailed on the \ref BuildTimeConfiguration page.
- *
- * Note that an application that consumes multiple services still instantiates
- * only a single object of this class. The delegate
- * of the object handles responses from all the services that the application
- * consumes.
+ * \copydetails ssGDServicesServiceClient
  */
 @interface GDServiceClient : NSObject
 
@@ -641,43 +585,11 @@ Don't use this function outside the context of service request
 
 @end
 
-/** AppKinetics service provider implementation.
+/*!
+ * \protocol GDServiceDelegate GDServices.h <BlackBerryDynamics/GD/GDServices.h>
+ * \brief AppKinetics service provider implementation.
  * 
- * Service requests received within the AppKinetics system are handled
- * by creating a class that implements this
- * protocol. Implementation is mandatory for
- * applications that provide services. An instance of the class must be set as
- * the observer for inbound service requests, by
- * setting the <tt>delegate</tt> property
- * of the application's \reflink GDService GDService \endlink instance.
- * 
- * This class also includes a callback that is invoked when transmission of a
- * service response completes.
- * 
- * This class is part of the service provider side of the AppKinetics
- * programming interface.
- *
- * <h3>Callback Invocation Sequence</h3>
- * The callbacks in this class will be invoked in the following sequence when a
- * service request is received.
- * -# \link GDServiceDelegate::GDServiceWillStartReceivingFrom:numberOfAttachments:forRequestID:
- *    GDServiceWillStartReceivingFrom:numberOfAttachments:forRequestID:\endlink
- *    once, if the service request has any file attachments.
- * -# \link GDServiceDelegate::GDServiceWillStartReceivingFrom:attachmentPath:fileSize:forRequestID:
- *    GDServiceWillStartReceivingFrom:attachmentPath:fileSize:forRequestID:\endlink
- *    once for each file attachment.
- * -# \reflink GDServiceDelegate::GDServiceDidReceiveFrom:forService:withVersion:forMethod:withParams:withAttachments:forRequestID: GDServiceDidReceiveFrom \endlink once.
- * .
- * The first two of these callbacks enable the application to display a
- * receiving status in its user interface. No action should be taken on any
- * attachment files until the last callback,
- * \reflink GDServiceDelegate::GDServiceDidReceiveFrom:forService:withVersion:forMethod:withParams:withAttachments:forRequestID: GDServiceDidReceiveFrom \endlink.
- * 
- * @see The \reflink GDService GDService class reference\endlink for:
- * - An overall description of AppKinetics.
- * - A list of requirements for applications that provide services, under
- *   Service Provider Requirements
- * .
+ * \copydetails ssGDServicesServiceListener
  */
 @protocol GDServiceDelegate<NSObject>
 
@@ -889,410 +801,14 @@ Don't use this function outside the context of service request
 
 @end
 
-/** AppKinetics service provider.
+/*!
+ * \class GDService GDServices.h <BlackBerryDynamics/GD/GDServices.h>
+ * \brief AppKinetics service provider.
  * 
- * This class is mandatory for service provider applications within the
- * AppKinetics system. This class also includes the programming interface for
- * sending AppKinetics service responses. This interface would be utilized in
- * the code of the delegate of this class.
- * 
- * 
- * For an overall description of AppKinetics, see below.
- * To utilize this programming interface, the application must meet the
- * requirements listed under Service Provider Requirements.
- *
- * The functions in the AppKinetics programming interface utilize <tt>NSError</tt> in a conventional way. Function calls accept as a parameter the location of a pointer to <tt>NSError</tt>, i.e. a pointer to a pointer, with type <tt>NSError**</tt>. The location may be <tt>nil</tt>. If the location isn't <tt>nil</tt>, and an error occurs, the BlackBerry Dynamics runtime overwrites the pointer at the specified location with the address of an object that describes the error that occurred.
- * 
- * The functions in this interface cannot be used until BlackBerry Dynamics
- * authorization processing is
- * complete, see under \reflink GDiOS::authorize: authorize (GDiOS) \endlink.
- * 
- * @see \reflink iccerrors AppKinetics Errors \endlink
- * @see \reflink GDServiceClient GDServiceClient \endlink for the parts of the interface that are specific
- *      to service consumers.
- * @see \reflink GDiOS::getServiceProvidersFor:andVersion:andServiceType: getServiceProvidersFor: (GDiOS) \endlink for the service discovery programming
- *      interface.
+ * \copydetails ssGDServicesService
  * 
  * <h3>AppKinetics</h3>
- * 
- * AppKinetics is a means of exchanging data and commands securely between two
- * BlackBerry Dynamics applications running on the same mobile device or
- * computer. The security of data isn't compromised during exchange.
- *
- * AppKinetics interactions follow a service consumer-provider model. One
- * application initiates communication by sending a service request to another.
- * The initiating application is the service consumer. The application that
- * receives the request is the service provider.
- *
- * After receiving the service request, the provider executes the necessary
- * processing and could then send a service response back to the consumer. Both
- * the service request and the service response, if any, can contain a number of
- * parameters and file attachments. See under Service Parameters and File
- * Attachments, below.
- *
- * The sequence of programming interfaces used in a typical AppKinetics
- * interaction is as follows.
- * -# The consumer application executes a service discovery query, by calling
- *    \reflink GDiOS::getServiceProvidersFor:andVersion:andServiceType: getServiceProvidersFor: (GDiOS) \endlink.
- * -# The consumer application calls \reflink GDServiceClient::sendTo:withService:withVersion:withMethod:withParams:withAttachments:bringServiceToFront:requestID:error: sendTo (GDServiceClient) \endlink.
- * -# The \reflink GDServiceDelegate::GDServiceDidReceiveFrom:forService:withVersion:forMethod:withParams:withAttachments:forRequestID: GDServiceDidReceiveFrom \endlink callback in the provider
- *    application is invoked by the AppKinetics system.
- * -# The provider application executes any required processing and then calls
- *    \reflink GDService::replyTo:withParams:bringClientToFront:withAttachments:requestID:error: replyTo (GDService) \endlink.
- * -# The \reflink GDServiceClientDelegate::GDServiceClientDidReceiveFrom:withParams:withAttachments:correspondingToRequestID: GDServiceClientDidReceiveFrom \endlink callback in the
- *    consumer is invoked by the AppKinetics system.
- * .
- * Note that an AppKinetics interaction can be initiated with any BlackBerry
- * Dynamics application whose native application identifier is known in the
- * service consumer. The identifier could be known by being present in the
- * application code or, as shown in the above, could be obtained at run time by
- * using BlackBerry Dynamics service discovery.
- *
- * Note that the service provider does not necessarily send a response, i.e. the
- * call to <tt>replyTo</tt> and subsequent invocation of the callback in the
- * consumer do not necessarily take place. The service definition specifies when
- * and whether the provider sends a response, see under Service Definition,
- * below.
- * 
- * The data for requests and responses is sent across a secure connection. The
- * connection is established and maintained as necessary by the BlackBerry
- * Dynamics runtime. This is transparent to the applications, although not
- * always to the end user because the user interface may sometimes "flip"
- * between applications during AppKinetics interaction. See also the Foreground
- * Execution section, below.
- *
- * AppKinetics cannot be used in
- * \ref enterprisesimulation.
- *
- * <h3>Service Definition</h3>
- * A service provided by an application may conform to a declared service
- * definition. The declaration, if there is one, will specify the following.
- * - Identifier and version of the service, conventionally a reversed Internet
- *   domain followed by a number of sub-domains separated by full stops
- *   (periods). Formally, service identifiers conform to the &lt;subdomain&gt;
- *   format defined in section 2.3.1 of <a
-       HREF="http://www.ietf.org/rfc/rfc1035.txt"
-       target="_blank"
-    >RFC1035</a>.
- * - Methods that comprise the service.
- * - Expected parameters to service requests, per method.
- * - Expected file attachments to service requests, per method.
- * - Whether and in what circumstances service responses will be issued, per
- *   method.
- * - What types of service response will be issued, per method.
- * - Expected parameters to service responses, per method and per type.
- * - Expected file attachments to service responses, per method and per type.
- * - Error conditions that are specific to the service.
- * .
- * An application that registers as providing a service for which there is a
- * definition must adhere to the definition. Similarly, an application that
- * consumes a service that is based on a declared definition should only send
- * requests that conform to the definition. 
- * 
- * The service definition for a public service may be published to the
- * BlackBerry Dynamics application developer portal. The published definition
- * may include a link to additional reference documentation for the service. In
- * any case, the reference documentation may be obtained from the developer of a
- * service provider application, or from the creator of the service definition.
- *
- * @see \ref ICCServiceDefinition for a description of BlackBerry Dynamics
- *      service definition.
- *
- * <h3>Service Parameters</h3>
- * An AppKinetics service request can include a number of parameters, sent by
- * the consumer. Service responses can also include parameters, sent by the
- * provider to convey detailed results to the consumer. The parameters in a
- * request or response are always provided to the application as a single
- * object. AppKinetics supports a number of types of service parameter object.
- * 
- * BlackBerry Dynamics service definitions declare the expected types of
- * parameter object for requests and responses for each method in a service. The
- * BlackBerry Dynamics service definition language uses platform-independent
- * terms for the declaration. The terms, and the native types that would be used
- * to represent a parameter of that type, are listed in the following table.
- * <table>
- *     <tr><th>
- *         Service Definition</th>
- *     <th>
- *         Native</th>
- *     </tr><tr><td>
- *         string</td>
- *     <td>
- *         <tt>NSString</tt></td>
- * 
- *     </tr><tr><td>
- *         number</td>
- *     <td>
- *         <tt>NSNumber</tt></td>
- *
- *     </tr><tr><td>
- *         integer</td>
- *     <td>
- *         <tt>NSNumber</tt></td>
- *
- *     </tr><tr><td>
- *         boolean</td>
- *     <td>
- *         <tt>NSNumber</tt></td>
- *
- *     </tr><tr><td>
- *         null</td>
- *     <td>
- *         <tt>NSNull</tt></td>
- *
- *     </tr><tr><td>
- *         UInt8Array</td>
- *     <td>
- *         <tt>NSData</tt></td>
- *
- *     </tr><tr><td>
- *         array</td>
- *     <td>
- *         <tt>NSArray</tt> of any of the
- *         simple types listed above.</td>
- *
- *     </tr><tr><td>
- *         object</td>
- *     <td>
- *         <tt>NSDictionary</tt> of key-value
- *         pairs, with any of the above types as values.</td>
- * 
- *     </tr>
- *  </table>
- *
- * Note that the service identifier, version, and method name are not service
- * parameters as such and are not included in the parameters object.
- *
- * Error responses can include additional details of the error condition. For
- * example, if a parameter exceeds a maximum value, then the additional details
- * could include the value of the maximum. Additional details are specified in
- * the service definition, per condition, in the same way as service parameters.
- * Additional detail values are handled as 
- * entries in the <tt>userInfo</tt> dictionary in an <tt>NSError</tt> object.
- * 
- * <h3>File Attachments</h3>
- * An AppKinetics service request can include a number of file attachments
- * specified by the consumer. Service responses can also include file
- * attachments, if these are sent by the provider as results.
- *
- * File attachments are sent from the secure store of one application, and
- * copied to the secure store of the other application. Deletion of the
- * recipient's copy of the file is the responsibility of the recipient
- * application. The AppKinetics system doesn't delete copies of files that were
- * attached to a request or response.
- *
- * In the programming interface, the sending application specifies file
- * attachments as paths in its secure store. The AppKinetics system copies the
- * files to the receiving application's secure store, and then invokes a
- * callback in the receiving application. The callback is passed the paths of
- * the copies, which it can then open in the usual manner.
- *
- * The AppKinetics system uses the following naming convention to construct the
- * paths of the receiving application's copies.\n
- * <em>Inbox Directory</em><tt>/</tt>
- * <em>Sender</em><tt>/</tt>
- * <em>Reference time</em><tt>/</tt>
- * <em>Original Path</em>\n
- * Where:\n
- * <em>Sender</em> is the native application identifier of the sending
- * application.\n
- * <em>Reference time</em> is the date and time at which the AppKinetics system
- * started handling the file attachments, down to a millisecond resolution.
- *
- * Note that all the files attached to a particular service request or response
- * will be placed under one directory. This means that the receiving application
- * can delete all these files in a single operation, by deleting the directory.
- *
- * The AppKinetics system supports the sending of empty files in the current
- * release, but did not in some earlier releases.
- * 
- * @see \reflink  GDFileManager \endlink for the secure file system programming
- *      interface.
- *
- * <h3>Foreground Execution</h3>
- * An AppKinetics service request can specify a preference that the application
- * that provides the service executes in foreground in order to process the
- * request. This could be used when request processing always requires user
- * interaction, for example if the service is a special web browser or document
- * editor. See the <tt>option</tt> parameter of the
- * \reflink GDServiceClient::sendTo:withService:withVersion:withMethod:withParams:withAttachments:bringServiceToFront:requestID:error: sendTo (GDServiceClient) \endlink function.
- *
- * Similarly, an AppKinetics service response can specify a preference that the
- * service consumer application executes in foreground in order to process the
- * response. This might be used to return the original application to the
- * foreground. See the <tt>option</tt> parameter of the \reflink GDService::replyTo:withParams:bringClientToFront:withAttachments:requestID:error: replyTo (GDService) \endlink
- * function.
- *
- * It is also possible that a service provider itself determines its need to
- * execute in foreground in order to process a particular request, after the
- * request has been received. This is supported in AppKinetics by use of the
- * <em>front request </em>programming interface.
- *
- * The front request interface has two parts: send and receive. In principle,
- * any BlackBerry Dynamics application can send a front request to any other
- * BlackBerry Dynamics application, and any BlackBerry Dynamics application
- * could receive a front request from any other BlackBerry Dynamics application.
- * In practice, a front request is only sent to the consumer of a service by the
- * provider of the service.
- *
- * The following scenario illustrates the typical sequence of events in which
- * front request is utilized.
- * -# Service consumer application sends a request that is to be executed in
- *    background.
- * -# Service provider application receives the request but determines that
- *    processing can only take place in foreground.
- * -# Service provider sends a front request to the service consumer. See under
- *    Front Request Programming Interface, below, for details.
- * -# Service consumer receives the front request. See under Front Request
- *    Programming Interface, below, for details.
- * -# Service consumer brings the provider to the foreground, by calling the
- *    \reflink GDServiceClient::bringToFront:completion:error: bringToFront: \endlink function.
- * -# Service provider completes processing of the original request.
- * .
- * Note that the service consumer could also leave the provider in background,
- * in which case the service request would be expected to fail in some way.
- *
- * A service provider might need to process a service request in foreground
- * because:
- * - User interaction is necessary, and this wasn't predicted in the service
- *   consumer before the service request was sent.
- * - The time needed to process the request exceeds the time that is likely to
- *   be allowed to the provider to run in background.
- * .
- *
- * In general, only the application that is currently running in foreground can
- * bring another application to the foreground. In the scenario that neither the
- * service consumer nor provider are in foreground, for example because the user
- * chose to take a call or started a third application, then neither application
- * can be brought to foreground by the other.
- * 
- * <h3>Front Request Programming Interface</h3>
- * The programming interface for front request is defined as a BlackBerry
- * Dynamics service within AppKinetics.
- *
- * The formal service definition of front request is as follows.
- * \code
- * {
- *     "service-id": "com.good.gd.icc",
- *     "version": "1.0.0.0",
- *     "title": "ICC Service ",
- *     "description": "ICC is a special Good Dynamics service created by Good
- * Technology. This service is for control of the Inter-Container Communication
- * channel.",
- *     "methods": {
- *         "FRONT_REQ": {
- *             "description": "The service consumer calls this method to request
- * that the service provider places the service consumer in foreground."
- *         }
- *     }
- * }
- * \endcode
- *
- * To send a front request, then, an application calls the 
- * <tt>sendTo:</tt> function, with the following
- * parameter values.
- * - <tt>sendTo:</tt> the native application
- *   identifier of the other application, which typically will have been
- *   supplied in a
- *   <tt>GDServiceDidReceiveFrom:</tt>
- *   invocation resulting from the original service request.
- * - <tt>withService:</tt> the
- *   <tt>GDFrontRequestService</tt> constant, which always has the
- *   <tt>service-id</tt> value in the above.
- * - <tt>withVersion:</tt> <tt>"1.0.0.0"</tt>
- * - <tt>withMethod:</tt> <tt>"FRONT_REQ"</tt>.
- * - <tt>withParams:</tt> <tt>nil</tt>.
- * - <tt>withAttachments:</tt> <tt>nil</tt>.
- * - <tt>bringServiceToFront:</tt>
- *   <tt>GDENoForegroundPreference</tt>.
- * - <tt>requestID:</tt> Location of a local pointer or <tt>nil</tt>, as for any
- *   call to <tt>sendTo:</tt>
- * - <tt>error:</tt> Location of a local pointer or <tt>nil</tt>, as for any
- *   call to <tt>sendTo:</tt>
- * .
- * This causes a front request to be sent through the AppKinetics system.
- *
- * The AppKinetics system will deliver the front request in the same way as any
- * other service request, by invoking a callback in the provider application to
- * which the request is addressed. Note that, in the typical case, the service
- * provider here will actually be the application that was originally the
- * service consumer. This means that any application that consumes a service
- * whose provider might send back a front request must itself be a provider of
- * the Front Request service. This includes meeting the generic requirements for
- * all service provider applications, which are detailed under Service Provider
- * Requirements, below.
- *
- * The invoked callback's application code for handling a front request service
- * request should be restricted to:
- * - Identifying the received service request as a front request.
- * - Any checks that are required to determine whether the application should
- *   yield foreground execution to the application that sent the front request.
- * - A call to the \reflink GDServiceClient::bringToFront:completion:error: bringToFront: \endlink function, to be
- *   executed if all checks pass.
- * .
- * A minimal handler would identify a front request, make no checks, and then
- * always call the \reflink GDServiceClient::bringToFront:completion:error: bringToFront: \endlink function.
- * 
- * Note that the front request service definition doesn't contain any service
- * responses nor errors so the application mustn't send any. If the application
- * code checks don't pass and foreground execution isn't to be yielded, then the
- * application need take no action.
- *
- * The following code snippet gives a simple utility function that could be
- * utilized in a callback as outlined above.
- * \code
- * + (BOOL)consumeFrontRequestService:(NSString*) serviceID forApplication:(NSString*) application forMethod:(NSString*) method withVersion:(NSString*)version
- * {
- *  if([serviceID isEqual:GDFrontRequestService] && [version isEqual:@"1.0.0.0"])
- *  {
- *      if([method isEqual:GDFrontRequestMethod])
- *      {
- *          [GDService bringToFront:application completion:^(BOOL success) { } error:nil];
- *          return YES;
- *      }
- *  }
- *  return NO;
- * }
- * \endcode
- *
- * <h3>Service Provider Requirements</h3>
- * The following requirements apply to BlackBerry Dynamics applications that are
- * service providers.
- *
- * <h4>Function as a service provider</h4>
- * To function as an AppKinetics service provider, a BlackBerry Dynamics
- * application must:
- * - Instantiate a single object of the <tt>GDSer</tt><tt>vice</tt> class.
- * - Set the
- *   <tt>delegate</tt> property to point
- *   to an object of a class that implements the
- *   <tt>GDServiceDelegate</tt>
- *   protocol, typically
- *   <tt>self</tt>.
- * - Register the AppKinetics URL type
- *   on the device. This will normally be achieved by utilizing the mandatory
- *   BlackBerry Dynamics build-time
- *   configuration, as detailed in the \reflink GDiOS \endlink class reference.
- * .
- * Note that an application that provides multiple services still instantiates
- * only a single object of this class. The delegate of the object handles
- * requests for all the services that the application provides.
- *
- * <h4>Returned by service discovery query</h4>
- * To be on the list returned by a service discovery query, an application must
- * be registered as a service provider. Register the application as a service
- * provider:
- * - In the enterprise management console, if an in-house application.
- * - Via the application developer portal, if a partner application.
- * .
- * In either user interface, enter the
- * native bundle identifier of the application, for example
- * "com.example.application.name". Different bundle identifiers can be entered
- * for different device types.
- * 
- * 
- * @see \reflink GDiOS::getServiceProvidersFor:andVersion:andServiceType: getServiceProvidersFor: (GDiOS) \endlink for details of the service discovery
- *      programming interface.
+ * \copydetails ssGDServices
  */
 @interface GDService : NSObject
 

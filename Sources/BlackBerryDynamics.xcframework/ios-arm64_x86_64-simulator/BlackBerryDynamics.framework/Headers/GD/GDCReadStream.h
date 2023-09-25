@@ -1,12 +1,14 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #pragma once
 
 #import <Foundation/Foundation.h>
 
-/** NSInputStream subclass for reading files that are in the secure store.
+/*!
+ * \class GDCReadStream GDCReadStream.h <BlackBerryDynamics/GD/GDCReadStream.h>
+ * \brief NSInputStream subclass for reading files that are in the secure store.
  * 
  * This class is a subclass of the native <tt>NSInputStream</tt> class, for
  * access to the BlackBerry Dynamics secure file system.

@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #ifndef GD_COMMON_H
@@ -102,7 +102,9 @@ GD_C_API extern const int32_t GDErrorInvalidArgument;
  */
 GD_C_API extern const int32_t GDErrorNotAllowed;
 
-/** Error structure.
+/*!
+ * \struct GDError GDCommon.h <BlackBerryDynamics/GD/GDCommon.h>
+ * \brief Error structure.
  *
  * This structure is used to represent errors in some parts of the BlackBerry
  * Dynamics programming interface.
@@ -122,7 +124,9 @@ struct GD_C_API GDError {
     const char* description;
 };
 
-/** Data encapsulation structure.
+/*!
+ * \struct GDData GDCommon.h <BlackBerryDynamics/GD/GDCommon.h>
+ * \brief Data encapsulation structure.
  *
  * This structure is used to encapsulate some types of binary data in the
  * BlackBerry Dynamics programming interface.

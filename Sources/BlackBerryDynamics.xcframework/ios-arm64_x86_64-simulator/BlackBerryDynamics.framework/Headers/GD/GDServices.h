@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  * 
  * The documentation in this file is also used elsewhere.
  */
@@ -145,7 +145,9 @@ extern NSString* const GDFrontRequestMethod;
 /** \}
  */
 
-/** Handler for AppKinetics consumer events.
+/*!
+ * \protocol GDServiceClientDelegate GDServices.h <BlackBerryDynamics/GD/GDServices.h>
+ * \brief Handler for AppKinetics consumer events.
  * 
  * \copydetails ssGDServicesClientListener
  */
@@ -196,7 +198,9 @@ extern NSString* const GDFrontRequestMethod;
 @end
 
 
-/** AppKinetics service consumer.
+/*!
+ * \class GDServiceClient GDServices.h <BlackBerryDynamics/GD/GDServiceClient.h>
+ * \brief AppKinetics service consumer.
  * 
  * \copydetails ssGDServicesServiceClient
  */
@@ -248,7 +252,9 @@ bringServiceToFront:(GDTForegroundOption)option
 
 @end
 
-/** AppKinetics service provider implementation.
+/*!
+ * \protocol GDServiceDelegate GDServices.h <BlackBerryDynamics/GD/GDServices.h>
+ * \brief AppKinetics service provider implementation.
  * 
  * \copydetails ssGDServicesServiceListener
  */
@@ -302,7 +308,9 @@ bringServiceToFront:(GDTForegroundOption)option
 
 @end
 
-/** AppKinetics service provider.
+/*!
+ * \class GDService GDServices.h <BlackBerryDynamics/GD/GDServices.h>
+ * \brief AppKinetics service provider.
  * 
  * \copydetails ssGDServicesService
  * 

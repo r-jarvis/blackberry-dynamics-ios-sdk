@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -20,7 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class GDServiceDetail;
 
-/** Service provider details.
+/*!
+ * \class GDServiceProvider GDServiceProvider.h <BlackBerryDynamics/GD/GDServiceProvider.h>
+ * \brief Service provider details.
  *
  * This class is used to return information about a service provider. See
  * \ss_servicediscovery_link. An instance of this class either represents a

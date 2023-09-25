@@ -1,5 +1,5 @@
 /*
- * (c) 2019 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -66,17 +66,11 @@ typedef void (^BBDJWTCompletion)(NSString* JWT, BBDJWTStatusCode status, int err
 /** \}
  */
 
-/** Delegate for handling the results of BlackBerry Dynamics authentication
- *  token requests.
+/*!
+ * \protocol GDAuthTokenDelegate GDUtility.h <BlackBerryDynamics/GD/GDUtility.h>
+ * \brief Delegate for handling the results of BlackBerry Dynamics authentication token requests.
  * 
- * The results of BlackBerry Dynamics authentication token requests are
- * handled by creating a class that implements this protocol.
- * 
- * BlackBerry Dynamics authentication tokens can be requested by utilizing a
- * function in the <tt>GDUti</tt><tt>lity</tt> class.
- *
- * For the token request programming interface, and general information about
- * the mechanism, see the \reflink GDUtility GDUtility \endlink class reference.
+ * \copydetails ssGDAuthTokenListener
  */
 @protocol GDAuthTokenDelegate
 
@@ -123,122 +117,12 @@ typedef void (^BBDJWTCompletion)(NSString* JWT, BBDJWTStatusCode status, int err
 
 @end
 
-/** BlackBerry Dynamics utility for managing authentication tokens and identity.
+/*!
+ * \class GDUtility GDUtility.h <BlackBerryDynamics/GD/GDUtility.h>
+ * \brief BlackBerry Dynamics utility for managing authentication tokens and identity.
  * 
- * 
- * <h3>BlackBerry Dynamics Authentication Token Mechanism</h3>
- * The BlackBerry Dynamics authentication token mechanism enables
- * applications to utilize the user identification that takes place during
- * BlackBerry Dynamics authorization processing. This enables an application
- * server at the enterprise to authenticate the user without the need for entry
- * of any additional credentials at the device or desktop.
- * 
- * See below for an overall description of the BlackBerry Dynamics
- * authentication token mechanism. This class includes the programming interface
- * for requesting tokens.
- * 
- * @see \reflink GDiOS::authorize: authorize (GDiOS) \endlink for more details of BlackBerry Dynamics authorization
- *      processing.
- * @see \ref ServerAPIGDAuthToken
- *
- * The BlackBerry Dynamics platform includes rigorous authentication of the end
- * user. This is used when, for example, identifying whether the user is
- * entitled to run the current application, and when applying security policies.
- * 
- * The BlackBerry Dynamics Authentication Token (BlackBerry Dynamics auth)
- * mechanism enables applications to take advantage of the authentication
- * processes of the platform.
- *
- * BlackBerry Dynamics auth tokens can be requested by the application on the
- * device or desktop. A token will only be issued if authorization processing
- * has completed, and the end user's identity has been authenticated.
- *
- * Once a token has been issued, the application can send the token to an
- * application server at the back end. The token can then be checked by the
- * application server, using a verification service provided by the BlackBerry
- * Dynamics infrastructure.
- *
- * The sequence of programming interfaces used in BlackBerry Dynamics auth is as
- * follows.
- * -# The mobile application calls \reflink GDUtility::getGDAuthToken:serverName: getGDAuthToken:serverName \endlink to
- *    request a token.
- * -# All being well, a token is issued and the
- *    \reflink GDAuthTokenDelegate::onGDAuthTokenSuccess: onGDAuthTokenSuccess \endlink callback is
- *    invoked and passed the new token.
- * -# The application sends the token to the application server, using an HTTP
- *    request, socket, or other method. In the same communication, the
- *    application sends the email address or other end user identifier for which
- *    it is activated as a BlackBerry Dynamics application.
- * -# The application server checks that the token is valid by calling the
- *    verification service in the \ref ServerAPIGDAuthToken, hosted by an
- *    enterprise BlackBerry Dynamics server. (The server could be a BlackBerry
- *    Proxy or Good Proxy instance.)
- * -# The response from the verification service includes the end user
- *    identifier, if the token is valid. The application server can check that
- *    the value from the verification service is the same as that originally
- *    sent by the mobile application.
- * .
- * This sequence validates the end user's identity, and the application server
- * can therefore grant access to resources and other permissions.
- *
- * Calling the verification service doesn't cause the token to be consumed.
- *
- * Note that a BlackBerry Dynamics application can obtain the identifier of the
- * end user from the <tt>GDAppConfigKeyUserId</tt> value in the collection
- * returned by the \reflink GDiOS::getApplicationConfig getApplicationConfig (GDiOS) \endlink function. 
- * 
- * <h3>Challenge Strings</h3>
- * A <em>challenge string </em>can be included in a BlackBerry Dynamics auth
- * token request. The same challenge string will then be provided to the
- * application server, in the response from the verification service.
- *
- * The challenge string could have a number of uses for application developers.
- * A typical usage could be to tie an instance of authentication to a previous
- * access request, as follows:
- * -# A mobile application attempts to access a resource on an application
- *    server.
- * -# The application server generates a random challenge string.
- * -# The application server responds to the mobile application with a denial of
- *    access message that includes the random challenge string.
- * -# The mobile application requests a BlackBerry Dynamics auth token, and
- *    passes the value from the denial of access message as the challenge
- *    string.
- * -# The mobile application again attempts to access the resource on the
- *    application server, but this time includes the BlackBerry Dynamics auth
- *    token in the request.
- * -# The application server sends the token to the verification service, which
- *    responds that the token is valid. The response includes the challenge
- *    string.
- * -# The application server checks that the challenge string from the
- *    verification service is the same as the random challenge string initially
- *    sent to the mobile application in the denial of access message.
- * .
- * In the above, a new random challenge string is generated on every resource
- * access attempt. This has the effect of making the BlackBerry Dynamics auth
- * tokens one-use. A more advanced algorithm might be to store the token and
- * challenge string in the server, as a session identifier. To end a session,
- * the server could delete the stored token and challenge string, effectively
- * forcing the application to generate a new token, based on a new challenge
- * string, when it next connected.
- * 
- * The verification service provides the challenge string to the application
- * server in an HTTP header, which limits the character set that can be utilized
- * safely. All letters and numerals in the ASCII range 32 to 126 can be utilized
- * safely. Use of other characters isn't supported.
- * 
-
- * <h3>BlackBerry Dynamics Shared User Identifier</h3>
- * The BlackBerry Dynamics Shared User ID is a unique identifier for all containers which are provisioned for the same user on the same device.
- *
- * <h4>Identifier characteristics</h4>
- *
- * - The identifier is available once a user has authorized / unlocked the container.
- * - The identifier is the same for applications activated against the same user, on the same UEM domain and on the same device, even if authentication delegation (SSO) is enabled.
- * - The identifier doesn't persist once the last Dynamics application is uninstalled from a device or the device is reset.
- * - The identifier is only available for applications activated against a UEM. (Not standalone GC)
- *
- * <h4>Shared Identifier limitations</h4>
- * Shared identifier will not be shared among applications from different keychain groups
+ * \copydetails ssGDAuthToken
+ * \copydetails ssSharedUserId
  */
 @interface GDUtility : NSObject
 

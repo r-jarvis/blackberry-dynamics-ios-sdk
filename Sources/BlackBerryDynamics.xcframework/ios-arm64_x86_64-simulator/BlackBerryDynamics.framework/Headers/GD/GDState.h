@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -243,7 +243,9 @@ typedef NS_ENUM(NSInteger, BBDActivationState)
  * \}
  */
 
-/** BlackBerry Dynamics run-time state.
+/*!
+ * \class GDState GDState.h <BlackBerryDynamic/GD/GDState.h>
+ * \brief BlackBerry Dynamics run-time state.
  *
  * This class represents a number of aspects of the BlackBerry Dynamics run-time
  * state. The representation is compliant with key-value observing (KVO). An

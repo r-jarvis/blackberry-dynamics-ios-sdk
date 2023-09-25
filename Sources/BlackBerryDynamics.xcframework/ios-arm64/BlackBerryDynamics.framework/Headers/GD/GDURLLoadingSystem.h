@@ -1,11 +1,13 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
 #import <Foundation/Foundation.h>
 
-/** Manage access across the firewall via the URL Loading System.
+/*!
+ * \class GDURLLoadingSystem GDURLLoadingSystem.h <BlackBerryDynamics/GD/GDURLLoadingSystem.h>
+ * \brief Manage access across the firewall via the URL Loading System.
  * 
  * BlackBerry Dynamics applications can utilize the native URL Loading System to
  * communicate with servers that are behind the enterprise firewall.
@@ -29,7 +31,7 @@
  * <B>Note that synchronous request calls shouldn't be made from the main
  * application thread.</B>
  *
- * \htmlonly<div class="bulletlists">\endhtmlonly
+ * \divclass{bulletlists}
  * When access is enabled, the normal URL Loading System classes can be used to
  * communicate with servers that are behind the firewall, using standard
  * Internet protocols. For an overview, see the <a
@@ -96,18 +98,27 @@
  *   >NSMutableURLRequest class reference</a> on the apple.com developer website
  *   for details of this flag.
  * .
- * \htmlonly</div>\endhtmlonly
+ * \enddivclass
  *
  * Additional features are made available, using the
+ * \if iOS
  * \ref NSMutableURLRequest(GDNET) category, and the 
+ * \endif
  * \ref NSURLCache(GDURLCache)
  * subclass.
  *
+ * \if iOS
  * @see \ref GDiOS, for BlackBerry Dynamics authorization
  * @see \ref background_execution
- * @see <a  HREF="https://docs.blackberry.com/en/endpoint-management/blackberry-uem/"  target="_blank" >Manuals page for the BlackBerry Dynamics enterprise servers</a > for the Platform Overview.
+ * \endif
+ * \if Mac
+ * @see \ref GDMac, for BlackBerry Dynamics authorization
+ * \endif
+ * @see \ewp
  * @see \ref GC.
+ * \if iOS
  * @see \ref GDNetUtility
+ * \endif
  * @see \ref nsurlsession_support
  *
  * <H3>Multiple Authentication Methods</H3>
@@ -169,37 +180,9 @@
    >NSURLConnectionDelegate protocol reference</A> on the apple.com developer
  * website.
  *
- * 
- * <h3>HTTP Cookie Handling</h3>
- * By default, HTTP cookies received through BlackBerry Dynamics secure
- * communication are handled automatically:
- * - Set-cookie: headers that are received as part of an HTTP response are
- *   processed and then added to subsequent matching requests.
- * - Persistent cookies are written to cookie storage in the BlackBerry Dynamics
- *   secure store.
- * .
- * 
- * The BlackBerry Dynamics cookie store persists between executions of the
- * application, and if the mobile device is switched off.
- * The contents of the store can be managed with the native
- * <tt>NSHTTPCookieStorage</tt> programming interface, and so can non-persistent
- * cookies received through BlackBerry Dynamics secure communication.
- *
- * Automatic handling of HTTP cookies received through BlackBerry Dynamics
- * secure communication can be switched off, as follows.
- * - For communication that goes via the <tt>GDURLLoad</tt><tt>ingSystem</tt>,
- *   such as <tt>NSURLSession</tt> and <tt>NSURLConnection</tt>, call the
- *   <tt>setHTTPShouldHandleCookies:</tt> method of the associated
- *   <tt>NSMutableURLRequest</tt> instance.
- * .
- * @see <a
- *     HREF="https://developer.apple.com/reference/foundation/nshttpcookiestorage"
- *     target="_blank"
- * >NSHttpCookieStorage class reference</a> on the apple.com developer website.
- * @see <a
- *     HREF="https://developer.apple.com/reference/foundation/nsmutableurlrequest?language=objc"
- *     target="_blank"
- * >NSMutableURLRequest class reference</a> on the apple.com developer website.
+ * \if iOS
+ * \copydetails ssGDCommunicationsHTTPCookies
+ * \endif
  */
 @interface GDURLLoadingSystem : NSObject {
 }

@@ -1,5 +1,5 @@
 /*
- * (c) 2018 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <Foundation/Foundation.h>
@@ -102,7 +102,9 @@ typedef NS_ENUM(NSInteger, GDFileManagerErrorType)
 /** \}
  */
 
-/** Secure File System.
+/*!
+ * \class GDFileManager GDFileManager.h <BlackBerryDynamics/GD/GDFileManager.h>
+ * \brief Secure File System.
  * 
  * This class is a subclass of the native <tt>NSFileManager</tt> class, for
  * access to the BlackBerry Dynamics secure file system.

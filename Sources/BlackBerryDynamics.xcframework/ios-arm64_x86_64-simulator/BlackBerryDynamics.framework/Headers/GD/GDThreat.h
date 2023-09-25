@@ -1,7 +1,7 @@
-    /*
-* (c) 2020 BlackBerry Limited. All rights reserved.
-*
-*/
+/*
+ * (c) 2020 BlackBerry Limited. All rights reserved.
+ *
+ */
 
 #pragma once
 
@@ -10,12 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /** Enumeration to indicate the level of risk posed by a threat.
-* 
-* The overall threat level is returned as part BBDThreatStatus.getOverallThreatLevel. 
-* To understand the risk for specific threat type use BBDThreat.getRiskLevel.
-*
-* To determine if a specific threat type is being evaluated you can also use BBDThreat.getDetectionEnabled.
-*/
+ *
+ * The overall threat level is returned as part BBDThreatStatus.getOverallThreatLevel.
+ * To understand the risk for specific threat type use BBDThreat.getRiskLevel.
+ *
+ * To determine if a specific threat type is being evaluated you can also use BBDThreat.getDetectionEnabled.
+ */
 typedef NS_ENUM(NSInteger, BBDThreatLevel)
 {
     /**
@@ -145,9 +145,10 @@ typedef NS_ENUM(NSInteger, BBDThreatType)
     DLP = 13
 };
 
-/**
-* Interface for retrieving threat details for a specific BBDThreatType.
-*/
+/*!
+ * \class BBDThreat GDThreat.h <BlackBerryDynamics/GD/GDThreat.h>
+ * \brief Interface for retrieving threat details for a specific BBDThreatType.
+ */
 @interface BBDThreat: NSObject
 
 /**

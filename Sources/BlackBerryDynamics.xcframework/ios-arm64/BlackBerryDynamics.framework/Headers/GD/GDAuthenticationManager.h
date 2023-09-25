@@ -1,5 +1,5 @@
 /*
- * (c) 2019 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -80,69 +80,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/**
- * Manage user authentication and require the user to authenticate.
- *
- * <h2>Authentication Manager Usage</h2>
- *
- * The Authentication Manager Interface enables an application to request a user to reauthenticate.
- * When called a user will be prompted to authenticate using whatever authentication 
- * method is specified by policy. For example, biometrics or security password. If the policy doesn't
- * require a password, then a prompt will be displayed with an 'Authorize' button for the user to acknowledge.
- *
- * There are two scenarios for using the interface.
- * 
- * <b>Authorize an action</b>
- *
- * Before permitting a destructive or sensitive action, it may be necessary to confirm such a request is 
- * being initiated by an authorized user of the application. For example, during a request 
- * to delete all documents or share a file with an external recipient the application may want to first 
- * prompt the user to enter their security password. Alternatively, if a user is taking an action on a 
- * different device or website, it may be necessary to confirm the authenticity of the request by prompting
- * the user to authorize the action on their BlackBerry Dynamics application, essentially a two-factor
- * authentication (2FA). In this scenario the user is able to cancel the request and continue using the 
- * application.
- *
- * <b>Force reauthentication</b>
- *
- * The application may want to trigger the runtime state to become locked, perhaps due to a threat which 
- * has been detected or an anomaly in user behaviour. To continue using the application the user must authenticate.
- *
- * <h3>Programming Interface and Notifications</h3>
- * To notify the application, the runtime posts an <tt>NSNotification</tt>.
- *
- * <h2>Code Snippets</h2> The following code snippets illustrate some common tasks.
- * <h3>Request reauthentication</h3>
- * \code
- *
- * NSNotificationCenter * __weak center = [NSNotificationCenter defaultCenter];
- * id __block observerToken = [center addObserverForName:GDReAuthenticationResultNotification
- *                                                object:nil
- *                                                 queue:[NSOperationQueue mainQueue]
- *                                            usingBlock:^(NSNotification *notification) {
- *
- *                                               NSLog(@"Received the reauthentication notification!");
- *
- *                                               NSString *receivedToken = [GDAuthenticationManager getReauthenticationToken:notification];
- *                                               GDReAuthResult result = [GDAuthenticationManager getReauthenticationResult:notification];
- *                                               GDReAuthType type = [GDAuthenticationManager getReauthenticationType:notification];
- *
- *                                               if (result == GDReAuthResultSuccess)
- *                                               {
- *                                                   NSLog(@"Reauthentication successful, proceed doing your work.");
- *                                                   // do some user action
- *                                               }
- *                                               else
- *                                               {
- *                                                   NSLog(@"Reauthentication Rejected");
- *                                               }
- *
- *                                               [center removeObserver:observerToken];
- *                               }];
- *
- * NSString *token = [GDAuthenticationManager reauthenticate:@"Title" message:@"Message" timeoutInSeconds:20 gracePeriodInSeconds:120 enforce:YES requirePassword:YES];
- * \endcode
- *
+/*!
+ * \class GDAuthenticationManager GDAuthenticationManager.h <BlackBerryDynamics/GD/GDAuthenticationManager.h>
+ * \copydetails ssAuthenticationManager
  */
 
 @interface GDAuthenticationManager : NSObject

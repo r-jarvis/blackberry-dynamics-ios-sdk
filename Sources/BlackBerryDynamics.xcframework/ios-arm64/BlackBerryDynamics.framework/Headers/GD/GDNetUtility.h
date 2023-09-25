@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #ifndef ios_GDNetUtility_h
@@ -107,7 +107,9 @@ typedef NS_ENUM(NSInteger, GDNslookupErr)
 typedef void (^GDNslookupCompletion)(NSDictionary *response, NSError *error);
 
 
-/** BlackBerry Dynamics proxy infrastructure network utilities.
+/*!
+ * \class GDNetUtility GDNetUtility.h <BlackBerryDynamics/GD/GDNetUtility.h>
+ * \brief BlackBerry Dynamics proxy infrastructure network utilities.
  * 
  * This class contains the programming interface for a network utility provided
  * by the BlackBerry Dynamics proxy infrastructure.

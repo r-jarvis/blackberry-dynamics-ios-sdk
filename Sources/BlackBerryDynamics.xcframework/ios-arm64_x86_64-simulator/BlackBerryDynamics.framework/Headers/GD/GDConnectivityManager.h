@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -7,7 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
-/** BlackBerry Dynamics infrastructure connection management.
+/*!
+ * \class GDConnectivityManager GDConnectivityManager.h <BlackBerryDynamics/GD/GDConnectivityManager.h>
+ * \brief BlackBerry Dynamics infrastructure connection management.
  * 
  * \copydetails ssGDConnectionManagement
  */

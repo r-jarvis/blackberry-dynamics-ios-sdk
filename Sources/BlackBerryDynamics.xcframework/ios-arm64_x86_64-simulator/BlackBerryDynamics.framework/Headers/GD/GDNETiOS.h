@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -42,7 +42,9 @@ typedef NS_ENUM(NSInteger, GDSocketErrorType)
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** Delegate for handling GDSocket state transitions and received data.
+/*!
+ * \protocol GDSocketDelegate GDNETiOS.h <BlackBerryDynamics/GD/GDNETiOS.h>
+ * \brief Delegate for handling GDSocket state transitions and received data.
  * 
  * Errors and state changes that occur when using GDSocket are handled by
  * creating a class that implements this protocol. The callback for handling
@@ -108,7 +110,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-/** Buffer for accessing GDSocket and GDHttpRequest data.
+/*!
+ * \class GDDirectByteBuffer GDNETiOS.h <BlackBerryDynamics/GD/GDNETiOS.h>
+ * \brief Buffer for accessing GDSocket and GDHttpRequest data.
  * 
  * The BlackBerry Dynamics direct byte buffer interface is used to access
  * a number of in-memory byte buffers within the BlackBerry Dynamics secure
@@ -266,7 +270,9 @@ NS_ASSUME_NONNULL_BEGIN
  * @see GDSocket
  */
 
-/** TCP socket, supporting SSL/TLS and communication across the firewall.
+/*!
+ * \class GDSocket GDNETiOS.h <BlackBerryDynamics/GD/GDNETiOS.h>
+ * \brief TCP socket, supporting SSL/TLS and communication across the firewall.
  * 
  * \copydetails ssGDSocket
  */

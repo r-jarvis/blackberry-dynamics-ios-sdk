@@ -1,5 +1,5 @@
 /*
- * (c) 2019 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -80,7 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/**
+/*!
+ * \class GDAuthenticationManager GDAuthenticationManager.h <BlackBerryDynamics/GD/GDAuthenticationManager.h>
  * \copydetails ssAuthenticationManager
  */
 

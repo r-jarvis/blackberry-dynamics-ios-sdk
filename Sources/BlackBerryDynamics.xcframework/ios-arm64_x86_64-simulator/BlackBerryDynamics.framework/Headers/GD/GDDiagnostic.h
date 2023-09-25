@@ -1,12 +1,14 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
 #ifndef GDDiagnostic_h
 #define GDDiagnostic_h
 
-/** BlackBerry Dynamics diagnostic checks and information.
+/*!
+ * \class GDDiagnostic GDDiagnostic.h <BlackBerryDynamics/GD/GDDiagnostic.h>
+ * \brief BlackBerry Dynamics diagnostic checks and information.
  *
  * \copydetails ssGDDiagnostic
  */

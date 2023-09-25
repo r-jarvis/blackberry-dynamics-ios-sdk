@@ -1,5 +1,5 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  */
 
 #import <Foundation/Foundation.h>
@@ -63,70 +63,11 @@ extern NSString * const GDLogUploadNotification;
  */
 extern const NSTimeInterval GDLogManagerDetailedMaximumDuration;
 
-/** BlackBerry Dynamics log manager.
+/*!
+ * \class GDLogManager GDLogManager.h <BlackBerryDynamics/GD/GDLogManager.h>
+ * \brief BlackBerry Dynamics log manager.
  *
- * This class contains a number of programming interfaces for managing
- * BlackBerry Dynamics activity logs.
- *
- * The BlackBerry Dynamics runtime logs its activity to files in the secure
- * store on the device. The application can use the programming interface in
- * this class to:
- * - Initiate upload of activity log files to a central server.
- * - Show a BlackBerry Dynamics user interface for monitoring the upload
- *   process.
- * - Implement a custom user interface for monitoring the upload process.
- * - Switch on detailed logging, if allowed by enterprise policies.
- * .
- *
- * <h2>Notifications for user interface update</h2>
- * In the case that the application implements a custom user interface, it can
- * be notified of progress by the BlackBerry Dynamics runtime. A notification
- * will be dispatched by the runtime when there is any change to the upload
- * state, or to the amount of data uploaded. For example, a notification would
- * be dispatched when:
- * - Log upload has finished.
- * - The number of bytes sent so far has increased.
- * .
- *
- * When a notification is received, the application code could determine the new
- * status and then update the user interface accordingly, for example:
- * - Update a progress bar to reflect the new number of bytes sent.
- * - Show or hide an option for the end user to cancel upload, based on
- *   whether there is an upload in progress.
- * .
- *
- * The following mechanisms are supported for notifications.
- * - Key-value observing (KVO).
- * - The <tt>NSNotificationCenter</tt> programming interface.
- * .
- * To use KVO, observe the properties of the GDLogManager interface object,
- * which is a singleton. The properties to observe are:
- * - GDLogManager.uploadState
- * - GDLogManager.uploadBytesSent
- * - GDLogManager.uploadBytesTotal
- * .
- * To use <tt>NSNotificationCenter</tt>:
- * - Set the notification name to the \ref GDLogUploadNotification value.
- * - Set the notification object to the \ref GDLogManager object, obtained by
- *     <tt>[G<tt></tt>DLogManager sharedInstance]</tt>.
- * - The posted notifications won't have a <tt>userInfo</tt> dictionary.
- * .
- *
- * @see <a
-      HREF="https://developer.apple.com/reference/foundation/nsnotificationcenter"
-      target="_blank">NSNotificationCenter class reference</a> in the Apple API
-      Reference on the apple.com developer website.
- * @see <a
-      HREF="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html"
-      target="_blank">Key-Value Observing Programming Guide</a> on the apple.com
-      developer website.
- *
- * Implementation of an observer of log upload notifications is only required if
- * the application has its own monitoring user interface. It should be easier to
- * display the built-in monitoring user interface, by calling the
- * GDLogManager.openLogUploadUI: function.
- * 
- * @see \ref logging.
+ * \copydetails ssGDLogManager
  */
 @interface GDLogManager : NSObject
 

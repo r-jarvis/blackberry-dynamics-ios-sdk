@@ -1,30 +1,16 @@
 /*
- * (c) 2017 BlackBerry Limited. All rights reserved.
+ * Copyright 2023 BlackBerry Limited. All rights reserved.
  *
  */
 
 #ifndef GDDiagnostic_h
 #define GDDiagnostic_h
 
-/** BlackBerry Dynamics diagnostic checks and information.
+/*!
+ * \class GDDiagnostic GDDiagnostic.h <BlackBerryDynamics/GD/GDDiagnostic.h>
+ * \brief BlackBerry Dynamics diagnostic checks and information.
  *
- * This class contains a number of programming interfaces for running
- * checks and retrieving information for diagnostic purposes.
- *
- * Use the application programming interface (API) of this class if the
- * application encounters an error that might involve the BlackBerry Dynamics
- * infrastructure or configuration in some way. The API includes functions
- * to:
- * - Check that an application server can be reached by BlackBerry Dynamics
- *   secure communication.
- * - Check that the enterprise BlackBerry Dynamics management console can be
- *   reached.
- * - Retrieve current application configuration settings.
- * .
- *
- * The return values are generally structured text that is intended to be logged
- * by the application and then made available to technical support staff. The
- * structure and content aren't documented.
+ * \copydetails ssGDDiagnostic
  */
 @interface GDDiagnostic : NSObject
 
