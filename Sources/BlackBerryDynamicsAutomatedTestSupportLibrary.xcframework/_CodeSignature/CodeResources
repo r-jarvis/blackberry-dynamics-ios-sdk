@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Info.plist</key>
 		<data>
-		mKIbp8uZgZfoX+2X0wH2OKArjgc=
+		h/gsfaDpGuTlhjS3jAbe/u4D/eA=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Info.plist</key>
 		<data>
-		QocurqHLiiYtnQijpVPsZ0G4avc=
+		uWT1hywPsTjo/mMnO3XDAqRuvKQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
 		<data>
@@ -487,11 +487,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mKIbp8uZgZfoX+2X0wH2OKArjgc=
+			h/gsfaDpGuTlhjS3jAbe/u4D/eA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VzyOC1384cBhz3e7XSk8tZbLxXJraKRhfB08R8Tk2tY=
+			BbPmkw49teQ69VZTvk0zOM/vvRgfv4ZXFx0rHhuOzyw=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
@@ -773,11 +773,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QocurqHLiiYtnQijpVPsZ0G4avc=
+			uWT1hywPsTjo/mMnO3XDAqRuvKQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			N0ZhbF99SYULlwsesbzyurvpIVtKrKKrooIoLWHUYds=
+			TKefhudmUffTHMrB/TrnkJ7V44pbK9TWqWJD/9Gnjo0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
