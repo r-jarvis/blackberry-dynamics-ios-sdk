@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamics</key>
 		<data>
-		LkGWRXVl8FdMy/bXkwyFYVSRQ+M=
+		6s4c9Klo7wLwQ04oz4oYvPp/sk4=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
 		<data>
@@ -1015,7 +1015,7 @@
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/Info.plist</key>
 		<data>
-		oKhm9Fts1AQg7EtIw0oReXD1Ljc=
+		0JOP19Tv9krL0seDIKHQmbIQFd8=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/Modules/module.modulemap</key>
 		<data>
@@ -1023,7 +1023,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamics</key>
 		<data>
-		GhlmQlyKxOXkmSNQRKNBc1kXppM=
+		+TJYfpcwE0NTusw7tDyANGUwfpk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
 		<data>
@@ -2032,7 +2032,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Info.plist</key>
 		<data>
-		tCdrkApJ/w1P9DGG9nYCpGy64JY=
+		Z7f+/KWLDg2IYIyDYP7C6C43d2k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Modules/module.modulemap</key>
 		<data>
@@ -2040,11 +2040,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/_CodeSignature/CodeResources</key>
 		<data>
-		6SBzTWVGaE3si3IV+5q+WNxq+Ys=
+		ci/FTPp58seIqqcJzYGuMXUmVMY=
 		</data>
 		<key>watchos-arm64_arm64_32/BBDynamicsWatch.framework/BBDynamicsWatch</key>
 		<data>
-		pB+St8/ipHQcNBySEHQ2jlhHWWk=
+		Ol76KhzJdCfn7q1qs76f13ZoasQ=
 		</data>
 		<key>watchos-arm64_arm64_32/BBDynamicsWatch.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
 		<data>
@@ -2785,7 +2785,7 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BBDynamicsWatch.framework/BBDynamicsWatch</key>
 		<data>
-		t0CsRobXFSstbOSneZE5YG+J8iI=
+		+BtXocbN1EdmjLh/bYuO95FIqOM=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BBDynamicsWatch.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
 		<data>
@@ -3535,11 +3535,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LkGWRXVl8FdMy/bXkwyFYVSRQ+M=
+			6s4c9Klo7wLwQ04oz4oYvPp/sk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			17NI+1KC924nNQnnFLbFivlBVQnkVHMFK1x0RkD/XP0=
+			zhqcmdvuYly0buSbAeeND3Sukn/hEGcsJck/pNbonlY=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
@@ -6167,11 +6167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oKhm9Fts1AQg7EtIw0oReXD1Ljc=
+			0JOP19Tv9krL0seDIKHQmbIQFd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TMNkWSHw3Yw7X+bstX5xVNUTTY6wZ4gx4vNTavaF0xE=
+			jrXf20Agxma1s11G5Y5Ljv2eet16TwZXTpvnj4x6Nls=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/Modules/module.modulemap</key>
@@ -6189,11 +6189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GhlmQlyKxOXkmSNQRKNBc1kXppM=
+			+TJYfpcwE0NTusw7tDyANGUwfpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			cpZ5vR3+/zqtgeJUyEc1VQ0naGRu23pmXHMI6JQYtGE=
+			PQ7M6wpeq4Q2NtBJVikGqD9vdoiz9MAB53wfLSuiW1k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
@@ -8821,11 +8821,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tCdrkApJ/w1P9DGG9nYCpGy64JY=
+			Z7f+/KWLDg2IYIyDYP7C6C43d2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			DrRDcLyJ1DKbQena6B4gZaJu4dfF1dsq/uaI48JYf6U=
+			yBt3zBs5aQCJjYg/8zNH0+vSHz+W36u8NHa4p2pL6Q0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Modules/module.modulemap</key>
@@ -8843,22 +8843,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6SBzTWVGaE3si3IV+5q+WNxq+Ys=
+			ci/FTPp58seIqqcJzYGuMXUmVMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			RPmldEUlsSiVIDvT3NqHG4YhlXn/6Z+qAIZEQ3N42bc=
+			KBDkupQsY3yYluh+D5Oa525H2IJ3sT1+Xjxg+mQRH+Y=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/BBDynamicsWatch.framework/BBDynamicsWatch</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pB+St8/ipHQcNBySEHQ2jlhHWWk=
+			Ol76KhzJdCfn7q1qs76f13ZoasQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			dKaUp6xbECA9w/rX3gMnw++ac12wDtbtaJRXu4BQTCE=
+			5AJY6Jm2PKKoyDSW7Nxk1SWliC1l4fren1QbXi/ZLIw=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/BBDynamicsWatch.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
@@ -10739,11 +10739,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t0CsRobXFSstbOSneZE5YG+J8iI=
+			+BtXocbN1EdmjLh/bYuO95FIqOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zSo+A0vKPAHGVAmvSAJfYAxdQquZsW4a/fwpgq3MGvM=
+			KTqCap/8ojFKMjx7fqMpb3UxNg3+aLIU42jgZGYXsgg=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/BBDynamicsWatch.framework/GDAssets.bundle/CMScene.storyboardc/BlQ-K5-qgy-view-cjm-M9-Seo.nib</key>
