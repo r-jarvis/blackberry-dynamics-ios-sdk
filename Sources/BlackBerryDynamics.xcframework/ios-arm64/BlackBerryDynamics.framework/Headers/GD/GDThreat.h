@@ -92,7 +92,7 @@ typedef NS_ENUM(NSInteger, BBDThreatType)
 * accumulated knowledge from threat intelligence feeds to provide an assessment of the safety of the URL. Use GD.SafeUrl::checkUrl to 
 * check specific URLs or IPs.
 *
-* Requires Mobile Threat Defense (MTD) to be enabled. 
+* Requires BlackBerry Mobile Threat Defense (MTD) to be enabled. 
     */
     SafeBrowsing = 4,
 
@@ -105,24 +105,6 @@ typedef NS_ENUM(NSInteger, BBDThreatType)
 * Requires BlackBerry Mobile Threat Defense (MTD) to be enabled.
     */
     SafeMessaging = 5,
-
-    /**
-    * Determine a user’s security risk level based on their real-world context.
-    *
-    * Determine a user’s security risk level based on their real-world context. Utilizes events and location data and scores these 
-* against geozones set by an administrator. 
-*
-* Requires BlackBerry Persona to be enabled.
-    */
-    GeoZone = 6,
-
-    /**
-    * Determine whether current application activity matches the behavior and identity of the authorized user.
-    *
-    * Determine a user’s security risk level based on behavior and usage analysis. Requires BlackBerry 
-Persona to be enabled.
-    */
-    Identity = 7,
     
     /**
     * Detect when the application's integrity is at risk or the app requires updating.
@@ -141,7 +123,7 @@ Persona to be enabled.
 * application developer. If a developer has been trusted this threat will be detected, as apps not from an official 
 * app store pose a security risk. 
 *
-* Requires BlackBerry "Mobile Threat Defense" to be enabled.
+* Requires BlackBerry Mobile Threat Defense (MTD) to be enabled.
     */
     UntrustedDeveloper = 9,
 

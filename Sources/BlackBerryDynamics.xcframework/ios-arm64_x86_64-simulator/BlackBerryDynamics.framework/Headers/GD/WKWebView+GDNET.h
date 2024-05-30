@@ -35,6 +35,15 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (strong, nullable) NSURLCredential* proxyCredentials;
 
+/** Use default cookie handling within <tt>WKWebView</tt> instance.
+*
+* @param HTTPShouldHandleCookies <tt>BOOL</tt> A Boolean value that indicates whether the <tt>WKWebView</tt>
+* instance should use the default cookie handling when making requests.
+* \ss_true if the request should use the default cookie handling or \ss_false otherwise.
+* The default is \ss_true which means cookies are sent from and stored to the <tt>WKWebView</tt> instance.
+*/
+@property (nonatomic, assign) BOOL HTTPShouldHandleCookies;
+
 @end
 
 NS_ASSUME_NONNULL_END

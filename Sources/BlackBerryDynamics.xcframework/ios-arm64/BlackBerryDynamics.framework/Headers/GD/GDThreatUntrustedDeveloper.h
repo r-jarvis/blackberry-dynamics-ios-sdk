@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 * application developer. If a developer has been trusted this threat will be detected, as apps not from an official 
 * app store pose a security risk. 
 *
-* Requires BlackBerry "Mobile Threat Defense" to be enabled.
+* Requires BlackBerry Mobile Threat Defense (MTD) to be enabled.
 */
 @interface BBDThreatUntrustedDeveloper : BBDThreat
 

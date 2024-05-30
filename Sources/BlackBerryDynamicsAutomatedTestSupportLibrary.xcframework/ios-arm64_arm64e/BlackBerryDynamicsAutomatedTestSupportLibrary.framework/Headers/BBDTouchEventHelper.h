@@ -271,4 +271,14 @@
  */
 + (BOOL)hideKeyboard:(BBDUITestCaseRef *)testCaseRef;
 
+/**
+ * Press button "Go" in keyboard dealing with the "Swipe" hint if present
+ */
++ (void)tapEnterButton:(BBDUITestCaseRef *)testCaseRef;
+
+/**
+ * Finds the keyboard hint about swipe and dismisses it if found
+ */
++ (void)dismissKeyboardHint:(BBDUITestCaseRef *)testCaseRef;
+
 @end

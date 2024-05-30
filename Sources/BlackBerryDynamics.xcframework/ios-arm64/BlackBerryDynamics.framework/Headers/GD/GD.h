@@ -46,11 +46,10 @@
 #import <BlackBerryDynamics/GD/GDThreatDeviceOffline.h>
 #import <BlackBerryDynamics/GD/GDThreatDeviceSecurity.h>
 #import <BlackBerryDynamics/GD/GDThreatDeviceSoftware.h>
-#import <BlackBerryDynamics/GD/GDThreatGeoZone.h>
-#import <BlackBerryDynamics/GD/GDThreatIdentity.h>
 #import <BlackBerryDynamics/GD/GDThreatNetworkSecurity.h>
 #import <BlackBerryDynamics/GD/GDThreatStatus.h>
 #import <BlackBerryDynamics/GD/GDThreatUntrustedDeveloper.h>
+#import <BlackBerryDynamics/GD/GDThreatWiFiSecurity.h>
 #import <BlackBerryDynamics/GD/GDURLLoadingSystem.h>
 #import <BlackBerryDynamics/GD/GDUtility.h>
 #import <BlackBerryDynamics/GD/GDVersion.h>
