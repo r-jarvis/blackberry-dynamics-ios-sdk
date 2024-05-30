@@ -372,7 +372,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ELv43kjm8yugKZOw5xxa/PJxyGs=
+			GEw+WvjxFJgVZ+sIETmvkk1eny0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -393,7 +393,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1VeY2CKnKv4ZXkkzx9E2IzRo0Ww=
+			p0NbTYi2UgmtCKva2lnF3eP2aOM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -402,7 +402,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZH4S6mXjj3r72clCJeHmCKbB1FQ=
+			NcxwreEK4JogMH7nxfLRVu/Y78o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -411,7 +411,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0vKZq/iepbm8FC3Okz3S9oOg/GE=
+			B268IIeT5IIpxmGdZrgJ/TPBbjk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -420,7 +420,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bXBQTckiax4YXVYBidiDPYwGe6I=
+			Ht3KJF0BU3OJt/geddWBuC+qJxs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -549,7 +549,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aQJieul78k8XI9VZXKFV5Y+EYEs=
+			Als1QZi03JtjVchibB8P3h/BrJM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -558,7 +558,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uUvpIuc7kCiEN7LP7qBFs8J0Cj8=
+			bR2g7Y+C9DVRKPEVX95GF8vNMuU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -567,7 +567,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FAA9JsD8i6qMloeZJxm7nzl7ZTw=
+			5+s9v6oEHeIgM01dyBeGO7MAsQ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -600,7 +600,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cuuwE3ZIjQtN0QbDGbCPCnhwvGQ=
+			oKeJbGQTZnBGMdSllWcqmvaEdTc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -621,7 +621,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b3ky81MmOkMSY80PABmiDjKwk10=
+			amTHxfzQe3pmaqXgYBCGP2DHq1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -630,7 +630,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GQyR0Y+LUytYxbvQjuzBgwOg0K4=
+			mYpSQhAMawJwGlRNsph8xV7KhHM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -711,7 +711,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O3E7Hf739TCaqai6ElCUYU0+lzQ=
+			7WhK/r8nfATR/EiUbEpbenx1ESw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -720,18 +720,18 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			99WlGYr8rQdtMTBaIMsyr40ZK9o=
+			eLqX0V6r19g/QGRoPqciutOyIus=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Headers/GD/BAFBlackberryAnalytics.h</key>
 		<data>
-		9Q2prOXwDiZzQT2am1pB9H5BBWg=
+		sb1XqYpIiXW2P2goxCQgrpYcVQs=
 		</data>
 		<key>Headers/GD/GD.h</key>
 		<data>
-		fiElXyFLDNwtWpjH3CbfpfrPjPY=
+		Qs0RdgV0PDMrgquu/V8r3kdz//w=
 		</data>
 		<key>Headers/GD/GDAppConfig.h</key>
 		<data>
@@ -883,7 +883,7 @@
 		</data>
 		<key>Headers/GD/GDThreat.h</key>
 		<data>
-		IoYFG02iTt2NgI1dVSI24jena4I=
+		5n5i0Qx4ePlFVlM7eHKzaEv10V0=
 		</data>
 		<key>Headers/GD/GDThreatApplicationSecurity.h</key>
 		<data>
@@ -901,14 +901,6 @@
 		<data>
 		Jztpnb6Z6vAPpPBt1OFHG5K1cEk=
 		</data>
-		<key>Headers/GD/GDThreatGeoZone.h</key>
-		<data>
-		eFmTv4wV0u4YQle1tRISYh41/zc=
-		</data>
-		<key>Headers/GD/GDThreatIdentity.h</key>
-		<data>
-		IiObd0Fk4sVgJDJ1Nk1crOAVuqk=
-		</data>
 		<key>Headers/GD/GDThreatNetworkSecurity.h</key>
 		<data>
 		04DDsPhKLxAenftvdb8Qq7d+zQo=
@@ -920,6 +912,10 @@
 		<key>Headers/GD/GDThreatUntrustedDeveloper.h</key>
 		<data>
 		Pp8JHQxgVmKmLyAmQlSlLgLp8oM=
+		</data>
+		<key>Headers/GD/GDThreatWiFiSecurity.h</key>
+		<data>
+		8MB/5XAuDIGODaIbi3FeOhBBS6w=
 		</data>
 		<key>Headers/GD/GDURLLoadingSystem.h</key>
 		<data>
@@ -947,7 +943,7 @@
 		</data>
 		<key>Headers/GD/WKWebView+GDNET.h</key>
 		<data>
-		DJup0zdwU+sHLJt2dsMs8Y4n5Cg=
+		HG3SOD5xBIP11vGM6QEvEqufU0k=
 		</data>
 		<key>Headers/GD_C/GD_C.h</key>
 		<data>
@@ -1011,11 +1007,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Z7f+/KWLDg2IYIyDYP7C6C43d2k=
+		Y3B51HYyWL2IvS9pzpIHyuXYkG8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ZAN8lohwiDuS39liDH8/Qr0B+lk=
+		BNttf/6MZy2ca2wTRqWSezPystU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		zJCvnSVK6JQQvyw+aaU8beDul6E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1661,7 +1661,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qdRGM5EcpUIVZPJwVwltNpR4DrWC1XgqfurgLStEGB8=
+			jZAzl5f4jFKJm/Wa95gbDzXt4+mAdBJ8fmPqByx2LRo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1691,7 +1691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N7pPd44I4HaGTXa98zllfkB7fg6VBm9FthRmM1ox+bY=
+			ptZkFvhLZHj/UnsTgJD98rkycE8vIdW7kC6EgfmVsVE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1700,7 +1700,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BCkNr3xs7aGh37+ie5xIExHbqpZqQixH3/L0t2mfshQ=
+			MDL/Ae4JXs+C6EqWeB7HXXsDZoE08ISv8ID/lq00Q/g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1709,7 +1709,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Turkh0n44g6llCS0tbiH4mNXfgEvDOd1mjuQ61ksc4s=
+			NKgJLTRxvf0SVZQ2/S1t9bAMcOJ/yJWfIZ7Qk3Qfjcg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1718,7 +1718,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pcL4u3JLLHR4Qu7sYzvaDgQUnaP5P5c2Z/3LYTF8lL8=
+			AjAZTTIM+JjjCAuDjYzo/XipY5/D0Th9lcKgxn8Wn20=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1937,7 +1937,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C77q5yBdEMu6ubX/OkOaUbyaDwIeD7RZdFYRTOIVS0U=
+			IMRnMijwaw4O/6RhvhBKsgPXCuq/1+6nfDf3c/47H+s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1946,7 +1946,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WtStOeIMKlslQb39R8Qz1wj2fr3ClHk+ehNLbAJNXks=
+			PGiUWSmh1K3Jm0C0aS27/fsBfj9E20yiX1MwyVgGtbY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1955,7 +1955,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tr26hNm+VlYihVnkn9WkvFyZ0NI+p0h9MIgS61+g6II=
+			Em6LusDazK3EhcyBdejVrJjXjg/IgnyxmXW7F8I5hXE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2006,7 +2006,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T5XqpZpLHl/sdn6xcKXpQvv7M6+7k4tV2Asz8Q76dGg=
+			PPvMPKV2ppqip8ErN2ItM/YcDYVso+NoohEXch+zq8E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2036,7 +2036,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S2qUXDlZvQy4p2Ma/puMhAXgxOrhg2iGvwXYA03QsXc=
+			vBE81gJV6b6w39x0LB+XvL72NcyNUH4prir+9x99Qbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2045,7 +2045,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k8JIoa2LtJQ/nGmayEGNYsjW6MD/cq+XHXqSvsLaYLU=
+			hCSdq9PrSap/YKWioc8/E+pCxAgRPMGVJPMpUNXVj2c=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2180,7 +2180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PRDunRvGUDw9FBNv6vTlPEfe6I/iiQaMetGCSYbUGrc=
+			8pKHmANoBAQPubXxAgvSRnsZeSY6rgXgwH/cBjcXJ+g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2189,7 +2189,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			unRCM48dt9u8vuEPLINqGbk9nk7S5DLscLXLzWDv0BA=
+			WbtEkZlI1jbaI/nt4iFkDt/DzXmxfcF46QrWOIZMt+I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2203,14 +2203,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKQgEJbisa2vUtrucSeDN63JdPGwQBWU0cqYWkahsWA=
+			DvYysLsmIYe4/b74ZX5ixXTZ4x3HLChlt8MXcQAJkik=
 			</data>
 		</dict>
 		<key>Headers/GD/GD.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+BBgzB1xZCPged/AAq4TeSYizL24yZ0qONdYXOfI6YQ=
+			nU03WA0utg2+Ldz4V65O+G7r7IiBQ+/yV8fWu7/2Z+0=
 			</data>
 		</dict>
 		<key>Headers/GD/GDAppConfig.h</key>
@@ -2476,7 +2476,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BDz1XpYenpQ5IFvXOJl/9CE2L4DjN1f+VvdW8KNym9I=
+			OcjmXnqci0RbQLxR1DRpEW2V6c0m5Rxjk+0tdS7YmpY=
 			</data>
 		</dict>
 		<key>Headers/GD/GDThreatApplicationSecurity.h</key>
@@ -2507,20 +2507,6 @@
 			n1AXiOXQknKvD6fS9YIse7buu14l3A4xwJoime6BdWM=
 			</data>
 		</dict>
-		<key>Headers/GD/GDThreatGeoZone.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+pS4fxzFSgY2BaX9EiGFDfHCj4ORjtkkMgYDVGPrL/A=
-			</data>
-		</dict>
-		<key>Headers/GD/GDThreatIdentity.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WXw1sgMGIGeO+FyNFrCSNlZ33cZMEzafUD2Mat+K6lk=
-			</data>
-		</dict>
 		<key>Headers/GD/GDThreatNetworkSecurity.h</key>
 		<dict>
 			<key>hash2</key>
@@ -2540,6 +2526,13 @@
 			<key>hash2</key>
 			<data>
 			7JT32WbkRglIq6yZ9Fuv1B/sbyNYAH1oR4HnaSaSXhk=
+			</data>
+		</dict>
+		<key>Headers/GD/GDThreatWiFiSecurity.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rb2phkBE0Gd9YW8cjAZ0qEdX9prZ8UQ+h87RwvfHem8=
 			</data>
 		</dict>
 		<key>Headers/GD/GDURLLoadingSystem.h</key>
@@ -2588,7 +2581,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r8sptBeqLMYRoHhUEN3oxpZGOO9w6bYFWjXxJelChGA=
+			sIC+DjEdHsMiOfBy+nIsBiWTtehKVHPNAPXkUeh7xNc=
 			</data>
 		</dict>
 		<key>Headers/GD_C.h</key>
@@ -2705,7 +2698,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T1ICo4aTd7q7NQmtbAAYzR1Tyq92h0zjUlrkBBOvQ54=
+			M01cGDrGYa2608y4MIVb0J0S2vp33kLpU2ZWb1C8pWY=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y9a6a2QaKZvcTPLkun8BiEddraQ9vVY6NMYOsh9y2Hg=
 			</data>
 		</dict>
 	</dict>

@@ -86,20 +86,6 @@ typedef NS_ENUM(NSInteger, BBDThreatType)
     * \copydetails ssThreatStatusSafeMessaging
     */
     SafeMessaging = 5,
-
-    /**
-    * Determine a user’s security risk level based on their real-world context.
-    *
-    * \copydetails ssThreatStatusGeoZone
-    */
-    GeoZone = 6,
-
-    /**
-    * Determine whether current application activity matches the behavior and identity of the authorized user.
-    *
-    * \copydetails ssThreatStatusIdentity
-    */
-    Identity = 7,
     
     /**
     * Detect when the application's integrity is at risk or the app requires updating.

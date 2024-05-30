@@ -1,0 +1,6 @@
+framework module BlackBerryDynamicsWatch {
+  umbrella header "BlackBerryDynamicsWatch.h"
+  export *
+
+  module * { export * }
+}

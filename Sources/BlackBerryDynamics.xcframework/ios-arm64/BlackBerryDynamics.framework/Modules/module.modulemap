@@ -35,8 +35,7 @@ framework module BlackBerryDynamics {
         header "GD/GDThreatDeviceSoftware.h"
         header "GD/GDThreatDeviceOffline.h"
         header "GD/GDThreatNetworkSecurity.h"
-        header "GD/GDThreatIdentity.h"
-        header "GD/GDThreatGeoZone.h"
+        header "GD/GDThreatWiFiSecurity.h"
         export *
     }
 
