@@ -1,6 +1,0 @@
-framework module BBDynamicsWatch {
-  umbrella header "BBDynamicsWatch.h"
-  export *
-
-  module * { export * }
-}
