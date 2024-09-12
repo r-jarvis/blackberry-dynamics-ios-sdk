@@ -6,20 +6,6 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>BlackBerryDynamics.framework/BlackBerryDynamics</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>BlackBerryDynamics.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
 			<string>BlackBerryDynamicsWatch.framework/BlackBerryDynamicsWatch</string>
 			<key>LibraryIdentifier</key>
 			<string>watchos-arm64_x86_64-simulator</string>
@@ -37,21 +23,6 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>BlackBerryDynamicsWatch.framework/BlackBerryDynamicsWatch</string>
-			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_arm64_32</string>
-			<key>LibraryPath</key>
-			<string>BlackBerryDynamicsWatch.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>arm64_32</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>watchos</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
 			<string>BlackBerryDynamics.framework/BlackBerryDynamics</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
@@ -66,6 +37,35 @@
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>BlackBerryDynamics.framework/BlackBerryDynamics</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>BlackBerryDynamics.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>BlackBerryDynamicsWatch.framework/BlackBerryDynamicsWatch</string>
+			<key>LibraryIdentifier</key>
+			<string>watchos-arm64_arm64_32</string>
+			<key>LibraryPath</key>
+			<string>BlackBerryDynamicsWatch.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>arm64_32</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>watchos</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>
