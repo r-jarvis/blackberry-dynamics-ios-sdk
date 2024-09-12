@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/BlackBerryCerticom.framework/Info.plist</key>
 		<data>
-		CLf/kvz7WqxWnPM+5YDwgxZlscY=
+		5oT+g3jsW0cgPDUo7PUjrBWBJ3w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/BlackBerryCerticom</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/Info.plist</key>
 		<data>
-		GLWaGEt4JEhHsL/ny/QaYrfcqRs=
+		nyaaGr45LxGEOzfk92VRzzmgU5U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -42,11 +42,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CLf/kvz7WqxWnPM+5YDwgxZlscY=
+			5oT+g3jsW0cgPDUo7PUjrBWBJ3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			4mrfs020z+VacCTjti1LxAXnyEofk1OPyiLH7GCoLz8=
+			ymObdKOPS25koiti10/IGWnN+yRT/a3sE8+kjCJjHZA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/BlackBerryCerticom</key>
@@ -64,11 +64,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GLWaGEt4JEhHsL/ny/QaYrfcqRs=
+			nyaaGr45LxGEOzfk92VRzzmgU5U=
 			</data>
 			<key>hash2</key>
 			<data>
-			PTVzBl8CLVkMEhO8s/gKkVwHh15bR+xXtuLXrCZK0o4=
+			xC+4398HJ6LE9ri/WIgL6zbujDNgOYu/MH1XT+sdAK4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/_CodeSignature/CodeResources</key>
