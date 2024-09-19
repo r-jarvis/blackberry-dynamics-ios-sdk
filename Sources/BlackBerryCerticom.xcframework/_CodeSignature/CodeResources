@@ -6,23 +6,23 @@
 	<dict>
 		<key>ios-arm64/BlackBerryCerticom.framework/BlackBerryCerticom</key>
 		<data>
-		2rchMSq8oqxTrMyDFmLm8pjQAFM=
+		4dJCSle00nnbre3nfxsqdR8pqEg=
 		</data>
 		<key>ios-arm64/BlackBerryCerticom.framework/Info.plist</key>
 		<data>
-		5oT+g3jsW0cgPDUo7PUjrBWBJ3w=
+		z4ANR8fQLRaVRSnkDKvaq9cjpsw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/BlackBerryCerticom</key>
 		<data>
-		U0vFVl70n02eEk6g7g7f0sNM6l8=
+		Ty6Gpug5ePO5nAM4YGMjlhzzSEg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/Info.plist</key>
 		<data>
-		nyaaGr45LxGEOzfk92VRzzmgU5U=
+		it7olAbmB9raEUzizFiUaA/0p/I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/_CodeSignature/CodeResources</key>
 		<data>
-		wqj86qmzey/cAtroro4f7zFpNgM=
+		I0f0tISLwtzpsLWHHfhEQoGz1Ns=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -31,55 +31,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2rchMSq8oqxTrMyDFmLm8pjQAFM=
+			4dJCSle00nnbre3nfxsqdR8pqEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			iayXlLjRh/wKk/FKEuLXkst4fnsBDncK/9ochcftE9E=
+			Lum8VSCGW4HXgDwUHBZdjeEf2TSfJaX16IeSA8qOx8g=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryCerticom.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5oT+g3jsW0cgPDUo7PUjrBWBJ3w=
+			z4ANR8fQLRaVRSnkDKvaq9cjpsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ymObdKOPS25koiti10/IGWnN+yRT/a3sE8+kjCJjHZA=
+			+4iNhhiDB7YvpxhHWsA/lgdgGFT/aSZ8f+PENhBxQbk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/BlackBerryCerticom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U0vFVl70n02eEk6g7g7f0sNM6l8=
+			Ty6Gpug5ePO5nAM4YGMjlhzzSEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			LhFNTUgVxuKrZuZ7QTNSQN1JQrFS5kY4IE+BObolKKk=
+			b0jeoEfEiMp+8czTnGvQXOr4yiG4mQcxVPuVdt8onE0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nyaaGr45LxGEOzfk92VRzzmgU5U=
+			it7olAbmB9raEUzizFiUaA/0p/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			xC+4398HJ6LE9ri/WIgL6zbujDNgOYu/MH1XT+sdAK4=
+			e1QRhOUYO3IYlf2NLA1oO6aY8ezhDpbCweEk937bJ1E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryCerticom.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wqj86qmzey/cAtroro4f7zFpNgM=
+			I0f0tISLwtzpsLWHHfhEQoGz1Ns=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ys46c3BLnf/rVAQcnLK5+y6XrDSKrSPP08qFAN3RaWo=
+			UrQVPXIxLawK0tKR3G6uXzYV4cmQD9B97Ok0jZizWwA=
 			</data>
 		</dict>
 	</dict>

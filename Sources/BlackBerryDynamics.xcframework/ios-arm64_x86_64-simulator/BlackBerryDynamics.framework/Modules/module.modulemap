@@ -112,6 +112,14 @@ framework module BlackBerryDynamics {
         export *
     }
     
+    explicit module Launcher {
+        requires objc
+        header "GD/GTLauncherViewController.h"
+        header "GD/GTLauncherSettingsViewController.h"
+        header "GD/GTLCommonSettingsCellConfiguration.h"
+        export *
+    }
+    
 }
 
 framework module GD_C {

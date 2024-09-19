@@ -108,6 +108,17 @@
 + (BOOL)setContainerPassword:(NSString *)password forTestCaseRef:(BBDUITestCaseRef *)testCaseRef;
 
 /**
+ * Method which dismisses the coachmark screen shown by the launcher at the first launch.
+ *
+ * @param testCaseRef
+ * instance of BBDUITestCaseRef class
+ * which properties should have references to XCUIApplication and XCTestCase objects to be tested
+ *
+ * @return YES, if coachmark screen was successfully dismissed, otherwise NO.
+ */
++ (BOOL)dismissLauncherCoachmarkScreenForTestCaseRef:(BBDUITestCaseRef *)testCaseRef;
+
+/**
  * Method which inputs email using email and access key for activation screen.
  * Checks any alert presence during testing, interacts with textfield for input and buttons for next steps.
  *
@@ -231,7 +242,7 @@
  * Synchronously waits for unlock screen presence
  *
  * @param idleLockInteval
- * The amount of time within which idle lock is expected (exect value depends upon GC policy)
+ * The amount of time within which idle lock is expected (exect value depends upon UEM policy)
  *
  * @param testCaseRef
  * instance of BBDUITestCaseRef class
@@ -344,7 +355,7 @@
 + (BOOL)selectForgotPasswordType:(BBDProvisionData *)provisionData forTestCaseRef:(BBDUITestCaseRef *)testCaseRef;
 
 /**
- * Unlocks application which was previously locked by GC.
+ * Unlocks application which was previously locked by UEM.
  * Target application should be provisioned before.
  * Method uses BBDProvisionData instance for all needed information .
  *

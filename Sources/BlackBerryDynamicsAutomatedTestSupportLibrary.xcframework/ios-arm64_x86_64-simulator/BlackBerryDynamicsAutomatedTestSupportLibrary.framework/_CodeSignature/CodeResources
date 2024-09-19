@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/BBDAutomatedTestSupport.h</key>
 		<data>
-		VhZcNzeLJu6q+sBgHRThTyMc+F4=
+		9UZalkx8cWFP4wZHPP7w/G6O2DY=
 		</data>
 		<key>Headers/BBDConditionHelper.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Headers/BBDProvisionData.h</key>
 		<data>
-		kqL71H9hC3/yEyII6mBPCwD06Q4=
+		rAO87su6KYmDcyw0Wb5LI/mZ/mA=
 		</data>
 		<key>Headers/BBDPublicConstans.h</key>
 		<data>
-		MJPayqAJd6PwrqYoi/k59e7MRm8=
+		tQ63MXOdJ66jUgPPxkBtfR0OaLg=
 		</data>
 		<key>Headers/BBDTouchEventHelper.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Headers/BBDUIAccessibilityIdentifiers.h</key>
 		<data>
-		S9n2TO20qCghUgBTd7TKb+d3A2w=
+		QyG/Bo817bGyjW89vOJugcOjz6Y=
 		</data>
 		<key>Headers/BBDUITestAppLogic.h</key>
 		<data>
-		YbQ0Ipj87a/clYXppiT8A3/89j0=
+		Ko3xyPmv8ZHJVzBV+/2DJZNYBZc=
 		</data>
 		<key>Headers/BBDUITestCaseRef.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nH7BgQVdi5cAGWsTRCu3Cy/nO5M=
+		+AbtGjOLXxK520nbqEOUDaUNJDc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -132,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			plSv7mF/Dw4f/rPYzOwDcRTH1VxXRbdYAvgXBn+trUc=
+			wxJc64/zZxmCdZuyfKgofzw1LY5mEitzdPejj/gAOXw=
 			</data>
 		</dict>
 		<key>Headers/BBDConditionHelper.h</key>
@@ -167,14 +167,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zPddFoG6fDwJaEnXIqMsjGFP8Cv4J8OFJCaw2D89GGI=
+			WxYeUenmfOZ3FlzWMPyTzB81xo98mMw7xKzup0rygJ8=
 			</data>
 		</dict>
 		<key>Headers/BBDPublicConstans.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HE3Z9yo8ij56GNfs+hVy1L4DAEkiRd8JWrrV0SrspCI=
+			v2NebHkThL7bUjt/0PnMp3pVOYQ3jsyMv6ZiOGwHDa0=
 			</data>
 		</dict>
 		<key>Headers/BBDTouchEventHelper.h</key>
@@ -188,14 +188,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d1Pw/qfB5L0arPVEQvx3cji2+dlkMPn2p6Zj4x2mgxk=
+			dBoQV+3eOtamZvudAEtBgVKNhtstt2VkhFPak7m7g4E=
 			</data>
 		</dict>
 		<key>Headers/BBDUITestAppLogic.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4wTdSlKY1RIqBCYjq9B1//aZTWoBuWRrF/PdwauazU=
+			x6dPfjstNrl524aRnEVQMGvHAuyymY7SmjA76yZ+QRk=
 			</data>
 		</dict>
 		<key>Headers/BBDUITestCaseRef.h</key>

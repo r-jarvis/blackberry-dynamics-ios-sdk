@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "blackberry-dynamics-ios-sdk",
     platforms: [
-        .iOS(.v15),
+        .iOS(.v16),
     ],
     products: [
         .library(name: "BlackBerryCerticom", targets: ["BlackBerryCerticom"]),
