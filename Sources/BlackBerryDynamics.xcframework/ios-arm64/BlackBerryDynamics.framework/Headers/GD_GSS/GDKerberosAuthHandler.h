@@ -423,6 +423,12 @@ public:
      */
     void setUpKerberosTicketAsync(const char* host, int port, GDKerberosAuthCallback& callback);
 
+    /**
+     * get error code of last operation
+     * @return error code
+     */
+    int getKerberosErrorCode();
+
 private:
     void *authKerberos;
 };

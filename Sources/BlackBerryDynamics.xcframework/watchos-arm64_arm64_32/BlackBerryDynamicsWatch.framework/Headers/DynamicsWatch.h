@@ -11,31 +11,35 @@
  * 
  * The enterprise policy does not permit the use of a wearable device.
  */
-NSInteger const WatchMessageErrorPolicyNotAllowed = 1;
+
+extern NSInteger const WatchMessageErrorPolicyNotAllowed;
 
 /** Communication needs to be secured. 
  * 
  * The communication between watch and companion app has not been secured. You must first use <tt>secureCommunicationSession</tt>.
  */
-NSInteger const WatchMessageErrorNeedsCommunicationSecured = 2;
 
+extern NSInteger const WatchMessageErrorNeedsCommunicationSecured;
 /** Communication has failed.
  *
  * The communication failed because the container is locked.
  */
-NSInteger const WatchMessageErrorRemoteLocked = 3;
+
+extern NSInteger const WatchMessageErrorRemoteLocked;
  
 /** Not allowed by enterprise policy
  *
  * The enterprise compliance policy has been violated
  */
-NSInteger const WatchMessageErrorIncompliant = 4;
+
+extern NSInteger const WatchMessageErrorIncompliant;
 
 /** Communication has failed.
  *
  * An unknown error has occurred while trying to secure communication.
  */
-NSInteger const WatchMessageErrorOther = 5;
+
+extern NSInteger const WatchMessageErrorOther;
 
 /** Error domain for watch message error
  * 
@@ -54,6 +58,14 @@ extern NSString const *WatchMessageErrorKey;
  * User info for the possible messaging errors are returned in a Dictionary entry using the userInfo key.
  */
 extern NSString const *WatchMessageErrorUserInfoKey;
+
+
+/** Watch Communication State Info key for watch
+ *
+ * Watch Communication State is returned in a Dictionary entry using the WatchCommunicationStateKey key.
+ */
+extern NSString const *WatchCommunicationStateKey;
+
 
 /**
  * 
@@ -75,11 +87,40 @@ extern NSString const *WatchMessageErrorUserInfoKey;
  * 
  * <h3>Setting Up Secure Communications</h3>
  *
- * Setup and pairing of the watch and companion app is done using <tt>secureCommunicationSession</tt>. When successful, the completion block 
- * <tt>authStatus</tt> will be \ss_true and the WatchCommunicationState changed to <tt>WatchCommunicationReady</tt>. The other states and transitions 
- * are shown in the following diagram. 
+ * Setup and pairing of the watch and companion app is done using <tt>secureCommunicationSession</tt> within the WatchOS app. When successful, the 
+ * completion block <tt>authStatus</tt> will be \ss_true and the WatchCommunicationState changed to <tt>WatchCommunicationReady</tt>. The other 
+ * states and transitions are shown in the following diagram. 
  * 
  * \uimage{st06 WatchCommunicationState.png,Diagram of watchCommunicationState for BlackBerry Dynamics WatchOS application}
+ *
+ * <h4>Behavior On Companion App</h4>
+ * It is best practice to first negotiate a secure communication session from the WatchOS app. This is because <tt>secureCommunicationSession</tt> is not available on 
+ * the iOS companion app. If a WCSession <tt>sendMessage</tt> or <tt>sendMessageData</tt> is sent from the companion app prior to negotiation of the secure communication session 
+ * then this will trigger the negotiation of the keys and the user will be required to confirm the 6 digit code on both devices. In this case the initiating message will 
+ * need to be resent. Other APIs which initiate communication from the companion app to the watch are not currently handled in the same way, for example,  
+ * <tt>transferFile</tt>, <tt>transferUserInfo</tt>, <tt>transferCurrentComplicationUserInfo</tt> and <tt>updateApplicationContext</tt>. Therefore use of these APIs without a 
+ * <tt>secureCommunicationSession</tt> may fail.
+ * 
+ * <h3>Monitoring Watch Communication State</h3>
+ *  The WatchCommunicationState can be monitored by subscribing to the Notification for the key WatchCommunicationStateKey
+ *
+ * @code
+ * NotificationCenter.default.addObserver(self, selector: #selector(watchCommStateChanged(_: )), name: NSNotification.Name(rawValue: WatchCommunicationStateKey), object: nil)
+ * @endcode
+ *
+ * The notification can be processed per this example code:
+ *
+ * @code
+ * @objc func watchCommStateChanged(_ notification:Notification?) {
+ *   guard let notif = notification else {
+ *   //No notification
+ *       return
+ *   }
+ *   if let watchCommState = WatchCommunicationState(rawValue: notif.userInfo?[WatchCommunicationStateKey] as! Int) {
+ *      updateWatchCommString(state:watchCommState)
+ *   }
+ *}
+ * * @endcode
  *
 * <h3>Sending Messages</h3>
  *
@@ -102,9 +143,24 @@ extern NSString const *WatchMessageErrorUserInfoKey;
  *
  * Possible errors are:
  * - \ref WatchMessageErrorPolicyNotAllowed
+ * - \ref WatchMessageErrorRemoteLocked
+ * - \ref WatchMessageErrorIncompliant
  * - \ref WatchMessageErrorNeedsCommunicationSecured
  * - \ref WatchMessageErrorOther
- * 
+ *
+ * <h3>Secure File System</h3>
+ *
+ * The secure file system is part of the BlackBerry Dynamics Watch Secure Storage feature.
+ 
+ * For applications, the BlackBerry Dynamics secure file system behaves like the default file system, with the following differences.
+ * All data within the secure file system is stored on the device in an encrypted form.
+ * Directory and file names are also encrypted.
+ * The secure file system cannot be accessed until the Watch Communication is secured, see  <h3>Setting Up Secure Communications</h3> .
+ *
+ * Use GDFileManager instead of NSFileManager in the Watch app to access the Secure File System.
+ *
+ * For more info see <a href="https://developer.blackberry.com/files/blackberry-dynamics/ios/interface_g_d_file_manager.html">GDFileManager</a>
+ *
  * <h3>Sample Application</h3>
  * 
  * Get started using the WatchOS and iOS sample app called 'WatchMessenger' located on BlackBerry's GitHub.
@@ -118,7 +174,8 @@ extern NSString const *WatchMessageErrorUserInfoKey;
  * 
  * This enumeration represents the state of the communication channel between watch and companion app.
  */
- typedef enum{
+
+typedef NS_ENUM(NSInteger, WatchCommunicationState) {
     /** The secure communication between watch and iOS application has not been started. This is the initial state.*/
      WatchCommunicationStateNotSet,
     /** The secure communication between watch and iOS companion application is being reset. This state is 
@@ -138,11 +195,14 @@ extern NSString const *WatchMessageErrorUserInfoKey;
     /** Securing of the communication channel was cancelled by the user or a validation code was rejected.*/
      WatchCommunicationSecuringFailed,
     /** Communication failed because the enterprise policy does not permit use of a wearable device.*/
-     WatchCommunicationNotAllowed
- }WatchCommunicationState;
+     WatchCommunicationNotAllowedByPolicy,
+    /** Communication failed because the companion app is remote locked.*/
+     WatchCommunicationNotAllowedRemoteLocked,
+    /** Communication failed because the devices are incompliant with Device policies.*/
+     WatchCommunicationNotAllowedIncompliant,
+};
 
-
-/** Conditional block indicating if authentication between the watch and companion app is successful. 
+/** Conditional block indicating if authentication between the watch and companion app is successful.
  *
  * @return <tt>boolean</tt> indicating if the communication has been secured. 
  * 

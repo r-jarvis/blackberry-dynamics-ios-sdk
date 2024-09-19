@@ -71,7 +71,7 @@ typedef NS_ENUM(NSInteger, BBDUnlockType) {
  * Container password
  *
  * @param unlockKey
- * Key which is used to unlock application when it was locked from GC.
+ * Key which is used to unlock application when it was locked from UEM.
  *
  * @deprecated
  * accessKey is now being renamed to activationPassword
@@ -98,7 +98,7 @@ typedef NS_ENUM(NSInteger, BBDUnlockType) {
  * Container password
  *
  * @param unlockKey
- * Key which is used to unlock application when it was locked from GC.
+ * Key which is used to unlock application when it was locked from UEM.
  *
  * @return BBDProvisionData instance, which is used for different purposes,
  * e.g. provisioning test.

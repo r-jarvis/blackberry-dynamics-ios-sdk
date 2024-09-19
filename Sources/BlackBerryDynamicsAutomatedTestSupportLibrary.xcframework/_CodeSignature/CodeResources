@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/BlackBerryDynamicsAutomatedTestSupportLibrary</key>
 		<data>
-		3ZzLiSNd1xKO3N1pl3MqG5JWxf0=
+		fbpBM1mNNKl+NudWNBpQ8aeB0AE=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/AbstractBBDUI.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDAutomatedTestSupport.h</key>
 		<data>
-		VhZcNzeLJu6q+sBgHRThTyMc+F4=
+		9UZalkx8cWFP4wZHPP7w/G6O2DY=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDConditionHelper.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDProvisionData.h</key>
 		<data>
-		kqL71H9hC3/yEyII6mBPCwD06Q4=
+		rAO87su6KYmDcyw0Wb5LI/mZ/mA=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDPublicConstans.h</key>
 		<data>
-		MJPayqAJd6PwrqYoi/k59e7MRm8=
+		tQ63MXOdJ66jUgPPxkBtfR0OaLg=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDTouchEventHelper.h</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUIAccessibilityIdentifiers.h</key>
 		<data>
-		S9n2TO20qCghUgBTd7TKb+d3A2w=
+		QyG/Bo817bGyjW89vOJugcOjz6Y=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestAppLogic.h</key>
 		<data>
-		YbQ0Ipj87a/clYXppiT8A3/89j0=
+		Ko3xyPmv8ZHJVzBV+/2DJZNYBZc=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestCaseRef.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Info.plist</key>
 		<data>
-		I0m6wugCI/x9GXf1BZbhsbPLr+o=
+		IC32c2DtB3xBjSg6+zrwSQ4UndM=
 		</data>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/BlackBerryDynamicsAutomatedTestSupportLibrary</key>
 		<data>
-		d51M/g6yhtsh/2bdVmT1Zc4BJH4=
+		6Ty/97A7PLgxK6SVrXMQs5aQbsk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/AbstractBBDUI.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDAutomatedTestSupport.h</key>
 		<data>
-		VhZcNzeLJu6q+sBgHRThTyMc+F4=
+		9UZalkx8cWFP4wZHPP7w/G6O2DY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDConditionHelper.h</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDProvisionData.h</key>
 		<data>
-		kqL71H9hC3/yEyII6mBPCwD06Q4=
+		rAO87su6KYmDcyw0Wb5LI/mZ/mA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDPublicConstans.h</key>
 		<data>
-		MJPayqAJd6PwrqYoi/k59e7MRm8=
+		tQ63MXOdJ66jUgPPxkBtfR0OaLg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDTouchEventHelper.h</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUIAccessibilityIdentifiers.h</key>
 		<data>
-		S9n2TO20qCghUgBTd7TKb+d3A2w=
+		QyG/Bo817bGyjW89vOJugcOjz6Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestAppLogic.h</key>
 		<data>
-		YbQ0Ipj87a/clYXppiT8A3/89j0=
+		Ko3xyPmv8ZHJVzBV+/2DJZNYBZc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestCaseRef.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Info.plist</key>
 		<data>
-		RnXpA3bystNvlSN4Ap0RvJ5Lfh8=
+		1fbrNPI2AEy9SXEDpGhDivr/8Kk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/_CodeSignature/CodeResources</key>
 		<data>
-		M7bZWFUw1p7PVwP640RefOPT+V0=
+		bfv2RvULXRsaGaSS70foqJlgO8g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -223,11 +223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ZzLiSNd1xKO3N1pl3MqG5JWxf0=
+			fbpBM1mNNKl+NudWNBpQ8aeB0AE=
 			</data>
 			<key>hash2</key>
 			<data>
-			j0odLyKlJfRsH6qdxXjTQhQM/pyBivwXpKwXaJIxLYs=
+			YoSeZ+TNHOXjmpUCg5IyZbGi1ya4QR+G1tbmj43Vtpc=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/AbstractBBDUI.h</key>
@@ -267,11 +267,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VhZcNzeLJu6q+sBgHRThTyMc+F4=
+			9UZalkx8cWFP4wZHPP7w/G6O2DY=
 			</data>
 			<key>hash2</key>
 			<data>
-			plSv7mF/Dw4f/rPYzOwDcRTH1VxXRbdYAvgXBn+trUc=
+			wxJc64/zZxmCdZuyfKgofzw1LY5mEitzdPejj/gAOXw=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDConditionHelper.h</key>
@@ -322,22 +322,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kqL71H9hC3/yEyII6mBPCwD06Q4=
+			rAO87su6KYmDcyw0Wb5LI/mZ/mA=
 			</data>
 			<key>hash2</key>
 			<data>
-			zPddFoG6fDwJaEnXIqMsjGFP8Cv4J8OFJCaw2D89GGI=
+			WxYeUenmfOZ3FlzWMPyTzB81xo98mMw7xKzup0rygJ8=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDPublicConstans.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MJPayqAJd6PwrqYoi/k59e7MRm8=
+			tQ63MXOdJ66jUgPPxkBtfR0OaLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			HE3Z9yo8ij56GNfs+hVy1L4DAEkiRd8JWrrV0SrspCI=
+			v2NebHkThL7bUjt/0PnMp3pVOYQ3jsyMv6ZiOGwHDa0=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDTouchEventHelper.h</key>
@@ -355,22 +355,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S9n2TO20qCghUgBTd7TKb+d3A2w=
+			QyG/Bo817bGyjW89vOJugcOjz6Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			d1Pw/qfB5L0arPVEQvx3cji2+dlkMPn2p6Zj4x2mgxk=
+			dBoQV+3eOtamZvudAEtBgVKNhtstt2VkhFPak7m7g4E=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestAppLogic.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YbQ0Ipj87a/clYXppiT8A3/89j0=
+			Ko3xyPmv8ZHJVzBV+/2DJZNYBZc=
 			</data>
 			<key>hash2</key>
 			<data>
-			n4wTdSlKY1RIqBCYjq9B1//aZTWoBuWRrF/PdwauazU=
+			x6dPfjstNrl524aRnEVQMGvHAuyymY7SmjA76yZ+QRk=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestCaseRef.h</key>
@@ -487,11 +487,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I0m6wugCI/x9GXf1BZbhsbPLr+o=
+			IC32c2DtB3xBjSg6+zrwSQ4UndM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bJU9W19EXYUe4ZJs3zl5gs7w4+1t1+vEfD4cSDBFoxQ=
+			Jr0ZZwuBDJwZcv++x9pkBPX5SLnLbhzm0JowC0FKyBw=
 			</data>
 		</dict>
 		<key>ios-arm64_arm64e/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
@@ -509,11 +509,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d51M/g6yhtsh/2bdVmT1Zc4BJH4=
+			6Ty/97A7PLgxK6SVrXMQs5aQbsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eX2EEUMbPYaQ2FQ9CjvjPRns4Bhcxu3lSO1Rct6YDuo=
+			R9vVd5FLWYnGcIxZrhy7/xtDLgQ6rkANJDn4gQ0FgQ0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/AbstractBBDUI.h</key>
@@ -553,11 +553,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VhZcNzeLJu6q+sBgHRThTyMc+F4=
+			9UZalkx8cWFP4wZHPP7w/G6O2DY=
 			</data>
 			<key>hash2</key>
 			<data>
-			plSv7mF/Dw4f/rPYzOwDcRTH1VxXRbdYAvgXBn+trUc=
+			wxJc64/zZxmCdZuyfKgofzw1LY5mEitzdPejj/gAOXw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDConditionHelper.h</key>
@@ -608,22 +608,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kqL71H9hC3/yEyII6mBPCwD06Q4=
+			rAO87su6KYmDcyw0Wb5LI/mZ/mA=
 			</data>
 			<key>hash2</key>
 			<data>
-			zPddFoG6fDwJaEnXIqMsjGFP8Cv4J8OFJCaw2D89GGI=
+			WxYeUenmfOZ3FlzWMPyTzB81xo98mMw7xKzup0rygJ8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDPublicConstans.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MJPayqAJd6PwrqYoi/k59e7MRm8=
+			tQ63MXOdJ66jUgPPxkBtfR0OaLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			HE3Z9yo8ij56GNfs+hVy1L4DAEkiRd8JWrrV0SrspCI=
+			v2NebHkThL7bUjt/0PnMp3pVOYQ3jsyMv6ZiOGwHDa0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDTouchEventHelper.h</key>
@@ -641,22 +641,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S9n2TO20qCghUgBTd7TKb+d3A2w=
+			QyG/Bo817bGyjW89vOJugcOjz6Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			d1Pw/qfB5L0arPVEQvx3cji2+dlkMPn2p6Zj4x2mgxk=
+			dBoQV+3eOtamZvudAEtBgVKNhtstt2VkhFPak7m7g4E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestAppLogic.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YbQ0Ipj87a/clYXppiT8A3/89j0=
+			Ko3xyPmv8ZHJVzBV+/2DJZNYBZc=
 			</data>
 			<key>hash2</key>
 			<data>
-			n4wTdSlKY1RIqBCYjq9B1//aZTWoBuWRrF/PdwauazU=
+			x6dPfjstNrl524aRnEVQMGvHAuyymY7SmjA76yZ+QRk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Headers/BBDUITestCaseRef.h</key>
@@ -773,11 +773,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RnXpA3bystNvlSN4Ap0RvJ5Lfh8=
+			1fbrNPI2AEy9SXEDpGhDivr/8Kk=
 			</data>
 			<key>hash2</key>
 			<data>
-			hCqyrSbSmq0fnzX+fCoTqYz9Wz0atgPAE1gVqWzd12I=
+			67fX2WK4c4v7/Oq0yFa6WlxR0cLjDX0ncPuoe0qN9Sw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamicsAutomatedTestSupportLibrary.framework/Modules/module.modulemap</key>
@@ -795,11 +795,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M7bZWFUw1p7PVwP640RefOPT+V0=
+			bfv2RvULXRsaGaSS70foqJlgO8g=
 			</data>
 			<key>hash2</key>
 			<data>
-			tRH9uk3PH3v7AtjgNtsXOfKWUyddzmhDr405zivm3L0=
+			9S36J37MiqVbMHDTQcXYHUwyz2u/TJlK4e4lSa0j3Y4=
 			</data>
 		</dict>
 	</dict>

@@ -1,5 +1,5 @@
 /*
- * (c) 2023 BlackBerry Limited. All rights reserved.
+ * (c) 2024 BlackBerry Limited. All rights reserved.
  *
  */
 
@@ -10,6 +10,7 @@
 #import <BlackBerryDynamics/GD/GDAppResultCode.h>
 #import <BlackBerryDynamics/GD/GDAppConfig.h>
 #import <BlackBerryDynamics/GD/GDVersion.h>
+#import <BlackBerryDynamics/GD/GTLauncherViewController.h>
 
 /* \cond DOXYGEN_IGNORE */
 // See: http://clang.llvm.org/docs/LanguageExtensions.html
@@ -1564,6 +1565,37 @@ typedef void (^GDGetEntitlementVersionsForBlock) (NSArray<GDVersion *>* _Nullabl
  * @return GDState instance representing the current state.
  */
 @property (nonatomic, strong, readonly) GDState *state;
+
+/** Returns the <tt>GTLauncherViewController</tt> being managed by 
+ * BlackBerry Dynamics, if any.
+ *
+ * Call this method to access the <tt>GTLauncherViewController</tt> 
+ * instance currently being displayed and managed by BlackBerry Dynamics.
+ * If BlackBerry Dynamics is not managing the <tt>GTLauncherViewController</tt>,
+ * this method will return nil.
+ *
+ * BlackBerry Dynamics will attempt to manage the 
+ * <tt>GTLauncherViewController</tt> by default, providing this functionality to
+ * all apps. If this is not desired, disable this behavior by creating an entry in the
+ * Info.plist file, as shown:
+ * \code
+ * <key>GDDisableAutomaticLauncherManagement</key>
+ * <true/>
+ * \endcode
+ *
+ * Additionally, if BlackBerry Dynamics is managing the
+ * <tt>GTLauncherViewController</tt>, then it is illegal for an application to call
+ * <tt>[UIWindow setRootViewController]</tt> with an argument of
+ * <tt>GTLauncherViewController</tt>, and this will result in an
+ * <tt>NSInvalidArgumentException</tt> being raised.
+ *
+ * Should the application need to manage an instance of
+ * <tt>GTLauncherViewController</tt>, set the Info.plist entry as described above.
+ *
+ * @return GTLauncherViewController instance managed by BlackBerry Dynamics, or nil
+ */
+-(GTLauncherViewController *)getManagedLauncherViewController;
+
 
 @end
 

@@ -23,11 +23,12 @@
 #   define DEPRECATE_BBDTESTOPTION_BBDTESTOPTIONTOUCHID __attribute__((deprecated))
 #endif
 
-typedef NS_OPTIONS(NSInteger, BBDTestOption){
-    BBDTestOptionNone,
-    BBDTestOptionDisclaimer,
-    BBDTestOptionBiometricsID, // simulator only
-    BBDTestOptionTouchID DEPRECATE_BBDTESTOPTION_BBDTESTOPTIONTOUCHID
+typedef NS_OPTIONS(NSInteger, BBDTestOption) {
+    BBDTestOptionNone          = (1 << 0),
+    BBDTestOptionDisclaimer    = (1 << 1),
+    BBDTestOptionBiometricsID  = (1 << 2), // simulator only
+    BBDTestOptionLauncher      = (1 << 3),
+    BBDTestOptionDefault       = BBDTestOptionLauncher
 };
 
 #undef DEPRECATE_BBDTESTOPTION_BBDTESTOPTIONTOUCHID

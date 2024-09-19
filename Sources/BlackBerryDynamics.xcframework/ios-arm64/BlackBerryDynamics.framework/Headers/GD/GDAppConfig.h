@@ -134,3 +134,8 @@ extern const NSString* const GDProtocolsKeyTLSv1_2;
 
 /** \}
  */
+
+//TODO add proper documentation and possibly relocate
+extern const NSString* const BBDWatchErrorDomain;
+extern const NSString* const BBDWatchErrorKey;
+

@@ -107,4 +107,8 @@ static NSString* const BBDBISEnableSwitchID = @"BBDBISEnableSwitchID";
 static NSString* const BBDBISAllowButtonID = @"BBDBISAllowButtonID";
 static NSString* const BBDBISMaybeLaterButtonID = @"BBDBISMaybeLaterButtonID";
 static NSString* const BBDBISNeverAskAgainButtonID = @"BBDBISNeverAskAgainButtonID";
+// Launcher UI
+static NSString* const BBDLauncherButtonID = @"launchpad";
+static NSString* const BBDLauncherCoachmarkViewID = @"coachmarksView";
+
 #endif

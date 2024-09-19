@@ -45,7 +45,7 @@
 /**
  * Get apps list that were installed by DeepTest before test starts.
  * This method was added as a part of EasyActivation flow changes.
- * 
+ *
  * @return apps list
  */
 - (NSArray *)getInstalledApps;
@@ -293,7 +293,7 @@
  * Target application should be provisioned before.
  *
  * @param timeout
- * The amount of time within which container wipe is expected after action from GC
+ * The amount of time within which container wipe is expected after action from UEM
  *
  * @return YES, if wipe/block screen appeared, otherwise NO.
  */
@@ -337,7 +337,7 @@
 - (BOOL)selectForgotPasswordType;
 
 /**
- * Unlocks application which was previously locked by GC.
+ * Unlocks application which was previously locked by UEM.
  * Target application should be provisioned before.
  * Method uses BBDProvisionData instance for all needed information .
  *
@@ -346,10 +346,10 @@
 - (BOOL)unLockBBDApp;
 
 /**
- * Unlocks application which was previously locked by GC.
+ * Unlocks application which was previously locked by UEM.
  * Target application should be provisioned before.
  * Method uses BBDProvisionData instance for all needed information .
- * 
+ *
  * @param authType
  * Indicates application configuration status
  *
@@ -594,7 +594,7 @@
  * Provisioned Activation Password
  *
  * @return YES, if data was successfully typed, otherwise NO.
-*/
+ */
 - (BOOL)enterEmail:(NSString *)email activationPassword:(NSString *)activationPassword;
 
 /**
@@ -612,7 +612,7 @@
  * Activation URL for provisioning
  *
  * @return YES, if data was successfully typed, otherwise NO.
-*/
+ */
 - (BOOL)enterEmail:(NSString *)email activationPassword:(NSString *)activationPassword activationURL:(NSString *)activationURL;
 
 
@@ -642,6 +642,13 @@
  * @return YES, if container password was successfully setted, otherwise NO.
  */
 - (BOOL)setContainerPassword:(NSString *)password;
+
+/**
+ * Method which dismisses the coachmark screen shown by the launcher at the first launch
+ *
+ * @return YES, if coachmark screen was successfully dismissed, otherwise NO.
+ */
+- (BOOL)dismissLauncherCoachmarkScreen;
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //>-----------------------------------------------------------------------------------<//
@@ -880,6 +887,19 @@
  * @return YES if screenshot was captured and saved without errors, otherwise NO
  */
 - (BOOL)captureScreenshotSavingToPath:(NSString *)path;
+
+/**
+ * Resets the test options to the default set
+ */
+- (void)resetOptionsToDefault;
+
+/**
+ * Adds the options in input to the default set
+ *
+ * @param options
+ * the options to be added to the default set
+ */
+- (void)addOptionsToDefault:(BBDTestOption)options;
 
 @end
 
