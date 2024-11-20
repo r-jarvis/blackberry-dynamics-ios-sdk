@@ -6,11 +6,11 @@
 	<dict>
 		<key>DynamicsWatchAssets.bundle/Info.plist</key>
 		<data>
-		OmuAvy4/mfph9rHm2uEl2fmJCoE=
+		aR8qDsMhn41bRlgJjC1yz8UsxT0=
 		</data>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		XkdSl2IcoE6YsmYNbYXhS2KRwlQ=
+		5TVn2aVUie6Uh2Q5M/3x2wRr1qQ=
 		</data>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		eLUfzDjE0zRjtuhxpAhwdqcxkuw=
+		CG+a7iVuhdX+f8thLi9wq9LYu/E=
 		</data>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -187,7 +187,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HySbKIxRwHp197sCTtsN7qlQg5A=
+		f/S0MzfbcmCmLMO5gtvfFbLcw38=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -200,14 +200,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			syin4JPUrUdoCf87Bg0MkEc/bjULRWrOmxoCXa+I6gw=
+			qkvX5ONL0pH+Ve6V+S2iPvOkpjA/8dpeF2YWFfYJv6A=
 			</data>
 		</dict>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kyin7zH/bzxPdAfuUls8RqOgGp2hdpNo0kWW7T6NAWk=
+			tn/S10rVAeEe/hRgrbaWEhxoSpubPQBqoaw7Hoco/C8=
 			</data>
 		</dict>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeRequirements</key>
@@ -221,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SU/9IFbvsWuOMCX/tZ/2Fb7NzGZuA8ZV+AMtWhGLB4c=
+			/NsHtKuLwSMEBrbtDN1w3lNJV5CcjmiGNv/31hMcU6g=
 			</data>
 		</dict>
 		<key>DynamicsWatchAssets.bundle/_CodeSignature/CodeResources</key>

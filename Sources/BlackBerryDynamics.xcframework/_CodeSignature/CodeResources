@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamics</key>
 		<data>
-		/Dvbt/JzBIddn5W4oxvYhEUmq0w=
+		Hb996rBPvcSbeK5GALhTZI9S8IY=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Assets.car</key>
 		<data>
-		5PJ1GGPgkEzyzQ9ISuAwFiCdJVI=
+		Pn4TeZhr/Dsb6ACHA4vF7JWx1KI=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Base.lproj/Launcher.storyboardc/0Se-pb-OYF-view-GI5-ty-gFx.nib</key>
 		<dict>
@@ -299,7 +299,7 @@
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Info.plist</key>
 		<data>
-		XNnSXu78qYYgKAUtX13rz2wnTMw=
+		AdzS9O6UXWVZbiY7ZvaOkpdl+V4=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/da.lproj/Localizable.strings</key>
 		<dict>
@@ -432,7 +432,7 @@
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/Headers/GD/GDAppConfig.h</key>
 		<data>
-		171ekUeeeGSLPzf+R9DnuzK+lMM=
+		CwHvbox64ADWAuFhjdHh8990+7E=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/Headers/GD/GDAppResultCode.h</key>
 		<data>
@@ -716,7 +716,7 @@
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/Info.plist</key>
 		<data>
-		SPLDdR+W+0R5UNuSmmE8/hzb5Eo=
+		YEt69u0Vrklp3eGRQQA46AmP5cw=
 		</data>
 		<key>ios-arm64/BlackBerryDynamics.framework/Modules/module.modulemap</key>
 		<data>
@@ -724,11 +724,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamics</key>
 		<data>
-		HQkeYVHtIhL4emp7ibJcTTNrVPE=
+		GtlHZbmpTTUz35VPLKp48q1k+Bs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Assets.car</key>
 		<data>
-		vILTycyBOTC2/54pWGGY6fbOQuE=
+		Pn4TeZhr/Dsb6ACHA4vF7JWx1KI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Base.lproj/Launcher.storyboardc/0Se-pb-OYF-view-GI5-ty-gFx.nib</key>
 		<dict>
@@ -1017,11 +1017,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Info.plist</key>
 		<data>
-		5OoWp9qrfk+xCkDjUD37Iv9CVu8=
+		8/xez66ZAHOIYWGu4XTgBEerx+c=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		2Bm8k2Z4QImNw1/65EJK67O3N9w=
+		YP7sYRZC21ZBP29BhiMdZJCZpOU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1029,11 +1029,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		crSwc1F48d8soKfr79TXjwsMXTc=
+		S3nhmULUQ652n2a3wCcuBv5vZUQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		NUx1Wg3P2Rw1vUpD9DEhTxh69ak=
+		nl6ffa9kF2PqtU31foh4OG4t61Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -1170,7 +1170,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Headers/GD/GDAppConfig.h</key>
 		<data>
-		Csv8sPVDWGxfGahfVkWhfAklcNw=
+		BhQmh418gBuKgWMk6ubhhyB+dbs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Headers/GD/GDAppResultCode.h</key>
 		<data>
@@ -1454,7 +1454,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Info.plist</key>
 		<data>
-		/TL7sGllHyQvHGzuw99r6a6OVB4=
+		qRLdAVUZaZDZk9ScLmJap0MP8RU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Modules/module.modulemap</key>
 		<data>
@@ -1462,15 +1462,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/_CodeSignature/CodeResources</key>
 		<data>
-		6DwQjBR3UtPKRmIizUDXLWKMwHM=
+		ylA2UKSf/EG+X70+SwX97nTC840=
 		</data>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/BlackBerryDynamicsWatch</key>
 		<data>
-		vEZxQBPXDDZJkx1sVe5D0BpWxiA=
+		NWFJpzu5HjlvejvHCVN38BHeXgk=
 		</data>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/Info.plist</key>
 		<data>
-		J2lviZHMytqK5rePy+GpA/nsnRk=
+		moVF731RJVr2XbjvDENWiJAwy9k=
 		</data>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/da.lproj/Localizable.strings</key>
 		<dict>
@@ -1631,7 +1631,7 @@
 		</data>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/Info.plist</key>
 		<data>
-		0iaRFL9/andmfmiLnsBPL6o2ONc=
+		4yf+YPhPBqh05Ss90N2a1qFWNcU=
 		</data>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/Modules/module.modulemap</key>
 		<data>
@@ -1639,15 +1639,15 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/BlackBerryDynamicsWatch</key>
 		<data>
-		pHqlIviineFNBMsGMGA3XplOFng=
+		dtNpilY+1QMNg8MqRfN65zxs+X4=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/Info.plist</key>
 		<data>
-		OmuAvy4/mfph9rHm2uEl2fmJCoE=
+		aR8qDsMhn41bRlgJjC1yz8UsxT0=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		XkdSl2IcoE6YsmYNbYXhS2KRwlQ=
+		5TVn2aVUie6Uh2Q5M/3x2wRr1qQ=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1655,7 +1655,7 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		eLUfzDjE0zRjtuhxpAhwdqcxkuw=
+		CG+a7iVuhdX+f8thLi9wq9LYu/E=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -1824,7 +1824,7 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/Info.plist</key>
 		<data>
-		HySbKIxRwHp197sCTtsN7qlQg5A=
+		f/S0MzfbcmCmLMO5gtvfFbLcw38=
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/Modules/module.modulemap</key>
 		<data>
@@ -1832,7 +1832,7 @@
 		</data>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/_CodeSignature/CodeResources</key>
 		<data>
-		P8WtjEyLwW9wajGX1eMz9bsXeG8=
+		CMOKREk/uM26q4iCH0/lyTgu/Ms=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1841,22 +1841,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/Dvbt/JzBIddn5W4oxvYhEUmq0w=
+			Hb996rBPvcSbeK5GALhTZI9S8IY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ce/fRGJ/mQcX5JKdMt/C45HV5Fk4tvtZRfSfi+3mB5o=
+			hBrDzl2Hxkuc4131MILe7DZrWZPeakXBWtWEO6w6h1U=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5PJ1GGPgkEzyzQ9ISuAwFiCdJVI=
+			Pn4TeZhr/Dsb6ACHA4vF7JWx1KI=
 			</data>
 			<key>hash2</key>
 			<data>
-			nevxsLlXNN+a7YP0H19yZjO9/zug/nyQYfLetQKUG6I=
+			kll1Cqr//vr56WYHbGIUYycND8jRAzYMn/bHU5lvvvQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Base.lproj/Launcher.storyboardc/0Se-pb-OYF-view-GI5-ty-gFx.nib</key>
@@ -2353,11 +2353,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XNnSXu78qYYgKAUtX13rz2wnTMw=
+			AdzS9O6UXWVZbiY7ZvaOkpdl+V4=
 			</data>
 			<key>hash2</key>
 			<data>
-			0rNCSChpVjiXtkQybn6haBU7LhIL2vQ0hthDukprsS4=
+			VmiV0GX+0hOp1ftOAT50fgRqIAtm3Ek9+CgMS2NLDro=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/da.lproj/Localizable.strings</key>
@@ -2571,11 +2571,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			171ekUeeeGSLPzf+R9DnuzK+lMM=
+			CwHvbox64ADWAuFhjdHh8990+7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			NeZL9JK5U3l9Q1pH8hCYTF2uXFoJP/ltsYxuyVjHJNU=
+			3TO8mReieHMENqFDUL0EEfHa1kMKDa4dIA/vqY3xdMQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/Headers/GD/GDAppResultCode.h</key>
@@ -3357,11 +3357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SPLDdR+W+0R5UNuSmmE8/hzb5Eo=
+			YEt69u0Vrklp3eGRQQA46AmP5cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			22PyXrckTGsA/LbvBofCcXIFLeWPHKvV2nZWlkhyEjA=
+			MsdGA9guIk/DB178B6YWJCBBeJxgRL4cSaZT6/Il40M=
 			</data>
 		</dict>
 		<key>ios-arm64/BlackBerryDynamics.framework/Modules/module.modulemap</key>
@@ -3379,22 +3379,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HQkeYVHtIhL4emp7ibJcTTNrVPE=
+			GtlHZbmpTTUz35VPLKp48q1k+Bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fcyPkSTpn6FO3yygUAtbhjVPdlG1VOMyu2/uUmreRYs=
+			wKhYI/d2GNEuJnUIjtrp4fOYbVV9V8E4OSldgGT14Dg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vILTycyBOTC2/54pWGGY6fbOQuE=
+			Pn4TeZhr/Dsb6ACHA4vF7JWx1KI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jN6ozoC1OxImiAKylAwK7VKVwdMQqk178qRwvFC65Dg=
+			kll1Cqr//vr56WYHbGIUYycND8jRAzYMn/bHU5lvvvQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/Base.lproj/Launcher.storyboardc/0Se-pb-OYF-view-GI5-ty-gFx.nib</key>
@@ -3891,22 +3891,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5OoWp9qrfk+xCkDjUD37Iv9CVu8=
+			8/xez66ZAHOIYWGu4XTgBEerx+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			abRfXH/0Dkb7zQRmsmUeq3KKrS1U47zK0Qu9sPaAHDw=
+			9/B3Wm3x5tUD+hx8RNFpyFhYz4a5wJIv5BjetgK/i0o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Bm8k2Z4QImNw1/65EJK67O3N9w=
+			YP7sYRZC21ZBP29BhiMdZJCZpOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			nPLM1slXkrxtY+Xoii0z4e8cTzYpcHbykluuUDPMeDg=
+			030ySyOSOYmqIf1BvOWFJZ8vRCD/XRlNnuy/F6xAr1c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeRequirements</key>
@@ -3924,22 +3924,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			crSwc1F48d8soKfr79TXjwsMXTc=
+			S3nhmULUQ652n2a3wCcuBv5vZUQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			AXSoTlaoBMnaa43rRrbULuLRVGAav0Oz8VHjkDLcpWk=
+			RsNtGYWWy6df6BaJzOWTqGIC+53MNQKFwqEkblnhUm8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NUx1Wg3P2Rw1vUpD9DEhTxh69ak=
+			nl6ffa9kF2PqtU31foh4OG4t61Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			bi8tIjCy5j5zXzjyP7GuSJCB2o3k9O3yFSI9LIDTeFE=
+			v0wzuRY37zmxfIh/vD9sIHefn6h1MLZzkcWKiF+ekC0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeSignature</key>
@@ -4164,11 +4164,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Csv8sPVDWGxfGahfVkWhfAklcNw=
+			BhQmh418gBuKgWMk6ubhhyB+dbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			pV/VvNVMBMOGyMVBms+KhOX19gwO9tGoaoRsGAEqOQI=
+			GUC4ls7d5f+1f7KVloBSrjwsiKURrfnzMZQHwsuFKN0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Headers/GD/GDAppResultCode.h</key>
@@ -4950,11 +4950,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/TL7sGllHyQvHGzuw99r6a6OVB4=
+			qRLdAVUZaZDZk9ScLmJap0MP8RU=
 			</data>
 			<key>hash2</key>
 			<data>
-			bpiNXlFauk+l4P8o6BKs6raoYLXLECfuW1IMoFsD6os=
+			hBbLDpknEnAUW0VaD0znKAg5LdNWW3WnO3xdAGtXTpA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BlackBerryDynamics.framework/Modules/module.modulemap</key>
@@ -4972,33 +4972,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6DwQjBR3UtPKRmIizUDXLWKMwHM=
+			ylA2UKSf/EG+X70+SwX97nTC840=
 			</data>
 			<key>hash2</key>
 			<data>
-			4T99FoPwFO8p50cU5Chz8m6HeJFKFpUyNJNY7AIynKM=
+			F6YBljwGOM3Nne7Vn6WjJJor7kuhV7j6WZ+iluspBjk=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/BlackBerryDynamicsWatch</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vEZxQBPXDDZJkx1sVe5D0BpWxiA=
+			NWFJpzu5HjlvejvHCVN38BHeXgk=
 			</data>
 			<key>hash2</key>
 			<data>
-			/ZxEotyfdfisxkXiAhDu/li7kAlyvNuuMDPlP7J9wTk=
+			IUq4V/f/d890jQKS/sdEVsZAD0j8DwWrA1GBSvNhNxM=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J2lviZHMytqK5rePy+GpA/nsnRk=
+			moVF731RJVr2XbjvDENWiJAwy9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			GBnPMUk0gzB9GCTG1YTCslIzGXwOe/rD1wfhTAfPmzc=
+			2jzAdqWkUuOs21gBRftCtQaldOEG3PmXND3RtqZizzs=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/da.lproj/Localizable.strings</key>
@@ -5284,11 +5284,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0iaRFL9/andmfmiLnsBPL6o2ONc=
+			4yf+YPhPBqh05Ss90N2a1qFWNcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			BkJKWmMpRwhJvyouqld8ivVeAihLoCgNdH5AaArRAOg=
+			4cmvNzH/h8PophB9NMHkWiyH6BPOJrJsoHpIj+NDBOo=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32/BlackBerryDynamicsWatch.framework/Modules/module.modulemap</key>
@@ -5306,33 +5306,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pHqlIviineFNBMsGMGA3XplOFng=
+			dtNpilY+1QMNg8MqRfN65zxs+X4=
 			</data>
 			<key>hash2</key>
 			<data>
-			pHe9E9quVLK0Baur1+O5adEQFg5x3DHKQBetIQsfVcI=
+			xQsqKG6B3K7PD6n1oVFbN7vIEUEM4VJy+DQ8OUTf1JI=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OmuAvy4/mfph9rHm2uEl2fmJCoE=
+			aR8qDsMhn41bRlgJjC1yz8UsxT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			syin4JPUrUdoCf87Bg0MkEc/bjULRWrOmxoCXa+I6gw=
+			qkvX5ONL0pH+Ve6V+S2iPvOkpjA/8dpeF2YWFfYJv6A=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XkdSl2IcoE6YsmYNbYXhS2KRwlQ=
+			5TVn2aVUie6Uh2Q5M/3x2wRr1qQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kyin7zH/bzxPdAfuUls8RqOgGp2hdpNo0kWW7T6NAWk=
+			tn/S10rVAeEe/hRgrbaWEhxoSpubPQBqoaw7Hoco/C8=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeRequirements</key>
@@ -5350,11 +5350,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eLUfzDjE0zRjtuhxpAhwdqcxkuw=
+			CG+a7iVuhdX+f8thLi9wq9LYu/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			SU/9IFbvsWuOMCX/tZ/2Fb7NzGZuA8ZV+AMtWhGLB4c=
+			/NsHtKuLwSMEBrbtDN1w3lNJV5CcjmiGNv/31hMcU6g=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/DynamicsWatchAssets.bundle/_CodeSignature/CodeResources</key>
@@ -5662,11 +5662,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HySbKIxRwHp197sCTtsN7qlQg5A=
+			f/S0MzfbcmCmLMO5gtvfFbLcw38=
 			</data>
 			<key>hash2</key>
 			<data>
-			GCynGLQTWCl9yINw5ZPoj/otREDEoIFPwyRJsex983c=
+			y3xDRDpJgpHD8x6vbxXWcC8ITDptf4oQmYodgpUccL0=
 			</data>
 		</dict>
 		<key>watchos-arm64_x86_64-simulator/BlackBerryDynamicsWatch.framework/Modules/module.modulemap</key>
@@ -5684,11 +5684,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P8WtjEyLwW9wajGX1eMz9bsXeG8=
+			CMOKREk/uM26q4iCH0/lyTgu/Ms=
 			</data>
 			<key>hash2</key>
 			<data>
-			p2/hkrzqOYYPORoVAdFOHAEOkHT01ywllfrPZrpavtQ=
+			Uk3jVm/sTaNDuq9G37thErw1EOv1suXBratOv/qnsqk=
 			</data>
 		</dict>
 	</dict>
