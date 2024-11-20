@@ -52,6 +52,11 @@ extern const NSString* const GDAppConfigKeyUserPrincipalName;
  */
 extern const NSString* const GDAppConfigKeyInstanceIdentifier;
 
+/** Constant key for AI Writing Tools security policy indicator.\  See
+ *  \ref \ss_iOS_Mac{GDiOS,GDMac}::getApplicationConfig.
+ */
+extern const NSString* const GDAppConfigKeyAllowAiWritingTools;
+
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 /**
  * \if iOS

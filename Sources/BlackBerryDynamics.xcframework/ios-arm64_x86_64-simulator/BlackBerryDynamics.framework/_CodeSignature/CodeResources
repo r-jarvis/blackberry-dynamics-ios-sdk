@@ -6,7 +6,7 @@
 	<dict>
 		<key>BlackBerryDynamicsAssets.bundle/Assets.car</key>
 		<data>
-		vILTycyBOTC2/54pWGGY6fbOQuE=
+		Pn4TeZhr/Dsb6ACHA4vF7JWx1KI=
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/Base.lproj/Launcher.storyboardc/0Se-pb-OYF-view-GI5-ty-gFx.nib</key>
 		<dict>
@@ -295,11 +295,11 @@
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/Info.plist</key>
 		<data>
-		5OoWp9qrfk+xCkDjUD37Iv9CVu8=
+		8/xez66ZAHOIYWGu4XTgBEerx+c=
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		2Bm8k2Z4QImNw1/65EJK67O3N9w=
+		YP7sYRZC21ZBP29BhiMdZJCZpOU=
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -307,11 +307,11 @@
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		crSwc1F48d8soKfr79TXjwsMXTc=
+		S3nhmULUQ652n2a3wCcuBv5vZUQ=
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		NUx1Wg3P2Rw1vUpD9DEhTxh69ak=
+		nl6ffa9kF2PqtU31foh4OG4t61Y=
 		</data>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -448,7 +448,7 @@
 		</data>
 		<key>Headers/GD/GDAppConfig.h</key>
 		<data>
-		Csv8sPVDWGxfGahfVkWhfAklcNw=
+		BhQmh418gBuKgWMk6ubhhyB+dbs=
 		</data>
 		<key>Headers/GD/GDAppResultCode.h</key>
 		<data>
@@ -732,7 +732,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/TL7sGllHyQvHGzuw99r6a6OVB4=
+		qRLdAVUZaZDZk9ScLmJap0MP8RU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -745,7 +745,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jN6ozoC1OxImiAKylAwK7VKVwdMQqk178qRwvFC65Dg=
+			kll1Cqr//vr56WYHbGIUYycND8jRAzYMn/bHU5lvvvQ=
 			</data>
 		</dict>
 		<key>BlackBerryDynamicsAssets.bundle/Base.lproj/Launcher.storyboardc/0Se-pb-OYF-view-GI5-ty-gFx.nib</key>
@@ -1082,14 +1082,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			abRfXH/0Dkb7zQRmsmUeq3KKrS1U47zK0Qu9sPaAHDw=
+			9/B3Wm3x5tUD+hx8RNFpyFhYz4a5wJIv5BjetgK/i0o=
 			</data>
 		</dict>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nPLM1slXkrxtY+Xoii0z4e8cTzYpcHbykluuUDPMeDg=
+			030ySyOSOYmqIf1BvOWFJZ8vRCD/XRlNnuy/F6xAr1c=
 			</data>
 		</dict>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeRequirements</key>
@@ -1103,14 +1103,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXSoTlaoBMnaa43rRrbULuLRVGAav0Oz8VHjkDLcpWk=
+			RsNtGYWWy6df6BaJzOWTqGIC+53MNQKFwqEkblnhUm8=
 			</data>
 		</dict>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bi8tIjCy5j5zXzjyP7GuSJCB2o3k9O3yFSI9LIDTeFE=
+			v0wzuRY37zmxfIh/vD9sIHefn6h1MLZzkcWKiF+ekC0=
 			</data>
 		</dict>
 		<key>BlackBerryDynamicsAssets.bundle/_CodeSignature/CodeSignature</key>
@@ -1267,7 +1267,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pV/VvNVMBMOGyMVBms+KhOX19gwO9tGoaoRsGAEqOQI=
+			GUC4ls7d5f+1f7KVloBSrjwsiKURrfnzMZQHwsuFKN0=
 			</data>
 		</dict>
 		<key>Headers/GD/GDAppResultCode.h</key>
