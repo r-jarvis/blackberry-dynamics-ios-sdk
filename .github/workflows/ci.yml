@@ -11,14 +11,9 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-latest
     environment: default
-    strategy:
-      matrix:
-        xcode: ["16.0"]
     steps:
       - uses: actions/checkout@v4
-      - name: Select Xcode ${{ matrix.xcode }}
-        run: sudo xcode-select -s /Applications/Xcode_${{ matrix.xcode }}.app
       - name: Build package
         run: xcodebuild -scheme blackberry-dynamics-ios-sdk-Package -destination generic/platform=iOS

@@ -1,9 +1,0 @@
-//
-//  Copyright © 2024 BlackBerry Ltd. All rights reserved.
-//
-
-framework module BlackBerryDynamicsWatch {
-    requires objc
-    umbrella header "BlackBerryDynamicsWatch.h"
-    export *
-}
